@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <FrameLayout android:layout_width="180dp"
+        android:layout_height="225dp">
+
+        <ImageView android:id="@+id/iv_redpacket"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_redrocket"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"/>
+
+        <View android:id="@+id/iv_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="top|right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="visible"/>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">猪猪虾</string>
+    
+    <!-- 主页面 -->
+    <string name="string_bottom_tab01">首页</string>
+    <string name="string_bottom_tab02">超级搜索</string>
+    <string name="string_bottom_tab03">实时播</string>
+    <string name="string_bottom_tab04">每日发圈</string>
+    <string name="string_bottom_tab05">个人中心</string>
+    <string name="tip_exit">再按一次退出程序</string>
+
+    <string name="app_name1">AutoScrollViewPager</string>
+
+    <string name="string_content">想要冬天婀娜多姿，保暖背心少不了，秋冬新款贴身加绒无袖背心女神福利价24元，疯抢~[玫瑰]精选优质面料，轻薄透气，柔软亲肤。
+棉质健康面料，穿着贴身更舒心，保暖塑性，加绒加厚，这个冬天让你温暖如初</string>
+    <string name="description_shareapp">天天双11,你想不到的低价都在这里!</string>
+
+    <string name="str_invitation">请输入邀请码享受独家优惠</string>
+
+
+    <string name="str_copycomment">复制评论</string>
+
+</resources>

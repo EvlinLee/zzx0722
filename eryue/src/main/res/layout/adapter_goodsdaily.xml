@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView android:id="@+id/iv_goodsdaily"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/img_daily"
+        android:scaleType="fitXY"/>
+
+    <TextView android:id="@+id/tv_name_goodsdaily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="全套基础视频教程"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="12dp"/>
+
+    <TextView android:id="@+id/tv_price_goodsdaily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="原价 ¥6.6"
+        android:maxLines="1"
+        android:textColor="@color/txt_gray"
+        android:textSize="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="券后"
+            android:textColor="@color/red"
+            android:textSize="12dp"/>
+
+        <TextView android:id="@+id/tv_after_goodsdaily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="¥3.6"
+            android:textColor="@color/red"
+            android:textSize="14dp"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView android:id="@+id/tv_price_paper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:background="@color/red"
+            android:text="券30"
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

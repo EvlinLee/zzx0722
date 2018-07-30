@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.eryue.ui.UISortTabView
+            android:id="@+id/tabview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bg_line" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#f3f2f7" />
+
+        <com.library.ui.dragrefresh.DragRefreshListView
+            android:id="@+id/listview_goods"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/bg_line"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="#00000000"
+            android:smoothScrollbar="true" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_rocket"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/icon_detailtop"
+        android:visibility="gone" />
+
+</FrameLayout>

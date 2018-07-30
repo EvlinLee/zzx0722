@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f3f2f7"
+    >
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager"
+        android:background="@color/cell_background">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="50dip"
+        android:layout_height="10dip"
+        android:id="@+id/indicator_view"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dip"
+        >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3">
+            <View
+                android:layout_width="5dip"
+                android:layout_height="5dip"
+                android:id="@+id/item_0"
+                android:tag="0"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3">
+            <View
+                android:layout_width="5dip"
+                android:layout_height="5dip"
+                android:id="@+id/item_1"
+                android:tag="1"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3">
+            <View
+                android:layout_width="5dip"
+                android:layout_height="5dip"
+                android:id="@+id/item_2"
+                android:tag="2"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3">
+            <View
+                android:layout_width="5dip"
+                android:layout_height="5dip"
+                android:id="@+id/item_3"
+                android:tag="3"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout android:id="@+id/layout_mycode"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_marginBottom="10dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hint1"
+            android:textSize="15dip"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:text="我的邀请码 "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/yaoqingma"
+            android:layout_centerVertical="true"
+            android:textSize="18dip"
+            android:textColor="#333333"
+            android:layout_toRightOf="@+id/hint1"/>
+
+        <TextView
+            android:layout_width="120dip"
+            android:layout_height="40dip"
+            android:id="@+id/copy_yqm"
+            android:layout_toRightOf="@+id/yaoqingma"
+            android:text="复制邀请码"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="25dip"
+            android:background="@drawable/bg_login_in"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.ali.auth.sdk:alibabauth_ui-1.4.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/alibabauth_ui-1.4.3.aar/df6066dbf819d540f6b433d889f52f61/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/alibabauth_ui-1.4.3.aar/df6066dbf819d540f6b433d889f52f61/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

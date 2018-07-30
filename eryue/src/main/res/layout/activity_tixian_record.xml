@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/name"
+            android:text="名称"
+            android:paddingLeft="15dip"
+            android:gravity="center_vertical|left"
+            android:textColor="#999999"
+            android:textSize="14dip"/>
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/date"
+            android:text="时间"
+            android:gravity="center_vertical|left"
+            android:textColor="#999999"
+            android:textSize="14dip"/>
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/money"
+            android:text="金额"
+            android:gravity="center_vertical|left"
+            android:textColor="#999999"
+            android:textSize="14dip"/>
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/status"
+            android:text="状态"
+            android:gravity="center_vertical|left"
+            android:textColor="#999999"
+            android:textSize="14dip"/>
+
+    </LinearLayout>
+
+    
+    <com.library.ui.dragrefresh.DragRefreshListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview"
+
+        android:divider="@color/bg_line"
+        android:dividerHeight="1px"></com.library.ui.dragrefresh.DragRefreshListView>
+
+</LinearLayout>

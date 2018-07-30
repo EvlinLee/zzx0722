@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dip">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/contain_0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/a_type"
+                android:layout_width="match_parent"
+                android:layout_height="43dip"
+                android:gravity="center"
+                android:text="我的团队"
+                android:textSize="15dip"
+                android:textColor="#ff5533" />
+
+            <View
+                android:id="@+id/line0"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#ff5533"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/contain_1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/b_type"
+                android:layout_width="match_parent"
+                android:layout_height="43dip"
+                android:gravity="center"
+                android:text="团队邀请"
+                android:textSize="15dip"
+                android:textColor="#090909" />
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#ff5533"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal"
+        android:background="@color/comm_background">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center|left"
+            android:paddingLeft="10dip"
+            android:id="@+id/nick_name"
+            android:text="用户昵称"
+            android:textColor="#999999"
+            android:textSize="14dip" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:id="@+id/wechat"
+            android:gravity="center|left"
+            android:text="手机号"
+            android:textColor="#999999"
+            android:textSize="14dip"
+            />
+        
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:id="@+id/time_contain"
+            android:tag="0">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:id="@+id/register_time"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="注册时间"
+                android:textColor="#999999"
+                android:textSize="14dip"
+                />
+            <ImageView
+                android:layout_width="12dip"
+                android:layout_height="12dip"
+                android:id="@+id/time_indicator"
+                android:background="@drawable/icon_arrow_down1"
+                android:layout_toRightOf="@id/register_time"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dip"/>
+
+
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:id="@+id/cash_contain"
+            android:tag="0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:id="@+id/cash"
+                android:gravity="center"
+                android:text="累计提现"
+                android:textColor="#999999"
+                android:textSize="14dip"
+                android:layout_centerHorizontal="true"
+                />
+            <ImageView
+                android:layout_width="12dip"
+                android:layout_height="12dip"
+                android:id="@+id/cash_indicator"
+                android:background="@drawable/icon_arrow_down1"
+                android:layout_toRightOf="@id/cash"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dip"/>
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <com.library.ui.dragrefresh.DragRefreshListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cell_background">
+
+    </com.library.ui.dragrefresh.DragRefreshListView>
+
+</LinearLayout>

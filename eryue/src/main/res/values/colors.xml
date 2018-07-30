@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#ffff4c4c</color>
+    <color name="gray">#FFCCCCCC</color>
+    <color name="blue">#ff355E7E</color>
+    <color name="main_text_color">#9b9b9b</color>
+    <color name="txt_color_tab">#ff222222</color>
+
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+
+    <color name="txt_gray">#FF333333</color>
+    <color name="txt_gray2">#FF444444</color>
+    <color name="txt_gray_light">#FF999999</color>
+    <color name="bg_line">#FFe6e6e6</color>
+    <color name="red_lite">#FF1A40</color>
+    <color name="red_paper">#FFF54D23</color>
+    <color name="gray_goods">#FF979797</color>
+
+    <color name="common_normal_text_w">#000000</color>
+    <color name="common_lite_text_w">#5F5F5F</color>
+
+    <color name="comm_background">#f3f2f7</color>
+    <color name="cell_background">#ffffff</color>
+    <color name="text_color_0">#030303</color>
+    <color name="line_color">#e0e0e0</color>
+
+    <color name="transparent_white">#66ffffff</color>
+    <color name="transparent">#66000000</color>
+
+    <color name="color_txthint">#aaaaaa</color>
+    <color name="txtcolor_red">#FF1A40</color>
+
+    <!--综合、价格、销量、券价-->
+    <color name="txtcolor_tab">#888888</color>
+    <color name="txtcolor_business">#666666</color>
+
+</resources>

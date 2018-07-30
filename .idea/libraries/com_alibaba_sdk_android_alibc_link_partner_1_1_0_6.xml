@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.alibaba.sdk.android:alibc_link_partner-1.1.0.6">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/alibc_link_partner-1.1.0.6.aar/446ce16e26ba6368c2d676414a31fc03/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/alibc_link_partner-1.1.0.6.aar/446ce16e26ba6368c2d676414a31fc03/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="listview_font_size_26_px">13dip</dimen>
+    <dimen name="listview_font_size_22_px">11dip</dimen>
+</resources>

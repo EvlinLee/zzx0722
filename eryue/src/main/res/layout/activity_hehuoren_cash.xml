@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f2f7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:id="@+id/contain_0">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/normal_account"
+            android:text="普通账户"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:background="#ffffff"
+            />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/jingdongmiandan"
+            android:text="京东免单"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:layout_toRightOf="@+id/normal_account"
+            android:layout_marginLeft="1dip"
+            android:background="#ffffff"
+            />
+
+        <RelativeLayout
+            android:id="@+id/hint0_con"
+            android:layout_width="10dip"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/jingdongmiandan"
+            android:layout_marginLeft="20dip"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/hint00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="今日"
+                android:textColor="#333333"
+                android:textSize="16dip" />
+
+            <ImageView
+                android:layout_width="10dip"
+                android:layout_height="10dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dip"
+                android:layout_toRightOf="@+id/hint00"
+                android:background="@drawable/icon_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:id="@+id/contain_11"
+        android:layout_below="@+id/contain_0">
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="100dip"
+            android:layout_weight="1"
+            android:background="#ffffff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value0"
+                android:textColor="#333333"
+                android:textSize="18dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hint0"
+                android:text="账户余额(元)"
+                android:textColor="#999999"
+                android:textSize="14dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dip"
+                android:layout_below="@+id/value0"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="100dip"
+            android:layout_weight="1"
+            android:background="#ffffff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value1"
+                android:textColor="#333333"
+                android:textSize="18dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hint1"
+                android:text="预估积分(元)"
+                android:textColor="#999999"
+                android:textSize="14dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dip"
+                android:layout_below="@+id/value1"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="100dip"
+            android:layout_weight="1"
+            android:background="#ffffff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value2"
+                android:textColor="#333333"
+                android:textSize="18dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hint2"
+                android:text="累计有效(元)"
+                android:textColor="#999999"
+                android:textSize="14dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dip"
+                android:layout_below="@+id/value2"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:id="@+id/contain_2"
+        android:layout_below="@+id/contain_11"
+        android:layout_marginTop="10dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dip"
+            android:id="@+id/contain_1"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hint3"
+                android:text="支付宝"
+                android:layout_marginLeft="16dip"
+                android:layout_centerVertical="true"
+                android:textColor="#333333"
+                android:textSize="15dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/input_alipay"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:text="请添加支付宝账号"
+                android:gravity="center"
+                android:textColor="#aaaaaa"
+                android:maxLines="1"
+                android:textSize="15dip"
+                android:layout_marginRight="40dip"/>
+
+            <ImageView
+                android:layout_width="15dip"
+                android:layout_height="15dip"
+                android:background="@drawable/icon_disclosure"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dip"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#e0e0e0"
+            android:layout_below="@id/contain_1"
+            android:id="@+id/line1"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dip"
+            android:id="@+id/contain_3"
+            android:layout_below="@+id/line1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hint4"
+                android:text="本次提现"
+                android:layout_marginLeft="16dip"
+                android:layout_centerVertical="true"
+                android:textColor="#333333"
+                android:textSize="15dip"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/cash"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:hint="请输入提现金额"
+                android:textColorHint="#aaaaaa"
+                android:textColor="#333333"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textSize="15dip"
+                android:layout_marginRight="16dip"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#e0e0e0"
+            android:layout_below="@id/contain_3"
+            android:id="@+id/line2"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hint5"
+        android:layout_below="@id/contain_2"
+        android:background="#ffffff"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:textSize="14dip"
+        android:textColor="#999999"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"/>
+
+
+    <TextView
+        android:id="@+id/take_cash"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_red_textview"
+        android:gravity="center"
+        android:text="确认提现"
+        android:layout_below="@+id/hint5"
+        android:textColor="#ffffff"
+        android:textSize="16dip" />
+
+    <ImageView
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:id="@+id/share_img"
+        android:background="@drawable/icon_promot"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dip"
+        android:layout_marginRight="20dip"/>
+
+</RelativeLayout>

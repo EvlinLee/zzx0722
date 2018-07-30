@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="txt_adf_color">#333333</color>
+
+    <color name="txt_default_white_color">#ffffff</color>
+    <color name="windstock_toolbar_bg">#252526</color>
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/comm_background">
+
+    <LinearLayout
+        android:id="@+id/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal"
+        android:background="@color/cell_background">
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/hint0_con">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/hint0"
+                android:gravity="center"
+                android:text="今日"
+                android:textColor="#333333"
+                android:textSize="16dip"
+                android:enabled="true"/>
+            <ImageView
+                android:layout_width="10dip"
+                android:layout_height="10dip"
+                android:background="@drawable/icon_arrow"
+                android:layout_toRightOf="@+id/hint0"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dip"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/hint1_con">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/hint1"
+                android:gravity="center"
+                android:text="全部订单"
+                android:textColor="#333333"
+                android:textSize="16dip"
+                android:enabled="true"/>
+            <ImageView
+                android:layout_width="10dip"
+                android:layout_height="10dip"
+                android:background="@drawable/icon_arrow"
+                android:layout_toRightOf="@+id/hint1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dip"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/hint3_con">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/hint3"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="#333333"
+                android:textSize="16dip"
+                android:enabled="true"/>
+            <ImageView
+                android:layout_width="10dip"
+                android:layout_height="10dip"
+                android:background="@drawable/icon_arrow"
+                android:layout_toRightOf="@+id/hint3"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dip"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:id="@+id/line"
+        android:background="@color/line_color"
+        android:layout_below="@+id/layout_toolbar"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:id="@+id/down_view"
+        android:background="@color/cell_background"
+        android:layout_below="@+id/line"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/num"
+                android:layout_marginTop="5dip"
+                android:text="0"
+                android:textColor="#333333"
+                android:textSize="16dip"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dip"
+                android:text="退款单数"
+                android:textColor="#999999"
+                android:textSize="12dip"
+                android:layout_below="@+id/num"
+                android:layout_centerHorizontal="true"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dip"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="#e2e1e6" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/money"
+                android:layout_marginTop="5dip"
+                android:text="0"
+                android:textColor="#333333"
+                android:textSize="16dip"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dip"
+                android:text="退款金额"
+                android:textColor="#999999"
+                android:textSize="12dip"
+                android:layout_below="@+id/money"
+                android:layout_centerHorizontal="true"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dip"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="#e2e1e6" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <com.library.ui.dragrefresh.DragRefreshListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview"
+        android:divider="@color/comm_background"
+        android:dividerHeight="5dip"
+        android:layout_below="@+id/down_view"
+        android:layout_marginTop="10dip">
+
+    </com.library.ui.dragrefresh.DragRefreshListView>
+
+    <ImageView
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:id="@+id/share_img"
+        android:background="@drawable/icon_promot"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dip"
+        android:layout_marginRight="20dip"/>
+
+</RelativeLayout>

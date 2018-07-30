@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_guide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+    
+    <Button 
+        android:id="@+id/btn_enter"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:background="#B6292D"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/indicator_guide"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        app:fillColor="#FF969696"
+        app:pageColor="#FFEDEDED"
+        app:strokeColor="#FFEDEDED"
+        android:padding="10dip" />
+
+
+</RelativeLayout>

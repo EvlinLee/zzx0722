@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingBottom="13dip">
+
+        <ImageView
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:layout_marginTop="7dip"
+            android:layout_marginLeft="7dip"
+            android:id="@+id/picture"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:text="title"
+            android:layout_toRightOf="@+id/picture"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="10dip"
+            android:textSize="14dip"
+            android:textColor="#333333"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dingdanhao"
+            android:text="订单编号:"
+            android:layout_toRightOf="@+id/picture"
+            android:layout_marginLeft="10dip"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="11dip"
+            android:textSize="12dip"
+            android:textColor="#666666"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dingdanhao_value"
+            android:layout_toRightOf="@+id/dingdanhao"
+            android:layout_marginLeft="1dip"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="11dip"
+            android:textSize="12dip"
+            android:textColor="#666666"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pay"
+            android:text="付款金额:"
+            android:layout_below="@+id/dingdanhao"
+            android:layout_toRightOf="@+id/picture"
+            android:layout_marginTop="11dip"
+            android:layout_marginLeft="10dip"
+            android:textSize="12dip"
+            android:textColor="#666666"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pay_value"
+            android:text=""
+            android:layout_below="@+id/dingdanhao"
+            android:layout_toRightOf="@+id/pay"
+            android:layout_marginTop="11dip"
+            android:layout_marginLeft="10dip"
+            android:textSize="12dip"
+            android:textColor="#666666"/>
+
+        <TextView
+            android:layout_width="50dip"
+            android:layout_height="18dip"
+            android:id="@+id/jifen"
+            android:text="预估积分"
+            android:layout_below="@+id/dingdanhao"
+            android:layout_toLeftOf="@+id/jifen_value"
+            android:layout_marginTop="11dip"
+            android:layout_marginRight="5dip"
+            android:textSize="12dip"
+            android:gravity="center"
+            android:textColor="#ff1a40"/>
+
+        <View
+            android:layout_width="50dip"
+            android:layout_height="18dip"
+            android:id="@+id/bg_status"
+            android:layout_below="@+id/dingdanhao"
+            android:layout_toLeftOf="@+id/jifen_value"
+            android:layout_marginTop="11dip"
+            android:layout_marginRight="5dip"
+            android:background="#ff1a40"
+            android:alpha="0.1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jifen_value"
+            android:text="0"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/dingdanhao"
+            android:layout_marginRight="45dip"
+            android:layout_marginTop="10dip"
+            android:textSize="15dip"
+            android:textColor="#333333"/>
+
+        <ImageView
+            android:layout_width="12dip"
+            android:layout_height="12dip"
+            android:id="@+id/img"
+            android:background="@drawable/icon_time"
+            android:layout_below="@+id/pay"
+            android:layout_toRightOf="@+id/picture"
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="10dip"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:text="2018-01-01 01:01:01"
+            android:layout_below="@+id/pay"
+            android:layout_toRightOf="@+id/img"
+            android:layout_marginLeft="4dip"
+            android:textSize="12dip"
+            android:layout_marginTop="12dip"
+            android:gravity="center"
+            android:textColor="#666666"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/offer"
+            android:text="由谁提供"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/pay"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:textSize="11dip"
+            android:textColor="#aaaaaa"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

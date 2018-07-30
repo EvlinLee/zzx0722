@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview"
+        android:background="#ffffff"
+        android:divider="@null"
+        android:dividerHeight="1px"
+        android:layout_marginTop="10dip"></ListView>
+
+
+    <ImageView
+        android:id="@+id/iv_rocket"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/icon_detailtop"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        android:orientation="horizontal"
+        android:background="@color/cell_background">
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <View
+                android:layout_width="120dip"
+                android:layout_height="120dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circle_1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jinriyujishouru"
+                android:text=""
+                android:textColor="#333333"
+                android:textSize="24dip"
+                android:layout_marginTop="55dip"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hint1"
+                android:layout_below="@+id/jinriyujishouru"
+                android:text="今日预估收入"
+                android:textColor="#999999"
+                android:textSize="11dip"
+                android:layout_marginTop="10dip"
+                android:layout_centerHorizontal="true"/>
+            <View
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#e6e6e6"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <View
+                android:layout_width="120dip"
+                android:layout_height="120dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circle_2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jinrichengjiaozongliang"
+                android:text=""
+                android:textColor="#333333"
+                android:textSize="24dip"
+                android:layout_marginTop="55dip"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hint2"
+                android:layout_below="@+id/jinrichengjiaozongliang"
+                android:text="今日成交总量"
+                android:textColor="#999999"
+                android:textSize="11dip"
+                android:layout_marginTop="10dip"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dip"
+        android:layout_marginTop="10dip"
+        android:background="@color/cell_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/yue_hint_1"
+            android:text="账户余额（元）"
+            android:textSize="14dip"
+            android:textColor="#060606"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/yue_value"
+            android:textColor="#ff5533"
+            android:textSize="24dip"
+            android:layout_below="@+id/yue_hint_1"
+            android:layout_marginTop="11dip"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            />
+
+        <TextView
+            android:layout_width="70dip"
+            android:layout_height="30dip"
+            android:id="@+id/tixian"
+            android:textColor="#ff5533"
+            android:textSize="15dip"
+            android:gravity="center"
+            android:layout_below="@+id/yue_hint_1"
+            android:layout_marginTop="11dip"
+            android:layout_toRightOf="@+id/yue_value"
+            android:layout_marginLeft="20dip"
+            android:text="提现"
+            android:background="@drawable/tixian"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yue_value"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:layout_width="15dip"
+                android:layout_height="15dip"
+                android:background="@drawable/icon_tips"
+                android:layout_below="@id/yue_value"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已结算但未体现的账户余额"
+                android:layout_below="@id/yue_value"
+                android:textSize="11dip"
+                android:textColor="#999999"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/line_color"
+            android:layout_marginTop="110dip"
+            android:id="@+id/line1"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dip"
+            android:layout_below="@+id/line1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dip">
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/benyue_value"
+                        android:text=""
+                        android:textSize="18dip"
+                        android:textColor="#333333"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="23dip"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/hint3"
+                        android:layout_below="@+id/benyue_value"
+                        android:text="本月结算预估收入"
+                        android:textColor="#999999"
+                        android:textSize="11dip"
+                        android:layout_marginTop="11dip"
+                        android:layout_centerHorizontal="true"/>
+                    <View
+                        android:layout_width="1dip"
+                        android:layout_height="40dip"
+                        android:background="#e6e6e6"
+                        android:layout_marginTop="23dip"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/shangyue_value"
+                        android:text=""
+                        android:textSize="18dip"
+                        android:textColor="#333333"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="23dip"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/hint4"
+                        android:layout_below="@+id/shangyue_value"
+                        android:text="上月结算预估收入"
+                        android:textColor="#999999"
+                        android:textSize="11dip"
+                        android:layout_marginTop="11dip"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dip"
+                android:layout_centerHorizontal="true">
+                <ImageView
+                    android:layout_width="15dip"
+                    android:layout_height="15dip"
+                    android:background="@drawable/icon_tips"
+                    android:layout_below="@id/yue_value"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本月结算预估收入以本月确认收货订单为准"
+                    android:layout_below="@id/yue_value"
+                    android:textSize="11dip"
+                    android:textColor="#999999"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

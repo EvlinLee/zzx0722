@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cell_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip">
+        <View
+            android:layout_width="3dip"
+            android:layout_height="15dip"
+            android:background="#ff3341"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:textColor="#333333"
+            android:textSize="15dip"
+            android:text="今日统计"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dip"/>
+
+        <TextView
+            android:layout_width="50dip"
+            android:layout_height="25dip"
+            android:id="@+id/update"
+            android:visibility="invisible"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="更新"
+            android:textColor="#ff5533"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dip">
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/self_contain_1">
+
+            <ImageView
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:id="@+id/image1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/icon_revenue_self"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value1"
+                android:textSize="16dip"
+                android:textColor="#333333"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/image1"
+                android:layout_marginTop="7dip"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hint1"
+                android:text="自身贡献收入"
+                android:textSize="13dip"
+                android:textColor="#999999"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/value1"
+                android:layout_marginTop="7dip"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/proxy_contain_1">
+
+            <ImageView
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:id="@+id/image2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/icon_revenue_agency"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value2"
+                android:textSize="16dip"
+                android:textColor="#333333"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/image2"
+                android:layout_marginTop="7dip"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hint2"
+                android:text="代理贡献收入"
+                android:textSize="13dip"
+                android:textColor="#999999"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/value2"
+                android:layout_marginTop="7dip"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/line_color"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dip">
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/self_contain_2">
+
+            <ImageView
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:id="@+id/image3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/icon_contribute_self"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value3"
+                android:textSize="16dip"
+                android:textColor="#333333"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/image3"
+                android:layout_marginTop="7dip"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hint3"
+                android:text="自身贡献量"
+                android:textSize="13dip"
+                android:textColor="#999999"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/value3"
+                android:layout_marginTop="7dip"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/proxy_contain_2">
+
+            <ImageView
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:id="@+id/image4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/icon_contribute_agency"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value4"
+                android:textSize="16dip"
+                android:textColor="#333333"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/image4"
+                android:layout_marginTop="7dip"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hint4"
+                android:text="代理贡献量"
+                android:textSize="13dip"
+                android:textColor="#999999"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/value4"
+                android:layout_marginTop="7dip"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

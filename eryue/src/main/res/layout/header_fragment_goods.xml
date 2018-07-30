@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.eryue.widget.AutoScrollViewPager.AutoScrollViewPager
+        android:id="@+id/viewPager_adv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <GridView
+        android:id="@+id/gridview_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@android:color/transparent"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:horizontalSpacing="8dp"
+        android:numColumns="5"
+        android:padding="8dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="8dp" />
+
+
+    <GridView
+        android:id="@+id/gridview_business"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@color/white"
+        android:padding="6dp"
+        android:numColumns="4"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:scrollbars="none" />
+
+    <!--公告-->
+    <LinearLayout android:id="@+id/layout_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="16dp"
+            android:src="@drawable/icon_notice"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="猪猪虾新版App上线啦!个人中心使用帮助了解更多猪猪虾新版App上线啦!个人中心使用帮助了解更多"
+            android:textColor="#666666"
+            android:textSize="16dp"
+            android:maxLines="1"
+            android:visibility="gone"
+            android:ellipsize="end"/>
+
+        <com.sunfusheng.marqueeview.MarqueeView
+            android:id="@+id/marqueeView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            app:mvAnimDuration="1000"
+            app:mvInterval="5000"
+            app:mvTextColor="#666666"
+            app:mvTextSize="14dp"
+            app:mvSingleLine="true"/>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:clickable="true"
+        android:background="#fef2f4"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="40dp"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        android:foreground="?android:attr/selectableItemBackground"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <!--京东免单-->
+    <LinearLayout android:id="@+id/layout_jd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"/>
+
+    <View android:id="@+id/view_space"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center_horizontal">
+        <View
+            android:layout_width="10dp"
+            android:layout_height="1dp"
+            android:background="#fd5b68"
+            android:layout_marginRight="6dp"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fd5b67"
+            android:text="精选好货"
+            android:textSize="12sp"
+            />
+        <View
+            android:layout_width="10dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="6dp"
+            android:background="#fd5b68"
+            android:layout_gravity="center_vertical"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/layout_daily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_daily_product_title" />
+
+        <com.eryue.ui.UIWrapContentViewPager
+            android:id="@+id/viewpager_daily"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="200dp" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator_daily"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:fillColor="#FF969696"
+            app:pageColor="#FFEDEDED"
+            app:strokeColor="#FFEDEDED"
+            android:padding="10dip" />
+
+    </LinearLayout>
+
+
+
+    <com.eryue.ui.NoScrollGridView
+        android:id="@+id/gridview_adv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:listSelector="@android:color/transparent"
+        android:horizontalSpacing="8dp"
+        android:numColumns="2"
+        android:padding="8dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="8dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/m_coupon"
+            android:drawablePadding="4dp"
+            android:text="每日上新"
+            android:textColor="@color/txt_gray"
+            android:textSize="16dp" />
+
+        <View android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/view_oval_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="好券不断"
+            android:textColor="@color/txt_gray"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

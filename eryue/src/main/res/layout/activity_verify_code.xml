@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/comm_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="输入短信验证码"
+        android:id="@+id/hint"
+        android:layout_centerHorizontal="true"
+        android:textColor="#333333"
+        android:textSize="18dip"
+        android:layout_marginTop="130dip"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="短信已发送至"
+        android:id="@+id/hint1"
+        android:layout_centerHorizontal="true"
+        android:textColor="#666666"
+        android:textSize="18dip"
+        android:layout_marginTop="10dip"
+        android:layout_below="@+id/hint"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:id="@+id/contain_1"
+        android:layout_below="@+id/hint1"
+        android:layout_marginTop="60dip">
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="15dip"
+            android:background="@null"
+            android:hint="输入短信验证码"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textSize="16dip"
+            android:textColorHint="#cccccc"
+            android:textColor="#333333"
+            android:layout_above="@+id/line1"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/line1"
+            android:layout_alignParentBottom="true"
+            android:background="#cbcbcb"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="40dip"
+        android:id="@+id/second_hint"
+        android:text="59秒后重新获取"
+        android:textColor="#666666"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/contain_1"
+        android:layout_marginTop="70dip"/>
+
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="40dip"
+        android:id="@+id/sure"
+        android:text="验证"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:background="@drawable/bg_login_in"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/second_hint"
+        android:layout_marginTop="20dip"/>
+
+
+</RelativeLayout>

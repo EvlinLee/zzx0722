@@ -1,0 +1,3 @@
+include ':mylibrary', ':calendarview'
+include ':eryue'
+include ':jdong'

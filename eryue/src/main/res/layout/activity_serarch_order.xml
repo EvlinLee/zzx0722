@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dip"
+        android:id="@+id/search_contain"
+        android:layout_marginTop="5dip">
+
+        <EditText
+            android:layout_width="270dip"
+            android:layout_height="match_parent"
+            android:id="@+id/order"
+            android:background="#f5f5f5"
+            android:hint="请输入订单编号或商品标题搜索"
+            android:gravity="left|center_vertical"
+            android:textColor="#aaaaaa"
+            android:textColorHint="#aaaaaa"
+            android:maxLines="1"
+            android:textSize="15dip"
+            android:layout_marginLeft="16dip"
+            android:paddingLeft="10dip"
+            android:layout_toLeftOf="@+id/sure"
+            android:layout_marginRight="10dip"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:layout_width="70dip"
+            android:layout_height="match_parent"
+            android:id="@+id/sure"
+            android:text="搜订单"
+            android:layout_marginRight="16dip"
+            android:gravity="center"
+            android:textSize="15dip"
+            android:textColor="#ffffff"
+            android:background="#ff1a40"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview"
+        android:background="#ffffff"
+        android:layout_below="@+id/search_contain"
+        android:layout_marginTop="10dip"></ListView>
+
+
+
+</RelativeLayout>

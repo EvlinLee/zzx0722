@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/red_lite"
+        android:id="@+id/layout_header"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/search_contain"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_marginLeft="18dip"
+            android:layout_marginRight="18dip"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_txt_search">
+
+            <ImageView
+                android:layout_width="22dip"
+                android:layout_height="22dip"
+                android:layout_marginLeft="4dip"
+                android:src="@drawable/icon_search"/>
+
+            <TextView
+                android:maxLines="1"
+                android:id="@+id/tv_search"
+                android:singleLine="true"
+                android:gravity="center|left"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="9dip"
+                android:text="寻找独家优惠"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical">
+
+        <com.eryue.widget.ScrollStockTabView
+            android:id="@+id/tabbar_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <View android:layout_width="1px"
+            android:layout_height="20dp"
+            android:background="@color/gray" />
+
+        <ImageView android:id="@+id/iv_more"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="8dp"
+            android:src="@drawable/icon_arrow_down"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+
+    <!--<com.directionalviewpager.DirectionalViewPager-->
+        <!--android:id="@+id/pager"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1" />-->
+
+</LinearLayout>

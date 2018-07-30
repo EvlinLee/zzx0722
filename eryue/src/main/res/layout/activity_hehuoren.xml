@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="131dip"
+            android:background="#fa4b2d">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="你好，合伙人"
+                android:textColor="#ffffff"
+                android:textSize="14dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dip"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:id="@+id/search"
+                android:layout_marginTop="43dip"
+                android:background="#f5593d"
+                android:alpha="0.9"
+
+                android:layout_marginLeft="17dip"
+                android:layout_marginRight="17dip">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:background="@drawable/icon_search_white"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="搜索订单号"
+                        android:textSize="14dip"
+                        android:textColor="#ffffff"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dip"/>
+                </RelativeLayout>
+                
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_alignParentBottom="true"
+                android:background="#f8422d">
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:id="@+id/myteam"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        >
+
+                        <ImageView
+                            android:layout_width="20dip"
+                            android:layout_height="20dip"
+                            android:background="@drawable/icon_team"
+                            android:id="@+id/image1"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的团队"
+                            android:textSize="14dip"
+                            android:textColor="#ffffff"
+                            android:layout_gravity="center"
+                            android:layout_toRightOf="@+id/image1"
+                            android:layout_marginLeft="5dip"
+                            />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:id="@+id/mylive"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        >
+
+                        <ImageView
+                            android:layout_width="20dip"
+                            android:layout_height="20dip"
+                            android:background="@drawable/icon_live"
+                            android:id="@+id/image2"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的直播"
+                            android:textSize="14dip"
+                            android:textColor="#ffffff"
+                            android:layout_gravity="center"
+                            android:layout_toRightOf="@+id/image2"
+                            android:layout_marginLeft="5dip"
+                            />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:id="@+id/jihuoliang">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        >
+
+                        <ImageView
+                            android:layout_width="20dip"
+                            android:layout_height="20dip"
+                            android:background="@drawable/icon_app"
+                            android:id="@+id/image3"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="APP激活量"
+                            android:textSize="14dip"
+                            android:textColor="#ffffff"
+                            android:layout_gravity="center"
+                            android:layout_toRightOf="@+id/image3"
+                            android:layout_marginLeft="5dip"
+                            />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dip"
+            android:background="@color/comm_background"/>
+
+        <com.eryue.mine.HeHuoRenView1
+            android:id="@+id/hehuorenview1"
+            android:layout_width="match_parent"
+            android:layout_height="390dip"></com.eryue.mine.HeHuoRenView1>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dip"
+            android:background="@color/comm_background" />
+
+        <com.eryue.mine.HeHuoRenView2
+            android:layout_width="match_parent"
+            android:layout_height="240dip"
+            android:id="@+id/today">
+        </com.eryue.mine.HeHuoRenView2>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dip"
+            android:background="@color/comm_background" />
+        <com.eryue.mine.HeHuoRenView2
+            android:layout_width="match_parent"
+            android:layout_height="240dip"
+            android:id="@+id/yestoday">
+
+        </com.eryue.mine.HeHuoRenView2>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dip"
+            android:background="@color/comm_background" />
+        <com.eryue.mine.HeHuoRenView2
+            android:layout_width="match_parent"
+            android:layout_height="240dip"
+            android:id="@+id/last7days">
+
+        </com.eryue.mine.HeHuoRenView2>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dip"
+            android:background="@color/comm_background" />
+        <com.eryue.mine.HeHuoRenView2
+            android:layout_width="match_parent"
+            android:layout_height="240dip"
+            android:id="@+id/curr_month">
+
+        </com.eryue.mine.HeHuoRenView2>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dip"
+            android:background="@color/comm_background" />
+        <com.eryue.mine.HeHuoRenView2
+            android:layout_width="match_parent"
+            android:layout_height="240dip"
+            android:id="@+id/last_month">
+
+        </com.eryue.mine.HeHuoRenView2>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+
+    <!-- 主页 -->
+    <dimen name="hight_navigation">50dp</dimen>
+    <dimen name="tab_text_size">11dp</dimen>
+    <dimen name="height_img_toolbar">24dp</dimen>
+
+    <!--商品-->
+    <dimen name="txtsize_name_goods">14dp</dimen>
+
+    <dimen name="txtsize_cell">15dip</dimen>
+
+    <dimen name="txtsize_16dip">16dip</dimen>
+
+</resources>

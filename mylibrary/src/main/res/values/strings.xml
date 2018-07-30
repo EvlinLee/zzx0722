@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MyLibrary</string>
+
+    <string name="permission_setting">设置</string>
+    <string name="permission_cancel">取消</string>
+    <string name="permission_rationale_exit">没有该权限，应用将无法正常工作</string>
+    <string name="permission_rationale_call">没有电话权限，将无法拨打电话</string>
+    <string name="permission_rationale_storage">请授予外置存储权限，否则将无法使用应用</string>
+    <string name="permission_rationale_calendar">没有日历权限，将无法将日程添加到日历</string>
+    <string name="permission_rationale_crm">没有这些权限，将无法使用协同管理</string>
+    <string name="permission_rationale_microphone">没有录音权限，将无法识别语音</string>
+    <string name="permission_rationale_location">没有授予权限，将无法使用该功能</string>
+    <string name="permission_rationale_contact">没有联系人权限，将无法获取通讯录</string>
+    <string name="permission_rationale_camera">没有相机权限，将无法拍照</string>
+    <string name="permission_rationale_ask_again">没有该权限，部分功能将无法正常工作。请打开系统设置开启权限</string>
+
+    <string name="listview_header_hint_normal">下拉可以刷新</string>
+    <string name="listview_header_hint_ready">松开可以刷新</string>
+    <string name="listview_header_last_time">上次刷新:</string>
+    <string name="listview_loading">加载中</string>
+    <string name="listview_footer_normal">更多</string>
+    <string name="listview_footer_failure">&lt;font color=\"#a5a5a5\"&gt;加载失败,点击重试&lt;\/font&gt;</string>
+    <string name="listview_footer_result">近期无数据</string>
+
+    <string name="picture_read_failed">图片解析失败</string>
+    <string name="wait_for_download_picture">等待图片下载……</string>
+</resources>

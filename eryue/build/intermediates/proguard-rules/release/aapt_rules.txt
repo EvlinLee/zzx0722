@@ -1,0 +1,447 @@
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\activity_guide.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\activity_home.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\activity_share_app.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_goodslist.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_home.xml:0
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_alert_dialog_material.xml:0
+-keep class android.support.v4.widget.NestedScrollView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_alert_dialog_button_bar_material.xml:0
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_alert_dialog_material.xml:0
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_alert_dialog_title_material.xml:0
+-keep class android.support.v4.widget.Space { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_select_dialog_material.xml:0
+-keep class android.support.v7.app.AlertController$RecycleListView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_action_menu_item_layout.xml:0
+-keep class android.support.v7.view.menu.ActionMenuItemView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_expanded_menu_layout.xml:0
+-keep class android.support.v7.view.menu.ExpandedMenuView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_list_menu_item_layout.xml:0
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_popup_menu_item_layout.xml:0
+-keep class android.support.v7.view.menu.ListMenuItemView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout-v26\abc_screen_toolbar.xml:0
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_screen_toolbar.xml:0
+-keep class android.support.v7.widget.ActionBarContainer { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout-v26\abc_screen_toolbar.xml:0
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_action_mode_bar.xml:0
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_screen_toolbar.xml:0
+-keep class android.support.v7.widget.ActionBarContextView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout-v26\abc_screen_toolbar.xml:0
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_screen_toolbar.xml:0
+-keep class android.support.v7.widget.ActionBarOverlayLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_action_menu_layout.xml:0
+-keep class android.support.v7.widget.ActionMenuView { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_activity_chooser_view.xml:0
+-keep class android.support.v7.widget.ActivityChooserView$InnerLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_alert_dialog_material.xml:0
+-keep class android.support.v7.widget.AlertDialogLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_alert_dialog_button_bar_material.xml:0
+-keep class android.support.v7.widget.ButtonBarLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_screen_content_include.xml:0
+-keep class android.support.v7.widget.ContentFrameLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_alert_dialog_title_material.xml:0
+-keep class android.support.v7.widget.DialogTitle { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_screen_simple_overlay_action_mode.xml:0
+-keep class android.support.v7.widget.FitWindowsFrameLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_dialog_title_material.xml:0
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_screen_simple.xml:0
+-keep class android.support.v7.widget.FitWindowsLinearLayout { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_search_view.xml:0
+-keep class android.support.v7.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout-v26\abc_screen_toolbar.xml:0
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_screen_toolbar.xml:0
+-keep class android.support.v7.widget.Toolbar { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_screen_simple.xml:0
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\res\layout\abc_screen_simple_overlay_action_mode.xml:0
+-keep class android.support.v7.widget.ViewStubCompat { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\base_layout_1.xml:0
+-keep class base.navigationbar.UINavigationBar { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_video.xml:0
+-keep class cn.jzvd.JZVideoPlayerStandard { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\layout_header_adv.xml:0
+-keep class cn.trinea.android.common.ui.AdViewPager { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:448
+-keep class com.ali.auth.third.accountlink.ui.BindResultActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:452
+-keep class com.ali.auth.third.accountlink.ui.UnbindWebViewActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:444
+-keep class com.ali.auth.third.ui.LoginActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:440
+-keep class com.ali.auth.third.ui.LoginWebViewActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:457
+-keep class com.ali.auth.third.ui.QrLoginActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:456
+-keep class com.ali.auth.third.ui.QrLoginConfirmActivity { <init>(...); }
+
+# Referenced at C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\alibabauth_ui-1.4.3.aar\df6066dbf819d540f6b433d889f52f61\res\layout\ali_auth_qrview.xml:0
+-keep class com.ali.auth.third.ui.webview.AuthWebView { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:436
+-keep class com.ali.auth.third.ui.webview.BaseWebViewActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:463
+-keep class com.alibaba.alibclinkpartner.ui.ALPCallbackActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:467
+-keep class com.alibaba.alibclinkpartner.ui.ALPEntranceActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:460
+-keep class com.alibaba.alibclinkpartner.ui.ALPWebviewActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:497
+-keep class com.alibaba.baichuan.android.trade.ui.AlibcBackActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:487
+-keep class com.alibaba.baichuan.android.trade.ui.AlibcWebViewActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:481
+-keep class com.alibaba.baichuan.trade.biz.auth.AlibcAuthActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:510
+-keep class com.alipay.sdk.app.H5PayActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:515
+-keep class com.alipay.sdk.auth.AuthActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:378
+-keep class com.baidu.android.pushservice.CommandService { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:383
+-keep class com.baidu.android.pushservice.PushInfoProvider { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:370
+-keep class com.baidu.android.pushservice.PushService { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:341
+-keep class com.baidu.android.pushservice.PushServiceReceiver { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:356
+-keep class com.baidu.android.pushservice.RegistrationReceiver { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_goodsdetailtop.xml:0
+-keep class com.directionalviewpager.DirectionalViewPager { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:320
+-keep class com.eryue.AppRegister { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:402
+-keep class com.eryue.BaiduBroadcastReceiver { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:49
+-keep class com.eryue.BaseApplication { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:222
+-keep class com.eryue.activity.CreateShareActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:226
+-keep class com.eryue.activity.CreateShareActivityEx { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:287
+-keep class com.eryue.activity.HideSettingActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:315
+-keep class com.eryue.activity.ImageBigActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:218
+-keep class com.eryue.activity.ImageBrowserActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:79
+-keep class com.eryue.activity.MainActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:279
+-keep class com.eryue.activity.SelfEndActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:56
+-keep class com.eryue.activity.SplashActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:87
+-keep class com.eryue.activity.VideoActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:73
+-keep class com.eryue.activity.WelcomeActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:67
+-keep class com.eryue.activity.WelcomeGuideActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:92
+-keep class com.eryue.goodsdetail.GoodsDetailActivityEx { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\activity_goodsdetail.xml:0
+-keep class com.eryue.goodsdetail.GoodsDetailFragmentEx { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:283
+-keep class com.eryue.goodsdetail.GoodsWebActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:299
+-keep class com.eryue.home.GoodsCatActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:307
+-keep class com.eryue.home.GoodsNoticeDetailActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:311
+-keep class com.eryue.jd.SearchJDActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:303
+-keep class com.eryue.live.SearchLiveActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:106
+-keep class com.eryue.mine.AboutUsActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:131
+-keep class com.eryue.mine.AppActivatorActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:202
+-keep class com.eryue.mine.BindAlipayActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:178
+-keep class com.eryue.mine.ChargeBackActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:245
+-keep class com.eryue.mine.ContactServerActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:198
+-keep class com.eryue.mine.ForgetPasswordActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:98
+-keep class com.eryue.mine.GeneratePosterActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:134
+-keep class com.eryue.mine.HeHuoRenActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:194
+-keep class com.eryue.mine.HeHuoRenCashActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\activity_hehuoren.xml:0
+-keep class com.eryue.mine.HeHuoRenView1 { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\activity_hehuoren.xml:0
+-keep class com.eryue.mine.HeHuoRenView2 { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:210
+-keep class com.eryue.mine.LoginActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:186
+-keep class com.eryue.mine.MessageCenterActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:166
+-keep class com.eryue.mine.ModifyCashWayActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:162
+-keep class com.eryue.mine.ModifyContactActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:170
+-keep class com.eryue.mine.ModifyPasswordActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:269
+-keep class com.eryue.mine.MyLiveActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:122
+-keep class com.eryue.mine.MyTeamActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:125
+-keep class com.eryue.mine.MyTeamActivity1 { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:265
+-keep class com.eryue.mine.NewUserActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:273
+-keep class com.eryue.mine.NewUserDetailActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:138
+-keep class com.eryue.mine.OrderDetailActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:142
+-keep class com.eryue.mine.OrderDetailActivity1 { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:150
+-keep class com.eryue.mine.OrderSubmissionActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:154
+-keep class com.eryue.mine.ProxyLearnActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:102
+-keep class com.eryue.mine.RegisterActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:261
+-keep class com.eryue.mine.SearchOrderActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:182
+-keep class com.eryue.mine.SearchTeamActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:128
+-keep class com.eryue.mine.SettingActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:110
+-keep class com.eryue.mine.ShareAppActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:158
+-keep class com.eryue.mine.SignCenterActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:206
+-keep class com.eryue.mine.TiXianRecordActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:190
+-keep class com.eryue.mine.VisitTraceActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:174
+-keep class com.eryue.mine.WebViewActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:146
+-keep class com.eryue.mine.XieYiActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:257
+-keep class com.eryue.mine.login.BindPhoneActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:249
+-keep class com.eryue.mine.login.InputInviteCodeActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:214
+-keep class com.eryue.mine.login.LoginActivity1 { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:253
+-keep class com.eryue.mine.login.VertifyCodeActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:329
+-keep class com.eryue.push.MyPushMessageReceiver { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:114
+-keep class com.eryue.search.GoodsSearchActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:291
+-keep class com.eryue.search.GoodsSearchActivityEx { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:118
+-keep class com.eryue.search.GoodsSearchListActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:295
+-keep class com.eryue.search.GoodsSearchResultActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\activity_image_browser.xml:0
+-keep class com.eryue.ui.HackyViewpager { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_goodpaper.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_goodssearch.xml:0
+-keep class com.eryue.ui.MultiLineTextView { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\adapter_dayfriends.xml:0
+-keep class com.eryue.ui.NineViewGroup { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_goodpaper.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\header_fragment_goods.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\view_goodsdaily.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\view_image_grid.xml:0
+-keep class com.eryue.ui.NoScrollGridView { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_goodsabstract.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_goodsdetail_header.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_top_goodsdetail.xml:0
+-keep class com.eryue.ui.NoScrollListView { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_goodsabstract.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_top_goodsdetail.xml:0
+-keep class com.eryue.ui.UIScrollView { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_searchlive.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_searchresult.xml:0
+-keep class com.eryue.ui.UISortTabView { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\header_fragment_goods.xml:0
+-keep class com.eryue.ui.UIWrapContentViewPager { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\activity_main.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_goodsabstract.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_goodsdetail_header.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_top_goodsdetail.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\header_fragment_goods.xml:0
+-keep class com.eryue.widget.AutoScrollViewPager.AutoScrollViewPager { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\activity_create_share.xml:0
+-keep class com.eryue.widget.ImageGridView { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\activity_goodssearch.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\activity_home.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_goodslist.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_home.xml:0
+-keep class com.eryue.widget.ScrollStockTabView { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\activity_create_share.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\view_pop_share.xml:0
+-keep class com.eryue.widget.ShareContentView { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:239
+-keep class com.eryue.zhuzhuxia.wxapi.WXEntryActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:419
+-keep class com.kepler.jd.sdk.KeplerBackActivity { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\activity_charge_back_detail.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\activity_draggrid.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\activity_message_center.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\activity_my_team_1.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\activity_order_detail_1.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\activity_proxy_learn.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\activity_tixian_record.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\avtivity_my_team.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_dayfriends.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_draggrid.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_goodsall.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_order_detail_my.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_order_detail_team.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_searchlive.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_searchresult.xml:0
+-keep class com.library.ui.dragrefresh.DragRefreshListView { <init>(...); }
+
+# Referenced at F:\work\zzx0722\mylibrary\build\intermediates\bundles\release\res\layout\gallery_general_layout.xml:0
+-keep class com.library.ui.img.uk.co.senab.photoview.Photoview { <init>(...); }
+
+# Referenced at F:\work\zzx0722\mylibrary\build\intermediates\bundles\release\res\layout\galleryactivity_animation_layout.xml:0
+-keep class com.library.ui.img.uk.co.senab.photoview.gallery.ViewPagerFixed { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\activity_sign_center.xml:0
+-keep class com.othershe.calendarview.weiget.CalendarView { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\activity_sign_center.xml:0
+-keep class com.othershe.calendarview.weiget.WeekView { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\header_fragment_goods.xml:0
+-keep class com.sunfusheng.marqueeview.MarqueeView { <init>(...); }
+
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\activity_guide.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_goodsabstract.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_goodsdetail_header.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\fragment_top_goodsdetail.xml:0
+# Referenced at F:\work\zzx0722\eryue\src\main\res\layout\header_fragment_goods.xml:0
+-keep class com.viewpagerindicator.CirclePageIndicator { <init>(...); }
+
+# Referenced at F:\work\zzx0722\mylibrary\build\intermediates\bundles\release\res\layout\gallery_container_layout.xml:0
+-keep class uk.co.senab.photoview.gallery.CircleProgressView { <init>(...); }
+

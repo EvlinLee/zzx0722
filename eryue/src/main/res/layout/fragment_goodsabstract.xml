@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.eryue.ui.UIScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.eryue.widget.AutoScrollViewPager.AutoScrollViewPager
+                android:id="@+id/viewPager_goodsimg"
+                android:layout_width="match_parent"
+                android:layout_height="380dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@id/viewPager_goodsimg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp" />
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--价格-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:orientation="vertical">
+
+
+            <TextView android:id="@+id/tv_paperprice"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="right|center_vertical"
+                android:paddingRight="15dp"
+                android:background="@drawable/icon_coupon"
+                android:text="--"
+                android:textColor="@color/white"
+                android:textSize="26dp" />
+
+
+            <LinearLayout android:id="@+id/layout_afterpaper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal">
+
+            <TextView android:id="@+id/tv_afterpaper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥0"
+                android:textColor="@color/txtcolor_red"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/shape_share_goodsdetail"
+                android:gravity="center_vertical"
+                android:padding="2dp"
+                android:text="券后价"
+                android:textColor="@color/red_lite"
+                android:textSize="10dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout android:id="@+id/layout_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/layout_afterpaper"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积分"
+                    android:textColor="@color/gray_goods"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_nowprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="--"
+                    android:textColor="@color/gray_goods"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_sellnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_afterpaper"
+                android:layout_toRightOf="@id/layout_price"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="80dp"
+                android:text="月销--"
+                android:textColor="@color/gray_goods"
+                android:textSize="15dp" />
+
+
+        </RelativeLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bg_line" />
+
+        <TextView
+            android:id="@+id/tv_goodstitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="券后包邮"
+                android:textColor="@color/red_paper"
+                android:textSize="14dp" />
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#C5C5C5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="在售价¥0"
+                android:textColor="@color/gray_goods"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_price_paper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_discount_coupon"
+                    android:drawablePadding="4dp"
+                    android:text="元"
+                    android:textColor="@color/gray_goods"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="销量--"
+                android:textColor="@color/gray_goods"
+                android:textSize="15dp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#C5C5C5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="小编推荐"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_suggestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:textColor="@color/gray_goods"
+            android:textSize="13dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="#F4F4F4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_u_like"
+                android:drawablePadding="4dp"
+                android:text="猜您喜欢"
+                android:textColor="@color/gray_goods"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <com.eryue.ui.NoScrollListView
+            android:id="@+id/listview_like"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F4F4F4"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="1px"
+                android:background="#8F8F8F" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="继续滑动查看详情"
+                android:textColor="@color/gray_goods"
+                android:textSize="13dp" />
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="1px"
+                android:background="#8F8F8F" />
+
+        </LinearLayout>
+
+        <!--<View android:layout_width="match_parent"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:background="#F4F4F4" />-->
+
+
+    </LinearLayout>
+
+</com.eryue.ui.UIScrollView>

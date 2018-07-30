@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dip"
+        android:id="@+id/search_contain"
+        android:layout_marginTop="5dip">
+
+        <EditText
+            android:layout_width="270dip"
+            android:layout_height="match_parent"
+            android:id="@+id/order"
+            android:background="#f5f5f5"
+            android:hint="请输入团队成员名称"
+            android:gravity="left|center_vertical"
+            android:textColor="#aaaaaa"
+            android:textColorHint="#aaaaaa"
+            android:maxLines="1"
+            android:textSize="15dip"
+            android:layout_marginLeft="16dip"
+            android:paddingLeft="10dip"
+            android:layout_toLeftOf="@+id/sure"
+            android:layout_marginRight="10dip"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:layout_width="70dip"
+            android:layout_height="match_parent"
+            android:id="@+id/sure"
+            android:text="搜队员"
+            android:layout_marginRight="16dip"
+            android:gravity="center"
+            android:textSize="15dip"
+            android:textColor="#ffffff"
+            android:background="#ff1a40"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:id="@+id/title_header_con"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="@color/comm_background">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center|left"
+            android:paddingLeft="10dip"
+            android:id="@+id/nick_name"
+            android:text="用户昵称"
+            android:textColor="#999999"
+            android:textSize="14dip" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:id="@+id/wechat"
+            android:gravity="center|left"
+            android:text="微信号"
+            android:textColor="#999999"
+            android:textSize="14dip"
+            />
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:id="@+id/time_contain"
+            android:tag="0">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:id="@+id/register_time"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="注册时间"
+                android:textColor="#999999"
+                android:textSize="14dip"
+                />
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:id="@+id/cash_contain"
+            android:tag="0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:id="@+id/cash"
+                android:gravity="center"
+                android:text="累计提现"
+                android:textColor="#999999"
+                android:textSize="14dip"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview"
+        android:background="#ffffff"
+        android:layout_below="@+id/search_contain"
+        android:layout_marginTop="10dip"></ListView>
+
+
+
+</LinearLayout>

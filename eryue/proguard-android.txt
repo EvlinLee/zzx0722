@@ -1,0 +1,153 @@
+# This is a configuration file for ProGuard.
+# http://proguard.sourceforge.net/index.html#manual/usage.html
+
+# Optimizations: If you don't want to optimize, use the
+# proguard-android.txt configuration file instead of this one, which
+# turns off the optimization flags.  Adding optimization introduces
+# certain risks, since for example not all optimizations performed by
+# ProGuard works on all versions of Dalvik.  The following flags turn
+# off various optimizations known to have issues, but the list may not
+# be complete or up to date. (The "arithmetic" optimization can be
+# used if you are only targeting Android 2.0 or later.)  Make sure you
+# test thoroughly if you go this route.
+#-optimizationpasses 5          # 指定代码的压缩级别
+#-dontusemixedcaseclassnames   # 是否使用大小写混合
+#-dontpreverify           # 混淆时是否做预校验
+#-verbose                # 混淆时是否记录日志
+
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-verbose
+
+-ignorewarnings
+
+-keepattributes *Annotation*
+# -keep public class com.google.vending.licensing.ILicensingService
+# -keep public class com.android.vending.licensing.ILicensingService
+
+# For native methods, see http://proguard.sourceforge.net/manual/examples.html#native
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+-keepclasseswithmembernames class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembernames class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context);
+}
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+# keep setters in Views so that animations can still work.
+# see http://proguard.sourceforge.net/manual/examples.html#beans
+-keepclassmembers public class * extends android.view.View {
+   void set*(***);
+   *** get*();
+}
+
+
+# We want to keep methods in Activity that could be used in the XML attribute onClick
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+   public void shell_Req(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keep class * implements java.io.Serializable{*; }
+
+
+-keepclassmembers class **.R$* {
+    public static <fields>;
+}
+
+-keep public class * implements com.bumptech.glide.module.GlideModule
+    -keep public enum com.bumptech.glide.load.resource.bitmap.ImageHeaderParser$** {
+      **[] $VALUES;
+      public *;
+}
+
+-dontwarn **CompatHoneycomb
+-dontwarn **CompatHoneycombMR2
+-dontwarn **CompatCreatorHoneycombMR2
+-keep interface android.support.v4.app.** { *; }
+-dontwarn android.support.v4.app.**
+-keep class android.support.v4.app.** { *; }
+-dontwarn android.support.v7.**
+-keep class android.support.v7.** { *; }
+
+-keep class com.google.gson.** { *; }
+-keep class com.google.gson.examples.android.model.** { *; }
+
+-dontwarn retrofit2.**
+-keep class retrofit2.** { *; }
+-keepattributes Signature
+-keepattributes Exceptions
+
+-dontwarn com.squareup.okhttp.**
+-keep class com.squareup.okhttp.** { *;}
+-dontwarn okio.**
+
+-dontwarn com.google.zxing.**
+-keep  class com.google.zxing.**{*;}
+
+-dontwarn com.tencent.**
+-keep class com.tencent.** { *;}
+
+-dontwarn net.**
+-keep class net.** { *;}
+
+-dontwarn com.eryue.model.**
+-keep class com.eryue.model.** { *;}
+
+
+-dontwarn com.eryue.ui.**
+-keep class com.eryue.ui.** { *;}
+
+-dontwarn com.eryue.widget.**
+-keep class com.eryue.widget.** { *;}
+
+
+#-libraryjars libs/pushservice-6.1.1.21.jar
+-dontwarn com.baidu.**
+-keep class com.baidu.**{*; }
+
+#京东
+-keep class com.kepler.jd.**{ public <fields>; public <methods>; public *; }
+
+#淘宝百川
+-keep class sun.misc.Unsafe { *; }
+-keep class com.taobao.** {*;}
+-keep class com.alibaba.** {*;}
+-keep class com.alipay.** {*;}
+-dontwarn com.taobao.**
+-dontwarn com.alibaba.**
+-dontwarn com.alipay.**
+-keep class com.ut.** {*;}
+-dontwarn com.ut.**
+-keep class com.ta.** {*;}
+-dontwarn com.ta.**
+-keep class org.json.** {*;}
+-keep class com.ali.auth.**  {*;}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/comm_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="输入邀请码"
+        android:id="@+id/hint"
+        android:textColor="#333333"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dip"
+        android:layout_marginTop="131dip"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:id="@+id/contain_1"
+        android:layout_below="@+id/hint"
+        android:layout_marginTop="80dip">
+
+        <EditText
+            android:id="@+id/invite_code"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="15dip"
+            android:background="@null"
+            android:hint="输入邀请码"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="16dip"
+            android:textColorHint="#cccccc"
+            android:textColor="#333333"
+            android:layout_above="@+id/line1"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/line1"
+            android:layout_alignParentBottom="true"
+            android:background="#cbcbcb"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="40dip"
+        android:id="@+id/next_step"
+        android:text="下一步"
+        android:textColor="#ffffff"
+        android:background="@drawable/bg_invite_code_0"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/contain_1"
+        android:layout_marginTop="90dip"/>
+
+
+</RelativeLayout>

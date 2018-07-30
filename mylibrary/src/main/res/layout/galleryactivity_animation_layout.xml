@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+
+    <com.library.ui.img.uk.co.senab.photoview.gallery.ViewPagerFixed
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+    <!-- 暂时保留，为有多个URL图片左右滑动 -->
+
+    <LinearLayout
+        android:id="@+id/position_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="8dip"
+        android:layout_marginRight="8dp"
+        android:baselineAligned="true"
+        android:fitsSystemWindows="true"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <!--
+                     android:textColor="@color/white"
+                android:shadowColor="@color/dark_gray"
+        -->
+
+        <TextView
+            android:id="@+id/position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="1"
+            android:textSize="35sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="/"
+            android:textSize="24sp"
+            android:visibility="gone"/>
+        <!--
+                     android:shadowColor="@color/dark_gray"
+                android:textColor="@color/white"
+        -->
+
+        <TextView
+            android:id="@+id/sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="1"
+            android:textSize="24sp"
+            android:visibility="gone"/>
+
+        <!--
+                     android:shadowColor="@color/dark_gray"
+                android:textColor="@color/white"
+        -->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/pre_view_navigationBar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/navigation_bg">
+
+        <Button
+            android:id="@+id/pre_view_navigationBar_leftView"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/pre_view_navigationBar_titleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预览"
+            android:textSize="20dip"
+            android:textColor="@color/txt_default_white_color"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/pre_view_navigationBar_rightView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dip"
+            android:gravity="center"
+            android:text="保存"
+            android:layout_marginTop="8dip"
+            android:layout_marginBottom="8dip"
+            android:textSize="18dip"
+            android:textColor="@color/txt_default_white_color"
+            android:background="@drawable/btn_save"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

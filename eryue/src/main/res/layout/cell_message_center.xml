@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:layout_marginLeft="17dip"
+    android:layout_marginRight="17dip">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="title"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="14dip"
+        android:textSize="16dip"
+        android:textColor="#333333"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/smalltitle"
+        android:text="title"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="11dip"
+        android:layout_marginBottom="10dip"
+        android:textSize="12dip"
+        android:textColor="#aaaaaa"
+        android:maxLines="1"
+
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/line_color"
+        android:id="@+id/line"
+        android:layout_below="@+id/smalltitle"
+        android:layout_marginTop="13dip"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_hint"
+        android:text="查看详情"
+        android:layout_marginLeft="15dip"
+        android:layout_below="@+id/line"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:textSize="12dip"
+        android:textColor="#666666"
+        android:maxLines="1"
+
+        />
+
+    <ImageView
+        android:layout_width="10dip"
+        android:layout_height="10dip"
+        android:layout_marginLeft="5dip"
+        android:background="@drawable/icon_disclosure"
+        android:layout_toRightOf="@+id/detail_hint"
+        android:layout_below="@+id/line"
+        android:layout_marginTop="13dip"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:layout_below="@+id/line"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:textSize="12dip"
+        android:textColor="#aaaaaa"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dip"
+        android:maxLines="1"
+
+        />
+
+
+</RelativeLayout>

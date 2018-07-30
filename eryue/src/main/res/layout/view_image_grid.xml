@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择图片"
+            android:textSize="14dp"
+            android:textColor="@color/txt_gray2"/>
+        <View android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已选"
+            android:textSize="14dp"
+            android:textColor="@color/txt_gray2"/>
+        <TextView android:id="@+id/tv_selectnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:text="1"
+            android:textSize="14dp"
+            android:textColor="@color/txt_gray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张"
+            android:textSize="14dp"
+            android:textColor="@color/txt_gray2"/>
+
+        <TextView android:id="@+id/tv_allselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="全选"
+            android:textSize="14dp"
+            android:textColor="@color/txtcolor_red"/>
+    </LinearLayout>
+    <com.eryue.ui.NoScrollGridView
+        android:id="@+id/grid_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:numColumns="3"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="2dp"
+        android:stretchMode="columnWidth"
+        android:scrollbars="none" />
+
+</LinearLayout>

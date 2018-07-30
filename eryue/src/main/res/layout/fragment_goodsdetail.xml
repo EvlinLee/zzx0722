@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <ListView android:id="@+id/listview_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:cacheColorHint="#00000000"></ListView>
+
+
+    <TextView
+        android:id="@+id/tv_buymessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_detailbuy_message"
+        android:layout_marginTop="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:visibility="gone"/>
+
+
+    <ImageView
+        android:id="@+id/iv_rocket"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/icon_detailtop"
+        android:visibility="gone" />
+
+</FrameLayout>

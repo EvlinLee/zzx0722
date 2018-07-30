@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@color/white">
+
+        <ImageView android:id="@+id/iv_homehori"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_homehori"
+            android:scaleType="fitXY"/>
+
+        <TextView android:id="@+id/tv_homehori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="今日上新"
+            android:textColor="@color/txt_gray"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+</LinearLayout>

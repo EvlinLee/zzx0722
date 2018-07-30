@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_background">
+
+    <RelativeLayout
+        android:layout_width="300dip"
+        android:layout_height="40dip"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="match_parent"
+            android:id="@+id/normal_order"
+            android:text="普通订单"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:layout_marginLeft="15dip"
+            android:background="#ffffff"
+            />
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="match_parent"
+            android:id="@+id/jingdong_order"
+            android:text="京东免单"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:layout_marginRight="15dip"
+            android:layout_alignParentRight="true"
+            android:background="#ffffff"
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dip">
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="100dip"
+            android:layout_weight="1"
+            android:background="#ffffff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value0"
+                android:textColor="#333333"
+                android:textSize="18dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hint0"
+                android:text="账户余额(元)"
+                android:textColor="#999999"
+                android:textSize="14dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dip"
+                android:layout_below="@+id/value0"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="100dip"
+            android:layout_weight="1"
+            android:background="#ffffff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value1"
+                android:textColor="#333333"
+                android:textSize="18dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hint1"
+                android:text="预估积分(元)"
+                android:textColor="#999999"
+                android:textSize="14dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dip"
+                android:layout_below="@+id/value1"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="100dip"
+            android:layout_weight="1"
+            android:background="#ffffff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value2"
+                android:textColor="#333333"
+                android:textSize="18dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hint2"
+                android:text="累计有效(元)"
+                android:textColor="#999999"
+                android:textSize="14dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dip"
+                android:layout_below="@+id/value2"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:id="@+id/contain_2"
+        android:layout_marginTop="10dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dip"
+            android:id="@+id/contain_3"
+            android:layout_below="@+id/line1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/order_num"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:hint="请输入订单编号"
+                android:textColorHint="#aaaaaa"
+                android:textColor="#333333"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textSize="15dip"
+                android:paddingLeft="15dip"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#e0e0e0"
+            android:layout_below="@id/contain_3"
+            android:id="@+id/line2"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:id="@+id/sure"
+        android:layout_below="@id/hint5"
+        android:layout_marginTop="25dip"
+        android:background="@drawable/bg_red_textview"
+        android:text="确认提交"
+        android:textSize="16dip"
+        android:textColor="#ffffff"
+        android:layout_marginRight="30dip"
+        android:layout_marginLeft="30dip"
+        android:gravity="center"
+        />
+
+
+</LinearLayout>

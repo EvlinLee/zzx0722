@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/search_et"
+            android:textColor="#333333"
+            android:background="@null"
+            android:hint="输入用户名查询"
+            android:gravity="left|center_vertical"
+            android:textColorHint="#aaaaaa"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="15dip"
+            android:paddingLeft="16dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+        <TextView
+            android:layout_width="90dip"
+            android:layout_height="30dip"
+            android:id="@+id/search"
+            android:layout_alignParentRight="true"
+            android:text="搜索"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/bg_red_textview"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dip">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/a_type"
+                android:layout_width="match_parent"
+                android:layout_height="43dip"
+                android:gravity="center"
+                android:text="A级成员"
+                android:textSize="15dip"
+                android:textColor="#ff5533" />
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#ff5533"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/b_type"
+                android:layout_width="match_parent"
+                android:layout_height="43dip"
+                android:gravity="center"
+                android:text="B级成员"
+                android:textSize="15dip"
+                android:textColor="#090909" />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#ff5533"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal"
+        android:background="@color/comm_background">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:id="@+id/nick_name"
+            android:text="成员昵称"
+            android:textColor="#999999"
+            android:textSize="14dip" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:id="@+id/curr_month"
+            android:gravity="center"
+            android:text="本月贡献"
+            android:textColor="#999999"
+            android:textSize="14dip"
+            />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:id="@+id/last_month"
+            android:gravity="center"
+            android:text="上月贡献"
+            android:textColor="#999999"
+            android:textSize="14dip"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <com.library.ui.dragrefresh.DragRefreshListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cell_background">
+
+    </com.library.ui.dragrefresh.DragRefreshListView>
+
+</LinearLayout>

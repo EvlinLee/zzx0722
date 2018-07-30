@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/comm_background">
+
+    <ImageView
+        android:layout_width="300dip"
+        android:layout_height="400dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dip"
+        android:id="@+id/header_iv"
+        >
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/curr_version"
+        android:textSize="15dip"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/header_iv"
+        android:textColor="#999999"/>
+
+    <TextView
+        android:layout_width="140dip"
+        android:layout_height="45dip"
+        android:id="@+id/check_version"
+        android:layout_below="@+id/curr_version"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dip"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="检查更新"
+        android:layout_marginTop="24dip"
+        android:background="@drawable/bg_red_textview"/>
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="1dip"
+        android:id="@+id/layout_test"
+        android:visibility="gone"
+        android:background="@color/cell_background"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="测试跳转"
+            android:textSize="15dip"
+            android:textColor="#333333"
+            android:layout_marginLeft="16dip"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:textSize="15dip"
+            android:text="拼多多"
+            android:textColor="#999999"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dip"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:id="@+id/time"
+            android:text="时间"
+            android:textColor="#030303"
+            android:textSize="14dip"/>
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:id="@+id/total"
+            android:gravity="center"
+            android:text="激活量"
+            android:textColor="#030303"
+            android:textSize="14dip"
+            />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:id="@+id/ios"
+            android:gravity="center"
+            android:text="iOS激活量"
+            android:textColor="#030303"
+            android:textSize="14dip"
+            />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:id="@+id/android"
+            android:gravity="center"
+            android:text="安卓激活量"
+            android:textColor="#030303"
+            android:textSize="14dip"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/line_color"
+        />
+
+
+
+</LinearLayout>
