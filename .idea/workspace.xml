@@ -15,7 +15,31 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfa2d93e-29b8-4ec9-a967-7ba256992cca" name="Default" comment="" />
+    <list default="true" id="bfa2d93e-29b8-4ec9-a967-7ba256992cca" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eryue/build/intermediates/incremental/packageDebug/debug/zip-cache/Iue54aiGxeTK5FclsYtqkKGX978=" afterPath="$PROJECT_DIR$/eryue/build/intermediates/incremental/packageDebug/debug/zip-cache/Iue54aiGxeTK5FclsYtqkKGX978=" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eryue/build/intermediates/incremental/packageInstantRunResourcesDebug/debug/zip-cache/Iue54aiGxeTK5FclsYtqkKGX978=" afterPath="$PROJECT_DIR$/eryue/build/intermediates/incremental/packageInstantRunResourcesDebug/debug/zip-cache/Iue54aiGxeTK5FclsYtqkKGX978=" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eryue/build/intermediates/instant-run-resources/resources-debug.ir.ap_" afterPath="$PROJECT_DIR$/eryue/build/intermediates/instant-run-resources/resources-debug.ir.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eryue/build/intermediates/res/debug/resources-debug.ap_" afterPath="$PROJECT_DIR$/eryue/build/intermediates/res/debug/resources-debug.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eryue/build/outputs/apk/debug/eryue-debug.apk" afterPath="$PROJECT_DIR$/eryue/build/outputs/apk/debug/eryue-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eryue/build/generated/source/r/debug/com/eryue/R.java" afterPath="$PROJECT_DIR$/eryue/build/generated/source/r/debug/com/eryue/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eryue/build/intermediates/blame/res/debug/multi-v2/debug.json" afterPath="$PROJECT_DIR$/eryue/build/intermediates/blame/res/debug/multi-v2/debug.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eryue/build/intermediates/blame/res/debug/single/debug.json" afterPath="$PROJECT_DIR$/eryue/build/intermediates/blame/res/debug/single/debug.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eryue/build/intermediates/build-info/debug/build-info.xml" afterPath="$PROJECT_DIR$/eryue/build/intermediates/build-info/debug/build-info.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eryue/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/eryue/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eryue/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/eryue/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eryue/build/intermediates/incremental/packageDebug/debug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/eryue/build/intermediates/incremental/packageDebug/debug/file-input-save-data.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eryue/build/intermediates/incremental/packageInstantRunResourcesDebug/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/eryue/build/intermediates/incremental/packageInstantRunResourcesDebug/debug/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eryue/build/intermediates/incremental/packageInstantRunResourcesDebug/debug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/eryue/build/intermediates/incremental/packageInstantRunResourcesDebug/debug/file-input-save-data.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eryue/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/eryue/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eryue/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterPath="$PROJECT_DIR$/eryue/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eryue/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/eryue/build/intermediates/symbols/debug/R.txt" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,11 +62,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GoodsAllFragmentEx.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/eryue/src/main/java/com/eryue/home/GoodsAllFragmentEx.java">
+      <file leaf-file-name="CreateShareActivityEx.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eryue/src/main/java/com/eryue/activity/CreateShareActivityEx.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3145">
-              <caret line="555" column="5" lean-forward="false" selection-start-line="555" selection-start-column="5" selection-end-line="555" selection-end-column="5" />
+            <state relative-caret-position="112">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_order_submission.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eryue/src/main/res/layout/activity_order_submission.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -51,28 +88,131 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eryue/src/main/java/com/eryue/activity/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7728">
-              <caret line="403" column="53" lean-forward="false" selection-start-line="403" selection-start-column="53" selection-end-line="403" selection-end-column="53" />
+            <state relative-caret-position="227">
+              <caret line="369" column="33" lean-forward="false" selection-start-line="369" selection-start-column="33" selection-end-line="369" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoodsAllFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eryue/src/main/java/com/eryue/home/GoodsAllFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="258" column="16" lean-forward="false" selection-start-line="258" selection-start-column="16" selection-end-line="258" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchLiveFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eryue/src/main/java/com/eryue/live/SearchLiveFragment.java">
+      <file leaf-file-name="GoodsAllFragmentEx.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eryue/src/main/java/com/eryue/home/GoodsAllFragmentEx.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1748">
-              <caret line="99" column="44" lean-forward="false" selection-start-line="99" selection-start-column="44" selection-end-line="99" selection-end-column="44" />
-              <folding />
+            <state relative-caret-position="516">
+              <caret line="370" column="87" lean-forward="false" selection-start-line="364" selection-start-column="7" selection-end-line="370" selection-end-column="87" />
+              <folding>
+                <element signature="e#5389#6146#0" expanded="true" />
+                <element signature="e#6145#6146#0" expanded="true" />
+                <element signature="e#6930#8767#0" expanded="true" />
+                <element signature="e#8766#8767#0" expanded="true" />
+                <marker date="1532938973411" expanded="true" signature="15368:15724" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="15419:15430" ph="&lt;~&gt;" />
+                <marker date="1532938973411" expanded="true" signature="15788:15933" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="16050:16986" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="16060:16538" ph="//..." />
+                <marker date="1532938973411" expanded="true" signature="16588:16677" ph="//..." />
+                <marker date="1532938973411" expanded="true" signature="17019:17126" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="17157:17307" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="17390:18484" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="17888:18032" ph="//..." />
+                <marker date="1532938973411" expanded="true" signature="18529:18750" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="18614:18667" ph="//..." />
+                <marker date="1532938973411" expanded="true" signature="18778:19023" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="19097:20729" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="19100:20721" ph="//..." />
+                <marker date="1532938973411" expanded="true" signature="20777:20889" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="20779:20883" ph="//..." />
+                <marker date="1532938973411" expanded="true" signature="20967:21445" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="21617:22652" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="22130:22208" ph="() → {" />
+                <marker date="1532938973411" expanded="true" signature="22485:22504" ph="}" />
+                <marker date="1532938973411" expanded="true" signature="22697:22803" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="23043:23899" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="23046:23892" ph="//..." />
+                <marker date="1532938973411" expanded="true" signature="23945:23953" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="24054:24509" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="24057:24502" ph="//..." />
+                <marker date="1532938973411" expanded="true" signature="24558:24812" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="24560:24806" ph="//..." />
+                <marker date="1532938973411" expanded="true" signature="24915:25819" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="24954:25076" ph="(msg) → {" />
+                <marker date="1532938973411" expanded="true" signature="25774:25789" ph="}" />
+                <marker date="1532938973411" expanded="true" signature="25868:25876" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="25927:26813" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="26357:26421" ph="//..." />
+                <marker date="1532938973411" expanded="true" signature="26956:26964" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="27061:27475" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="27649:29032" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="27738:27860" ph="(msg) → {" />
+                <marker date="1532938973411" expanded="true" signature="28456:28799" ph="//..." />
+                <marker date="1532938973411" expanded="true" signature="28988:29003" ph="}" />
+                <marker date="1532938973411" expanded="true" signature="29080:29416" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="29118:29240" ph="(msg) → {" />
+                <marker date="1532938973411" expanded="true" signature="29372:29387" ph="}" />
+                <marker date="1532938973411" expanded="true" signature="29559:30407" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="29884:30014" ph="(msg) → {" />
+                <marker date="1532938973411" expanded="true" signature="30348:30367" ph="}" />
+                <marker date="1532938973411" expanded="true" signature="30455:31286" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="30457:31279" ph="//..." />
+                <marker date="1532938973411" expanded="true" signature="31429:33596" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="32101:32234" ph="(v) → { " />
+                <marker date="1532938973411" expanded="true" signature="32251:32291" ph=" }" />
+                <marker date="1532938973411" expanded="true" signature="32340:32516" ph="//..." />
+                <marker date="1532938973411" expanded="true" signature="33098:33237" ph="(dialog) → {" />
+                <marker date="1532938973411" expanded="true" signature="33403:33426" ph="}" />
+                <marker date="1532938973411" expanded="true" signature="33602:33634" ph="/**...*/" />
+                <marker date="1532938973411" expanded="true" signature="33720:33997" ph="{...}" />
+                <marker date="1532938973411" expanded="false" signature="33785:33907" ph="(msg) → {" />
+                <marker date="1532938973411" expanded="false" signature="33954:33969" ph="}" />
+                <marker date="1532938973411" expanded="true" signature="34047:34055" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="34098:34525" ph="{...}" />
+                <marker date="1532938973411" expanded="true" signature="34629:34884" ph="{...}" />
+                <marker date="1532938973411" expanded="false" signature="34669:34791" ph="(msg) → {" />
+                <marker date="1532938973411" expanded="false" signature="34840:34855" ph="}" />
+                <marker date="1532938973411" expanded="true" signature="34936:35383" ph="{...}" />
+                <marker date="1532938973411" expanded="false" signature="34974:35096" ph="(msg) → {" />
+                <marker date="1532938973411" expanded="false" signature="35340:35355" ph="}" />
+                <marker date="1532938973411" expanded="true" signature="35466:37806" ph="{...}" />
+                <marker date="1532938973411" expanded="false" signature="36920:37031" ph="(view) → {" />
+                <marker date="1532938973411" expanded="false" signature="37699:37722" ph="}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoodsListAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eryue/src/main/java/com/eryue/home/GoodsListAdapter.java">
+      <file leaf-file-name="header_fragment_goods.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/eryue/src/main/res/layout/header_fragment_goods.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2162">
-              <caret line="142" column="82" lean-forward="false" selection-start-line="142" selection-start-column="82" selection-end-line="142" selection-end-column="82" />
+            <state relative-caret-position="762">
+              <caret line="217" column="15" lean-forward="false" selection-start-line="217" selection-start-column="15" selection-end-line="217" selection-end-column="15" />
+              <folding>
+                <marker date="1532938973413" expanded="true" signature="5807:6291" ph="..." />
+                <marker date="1532938973413" expanded="true" signature="6311:7402" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoodsLikeListAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eryue/src/main/java/com/eryue/home/GoodsLikeListAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="111" column="20" lean-forward="false" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -84,18 +224,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="68" column="39" lean-forward="false" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoodsLikeListAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eryue/src/main/java/com/eryue/home/GoodsLikeListAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="46" column="13" lean-forward="false" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+            <state relative-caret-position="621">
+              <caret line="57" column="29" lean-forward="false" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -107,8 +237,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1633">
-              <caret line="71" column="34" lean-forward="false" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
+            <state relative-caret-position="161">
+              <caret line="61" column="37" lean-forward="false" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -169,7 +299,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="2.3.0" />
       </map>
     </option>
   </component>
@@ -4439,7 +4569,9 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="AndroidView" proportions="" version="1">
       <flattenPackages />
@@ -4455,6 +4587,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -4467,12 +4601,176 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidBuildScriptsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zzx0722" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eryue" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zzx0722" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eryue" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zzx0722" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eryue" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zzx0722" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eryue" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zzx0722" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eryue" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="net" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zzx0722" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eryue" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eryue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zzx0722" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eryue" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eryue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widget" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zzx0722" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eryue" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eryue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zzx0722" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eryue" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -4573,7 +4871,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532937234108" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532939060579" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -4621,7 +4919,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532937234108" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532939060579" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -4705,7 +5003,7 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" />
       <option name="WORKING_DIRECTORY" />
-      <module name="" />
+      <module name="jdong" />
       <envs />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="filePath" />
@@ -4807,7 +5105,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532937234109" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532939060580" />
       </method>
     </configuration>
     <list size="1">
@@ -4859,39 +5157,65 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35117057" sideWeight="0.4946695" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32552955" sideWeight="0.49307036" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27292112" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20842217" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35044643" sideWeight="0.4946695" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32552955" sideWeight="0.49307036" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29264393" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35044643" sideWeight="0.4946695" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20842217" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32552955" sideWeight="0.49307036" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29264393" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33035713" sideWeight="0.4978678" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -5052,7 +5376,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5074,7 +5397,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5159,15 +5481,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eryue/src/main/java/com/eryue/activity/CreateShareActivityEx.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
+        <state relative-caret-position="112">
           <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#9959#11361#0" expanded="true" />
-            <element signature="e#11360#11361#0" expanded="true" />
-            <element signature="e#13318#15229#0" expanded="true" />
-            <element signature="e#15228#15229#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -5234,7 +5550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="701">
           <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5242,7 +5557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="94" column="42" lean-forward="false" selection-start-line="94" selection-start-column="42" selection-end-line="94" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5325,8 +5639,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eryue/src/main/java/com/eryue/home/GoodsLikeListAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="46" column="13" lean-forward="false" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        <state relative-caret-position="345">
+          <caret line="111" column="20" lean-forward="false" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -5336,8 +5650,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1633">
-          <caret line="71" column="34" lean-forward="false" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
+        <state relative-caret-position="161">
+          <caret line="61" column="37" lean-forward="false" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -5364,9 +5678,12 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-253">
-          <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="762">
+          <caret line="217" column="15" lean-forward="false" selection-start-line="217" selection-start-column="15" selection-end-line="217" selection-end-column="15" />
+          <folding>
+            <marker date="1532938973413" expanded="true" signature="5807:6291" ph="..." />
+            <marker date="1532938973413" expanded="true" signature="6311:7402" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -5403,9 +5720,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eryue/src/main/java/com/eryue/activity/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7728">
-          <caret line="403" column="53" lean-forward="false" selection-start-line="403" selection-start-column="53" selection-end-line="403" selection-end-column="53" />
-          <folding />
+        <state relative-caret-position="227">
+          <caret line="369" column="33" lean-forward="false" selection-start-line="369" selection-start-column="33" selection-end-line="369" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -5441,17 +5760,92 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="68" column="39" lean-forward="false" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
+        <state relative-caret-position="621">
+          <caret line="57" column="29" lean-forward="false" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eryue/src/main/java/com/eryue/home/GoodsAllFragmentEx.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3145">
-          <caret line="555" column="5" lean-forward="false" selection-start-line="555" selection-start-column="5" selection-end-line="555" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="516">
+          <caret line="370" column="87" lean-forward="false" selection-start-line="364" selection-start-column="7" selection-end-line="370" selection-end-column="87" />
+          <folding>
+            <element signature="e#5389#6146#0" expanded="true" />
+            <element signature="e#6145#6146#0" expanded="true" />
+            <element signature="e#6930#8767#0" expanded="true" />
+            <element signature="e#8766#8767#0" expanded="true" />
+            <marker date="1532938973411" expanded="true" signature="15368:15724" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="15419:15430" ph="&lt;~&gt;" />
+            <marker date="1532938973411" expanded="true" signature="15788:15933" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="16050:16986" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="16060:16538" ph="//..." />
+            <marker date="1532938973411" expanded="true" signature="16588:16677" ph="//..." />
+            <marker date="1532938973411" expanded="true" signature="17019:17126" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="17157:17307" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="17390:18484" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="17888:18032" ph="//..." />
+            <marker date="1532938973411" expanded="true" signature="18529:18750" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="18614:18667" ph="//..." />
+            <marker date="1532938973411" expanded="true" signature="18778:19023" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="19097:20729" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="19100:20721" ph="//..." />
+            <marker date="1532938973411" expanded="true" signature="20777:20889" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="20779:20883" ph="//..." />
+            <marker date="1532938973411" expanded="true" signature="20967:21445" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="21617:22652" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="22130:22208" ph="() → {" />
+            <marker date="1532938973411" expanded="true" signature="22485:22504" ph="}" />
+            <marker date="1532938973411" expanded="true" signature="22697:22803" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="23043:23899" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="23046:23892" ph="//..." />
+            <marker date="1532938973411" expanded="true" signature="23945:23953" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="24054:24509" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="24057:24502" ph="//..." />
+            <marker date="1532938973411" expanded="true" signature="24558:24812" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="24560:24806" ph="//..." />
+            <marker date="1532938973411" expanded="true" signature="24915:25819" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="24954:25076" ph="(msg) → {" />
+            <marker date="1532938973411" expanded="true" signature="25774:25789" ph="}" />
+            <marker date="1532938973411" expanded="true" signature="25868:25876" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="25927:26813" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="26357:26421" ph="//..." />
+            <marker date="1532938973411" expanded="true" signature="26956:26964" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="27061:27475" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="27649:29032" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="27738:27860" ph="(msg) → {" />
+            <marker date="1532938973411" expanded="true" signature="28456:28799" ph="//..." />
+            <marker date="1532938973411" expanded="true" signature="28988:29003" ph="}" />
+            <marker date="1532938973411" expanded="true" signature="29080:29416" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="29118:29240" ph="(msg) → {" />
+            <marker date="1532938973411" expanded="true" signature="29372:29387" ph="}" />
+            <marker date="1532938973411" expanded="true" signature="29559:30407" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="29884:30014" ph="(msg) → {" />
+            <marker date="1532938973411" expanded="true" signature="30348:30367" ph="}" />
+            <marker date="1532938973411" expanded="true" signature="30455:31286" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="30457:31279" ph="//..." />
+            <marker date="1532938973411" expanded="true" signature="31429:33596" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="32101:32234" ph="(v) → { " />
+            <marker date="1532938973411" expanded="true" signature="32251:32291" ph=" }" />
+            <marker date="1532938973411" expanded="true" signature="32340:32516" ph="//..." />
+            <marker date="1532938973411" expanded="true" signature="33098:33237" ph="(dialog) → {" />
+            <marker date="1532938973411" expanded="true" signature="33403:33426" ph="}" />
+            <marker date="1532938973411" expanded="true" signature="33602:33634" ph="/**...*/" />
+            <marker date="1532938973411" expanded="true" signature="33720:33997" ph="{...}" />
+            <marker date="1532938973411" expanded="false" signature="33785:33907" ph="(msg) → {" />
+            <marker date="1532938973411" expanded="false" signature="33954:33969" ph="}" />
+            <marker date="1532938973411" expanded="true" signature="34047:34055" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="34098:34525" ph="{...}" />
+            <marker date="1532938973411" expanded="true" signature="34629:34884" ph="{...}" />
+            <marker date="1532938973411" expanded="false" signature="34669:34791" ph="(msg) → {" />
+            <marker date="1532938973411" expanded="false" signature="34840:34855" ph="}" />
+            <marker date="1532938973411" expanded="true" signature="34936:35383" ph="{...}" />
+            <marker date="1532938973411" expanded="false" signature="34974:35096" ph="(msg) → {" />
+            <marker date="1532938973411" expanded="false" signature="35340:35355" ph="}" />
+            <marker date="1532938973411" expanded="true" signature="35466:37806" ph="{...}" />
+            <marker date="1532938973411" expanded="false" signature="36920:37031" ph="(view) → {" />
+            <marker date="1532938973411" expanded="false" signature="37699:37722" ph="}" />
+          </folding>
         </state>
       </provider>
     </entry>

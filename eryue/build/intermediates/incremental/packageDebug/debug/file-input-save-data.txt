@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Jul 30 15:26:08 CST 2018
+#Mon Jul 30 16:23:13 CST 2018
 20.base=F\:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\debug\\resources-debug.ap_
 143.base=F\:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\debug\\resources-debug.ap_
 493.base=F\:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\debug\\resources-debug.ap_
