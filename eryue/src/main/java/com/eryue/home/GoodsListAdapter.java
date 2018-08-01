@@ -25,6 +25,7 @@ import com.eryue.R;
 import com.eryue.WXShare;
 import com.eryue.activity.CreateShareActivityEx;
 import com.eryue.goodsdetail.GoodsDetailActivityEx;
+import com.eryue.widget.GlideRoundTransform;
 import com.eryue.widget.ShareContentView;
 import com.library.util.CommonFunc;
 import com.library.util.ImageUtils;
@@ -167,8 +168,11 @@ public class GoodsListAdapter extends BaseAdapter implements ShareContentView.On
             viewHolder.iv_status.setVisibility(View.VISIBLE);
             Glide.with(context).load(GoodsUtil.getGoodsStatusRid(false,searchProductInfo.couponStatus)).asBitmap().into(viewHolder.iv_status);
         }
+
         //商品图片
-        Glide.with(context).load(searchProductInfo.pictUrl).placeholder(R.drawable.img_default_contract).into(viewHolder.iv_goods);
+        //设置图片圆角角度
+        Glide.with(context).load(searchProductInfo.pictUrl).transform(new GlideRoundTransform(context,10))
+                .into(viewHolder.iv_goods);
 
         int goodsImgId = GoodsUtil.getGoodsBusinessRid((int) searchProductInfo.isMall,searchProductInfo.productType);
 
@@ -188,12 +192,12 @@ public class GoodsListAdapter extends BaseAdapter implements ShareContentView.On
         }
 
         //优惠券价格
-        viewHolder.tv_price_paper.setText(CommonFunc.fixText(searchProductInfo.quanPrice, 0));
+        viewHolder.tv_price_paper.setText("券¥" +CommonFunc.fixText(searchProductInfo.quanPrice, 0));
 
         if (isLogin){
             viewHolder.tv_share.setVisibility(View.VISIBLE);
             //分享后可赚
-            viewHolder.tv_share.setText("可赚¥" + CommonFunc.fixText(searchProductInfo.jf, 2));
+            viewHolder.tv_share.setText("赚¥" + CommonFunc.fixText(searchProductInfo.jf, 2));
         }else{
             viewHolder.tv_share.setVisibility(View.GONE);
         }
@@ -231,7 +235,7 @@ public class GoodsListAdapter extends BaseAdapter implements ShareContentView.On
         //原价-中间横线
         viewHolder.tv_originalprice.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
         //销量
-        viewHolder.tv_sellnum.setText("销量"+String.valueOf(searchProductInfo.soldQuantity));
+        viewHolder.tv_sellnum.setText("已售 "+String.valueOf(searchProductInfo.soldQuantity));
 
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override

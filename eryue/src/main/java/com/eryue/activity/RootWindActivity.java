@@ -16,7 +16,7 @@ import com.library.permission.PermissionsManager;
 
 
 /**
- * ADF TOP Activity
+ * ADF TOP aaa
  * <p/>
  * 为 BaseActivity 和 MainUIActivity 提取共有 父Activity
  *

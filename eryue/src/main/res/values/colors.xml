@@ -39,4 +39,5 @@
     <color name="txtcolor_tab">#888888</color>
     <color name="txtcolor_business">#666666</color>
 
+    <color name="fragment_titile_color">#333333</color>
 </resources>

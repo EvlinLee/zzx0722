@@ -16,6 +16,7 @@ import android.view.WindowManager;
 
 import java.util.List;
 
+import me.imid.swipebacklayout.lib.app.SwipeBackActivity;
 import permission.PermissionUtil;
 import permission.PermissionsManager;
 

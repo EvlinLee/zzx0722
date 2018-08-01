@@ -84,7 +84,7 @@ public class GoodsDailyAdapter extends BaseAdapter {
         //商品券后价格
         viewHolder.tv_after_goodsdaily.setText("¥"+CommonFunc.fixText(searchProductInfo.afterQuan,2));
         //券价格
-        viewHolder.tv_price_paper.setText("券"+CommonFunc.fixText(searchProductInfo.quanPrice));
+        viewHolder.tv_price_paper.setText("券￥"+CommonFunc.fixText(searchProductInfo.quanPrice));
 
         return convertView;
     }

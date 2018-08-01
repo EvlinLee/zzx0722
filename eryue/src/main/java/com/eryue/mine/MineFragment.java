@@ -336,22 +336,22 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
         headview_no_login = getView().findViewById(R.id.headview_no_login);
         headview_login = getView().findViewById(R.id.headview_login);
         wodetuandui = getView().findViewById(R.id.wodetuandui);
-        wodetuandui.setOnClickListener(this);
+//        wodetuandui.setOnClickListener(this);
         zhanghutixian = getView().findViewById(R.id.zhanghutixian);
-        zhanghutixian.setOnClickListener(this);
-        dingdanxiangqing = getView().findViewById(R.id.dingdanxiangqing);
+//        zhanghutixian.setOnClickListener(this);
+    /*    dingdanxiangqing = getView().findViewById(R.id.dingdanxiangqing);
         dingdanxiangqing.setOnClickListener(this);
         dailirenxuexi = getView().findViewById(R.id.dailirenxuexi);
         dailirenxuexi.setOnClickListener(this);
-
+*/
         navigation_help = getView().findViewById(R.id.navigation_help);
         navigation_help.setOnClickListener(this);
         navigation_message = getView().findViewById(R.id.navigation_message);
         navigation_message.setOnClickListener(this);
         tuidanxiangqing = getView().findViewById(R.id.tuidanxiangqing);
-        tuidanxiangqing.setOnClickListener(this);
+//        tuidanxiangqing.setOnClickListener(this);
         dingdantijiao = getView().findViewById(R.id.dingdantijiao);
-        dingdantijiao.setOnClickListener(this);
+//        dingdantijiao.setOnClickListener(this);
         qiandao = getView().findViewById(R.id.qiandao);
         qiandao.setOnClickListener(this);
         liulanzuji = getView().findViewById(R.id.liulanzuji);

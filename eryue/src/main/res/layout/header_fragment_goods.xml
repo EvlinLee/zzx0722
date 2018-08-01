@@ -5,10 +5,61 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.eryue.widget.AutoScrollViewPager.AutoScrollViewPager
-        android:id="@+id/viewPager_adv"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+        <com.eryue.widget.AutoScrollViewPager.AutoScrollViewPager
+            android:id="@+id/viewPager_adv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/layout_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hight_navigation"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/search_contain"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_edit_search"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/icon_search" />
+
+                <TextView
+                    android:id="@+id/tv_search"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="寻找独家优惠"
+                    android:textColor="@color/color_txthint"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <ImageView android:id="@+id/iv_message"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_marginRight="15dip"
+                android:src="@drawable/icon_message" />
+        </LinearLayout>
+
+    </RelativeLayout>
 
 
     <GridView
@@ -48,10 +99,10 @@
         android:paddingBottom="10dp">
 
         <ImageView
-            android:layout_width="32dp"
-            android:layout_height="16dp"
-            android:src="@drawable/icon_notice"
-            android:layout_marginLeft="12dp"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:src="@drawable/img_home_notify"
+            android:layout_marginLeft="38dp"
             android:layout_marginRight="12dp"/>
 
         <TextView
@@ -107,9 +158,10 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="@color/white"
-        android:gravity="center_horizontal">
+        android:paddingTop="10dp"
+        android:gravity="center">
         <View
-            android:layout_width="10dp"
+            android:layout_width="12dp"
             android:layout_height="1dp"
             android:background="#fd5b68"
             android:layout_marginRight="6dp"
@@ -120,10 +172,10 @@
             android:layout_height="wrap_content"
             android:textColor="#fd5b67"
             android:text="精选好货"
-            android:textSize="12sp"
+            android:textSize="15sp"
             />
         <View
-            android:layout_width="10dp"
+            android:layout_width="12dp"
             android:layout_height="1dp"
             android:layout_marginLeft="6dp"
             android:background="#fd5b68"

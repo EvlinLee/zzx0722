@@ -1,3 +1,0 @@
-# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:49
--keep class com.eryue.BaseApplication { <init>(...); }
-

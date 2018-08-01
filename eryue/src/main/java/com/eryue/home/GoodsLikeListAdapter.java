@@ -142,7 +142,7 @@ public class GoodsLikeListAdapter extends BaseAdapter implements ShareContentVie
 
             viewHolder.tv_price_paper = (TextView) convertView.findViewById(R.id.tv_price_paper);
             viewHolder.tv_share = (TextView) convertView.findViewById(R.id.tv_share);
-            viewHolder.iv_share = (ImageView) convertView.findViewById(R.id.iv_share);
+            viewHolder.iv_share = (TextView) convertView.findViewById(R.id.iv_share);
 
             viewHolder.tv_price = (TextView) convertView.findViewById(R.id.tv_price);
             viewHolder.tv_originalprice = (TextView) convertView.findViewById(R.id.tv_originalprice);
@@ -288,7 +288,7 @@ public class GoodsLikeListAdapter extends BaseAdapter implements ShareContentVie
 
         public TextView tv_price_paper;
         public TextView tv_share;
-        public ImageView iv_share;
+        public TextView iv_share;
 
         public TextView tv_price;
         public TextView tv_originalprice;

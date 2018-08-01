@@ -136,8 +136,8 @@ public class GoodsAllFragmentEx extends BaseFragment implements DragRefreshListV
         iv_rocket = getView().findViewById(R.id.iv_rocket);
         iv_rocket.setOnClickListener(this);
 
-        search_contain = getView().findViewById(R.id.search_contain);
-        search_contain.setOnClickListener(this);
+       /* search_contain = getView().findViewById(R.id.search_contain);
+        search_contain.setOnClickListener(this);*/
 
         listview = (DragRefreshListView) getView().findViewById(R.id.listview_drag);
         listview.setDragRefreshListViewListener(this);

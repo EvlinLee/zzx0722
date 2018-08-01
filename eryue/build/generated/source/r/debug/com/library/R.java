@@ -8,9 +8,9 @@ package com.library;
 
 public final class R {
     public static final class color {
-        public static final int txt_adf_color = 0x7f040077;
-        public static final int txt_default_white_color = 0x7f040079;
-        public static final int windstock_toolbar_bg = 0x7f04008b;
+        public static final int txt_adf_color = 0x7f040078;
+        public static final int txt_default_white_color = 0x7f04007a;
+        public static final int windstock_toolbar_bg = 0x7f04008c;
     }
     public static final class dimen {
         public static final int listview_font_size_22_px = 0x7f050076;
@@ -19,45 +19,45 @@ public final class R {
     public static final class drawable {
         public static final int back_btn = 0x7f060056;
         public static final int bg_progress = 0x7f060069;
-        public static final int btn_black_pressed = 0x7f060070;
-        public static final int btn_save = 0x7f060073;
-        public static final int icon_back = 0x7f0600c3;
-        public static final int list_refresh = 0x7f060150;
-        public static final int loading00 = 0x7f060151;
-        public static final int navigation_bg = 0x7f06015f;
-        public static final int progress_round = 0x7f060173;
-        public static final int progressbar = 0x7f060174;
-        public static final int top_button_normal_master = 0x7f060194;
+        public static final int btn_black_pressed = 0x7f060073;
+        public static final int btn_save = 0x7f06007c;
+        public static final int icon_back = 0x7f0600d2;
+        public static final int list_refresh = 0x7f060180;
+        public static final int loading00 = 0x7f060181;
+        public static final int navigation_bg = 0x7f060194;
+        public static final int progress_round = 0x7f0601b9;
+        public static final int progressbar = 0x7f0601ba;
+        public static final int top_button_normal_master = 0x7f0601ed;
     }
     public static final class id {
-        public static final int animation = 0x7f07002e;
-        public static final int back = 0x7f070032;
-        public static final int child = 0x7f070055;
-        public static final int error = 0x7f07008e;
-        public static final int large = 0x7f070122;
-        public static final int listview_footer = 0x7f070168;
-        public static final int listview_footer_progressbar = 0x7f070169;
-        public static final int listview_footer_textview = 0x7f07016a;
-        public static final int listview_header = 0x7f07016c;
-        public static final int listview_header_arrow = 0x7f07016d;
-        public static final int listview_header_hint_textview = 0x7f07016e;
-        public static final int listview_header_last_time = 0x7f07016f;
-        public static final int listview_header_progressbar = 0x7f070170;
-        public static final int listview_header_text = 0x7f070171;
-        public static final int listview_header_time = 0x7f070172;
-        public static final int loading = 0x7f070178;
-        public static final int pager = 0x7f0701ae;
-        public static final int position = 0x7f0701ba;
-        public static final int position_layout = 0x7f0701bb;
-        public static final int pre_view_navigationBar = 0x7f0701bc;
-        public static final int pre_view_navigationBar_leftView = 0x7f0701bd;
-        public static final int pre_view_navigationBar_rightView = 0x7f0701be;
-        public static final int pre_view_navigationBar_titleView = 0x7f0701bf;
-        public static final int progress = 0x7f0701c0;
-        public static final int progressBar1 = 0x7f0701c1;
-        public static final int sum = 0x7f070208;
-        public static final int title = 0x7f070227;
-        public static final int wait = 0x7f07029c;
+        public static final int animation = 0x7f07002f;
+        public static final int back = 0x7f070033;
+        public static final int child = 0x7f070056;
+        public static final int error = 0x7f070090;
+        public static final int large = 0x7f07011a;
+        public static final int listview_footer = 0x7f070160;
+        public static final int listview_footer_progressbar = 0x7f070161;
+        public static final int listview_footer_textview = 0x7f070162;
+        public static final int listview_header = 0x7f070164;
+        public static final int listview_header_arrow = 0x7f070165;
+        public static final int listview_header_hint_textview = 0x7f070166;
+        public static final int listview_header_last_time = 0x7f070167;
+        public static final int listview_header_progressbar = 0x7f070168;
+        public static final int listview_header_text = 0x7f070169;
+        public static final int listview_header_time = 0x7f07016a;
+        public static final int loading = 0x7f070170;
+        public static final int pager = 0x7f0701a6;
+        public static final int position = 0x7f0701b2;
+        public static final int position_layout = 0x7f0701b3;
+        public static final int pre_view_navigationBar = 0x7f0701b4;
+        public static final int pre_view_navigationBar_leftView = 0x7f0701b5;
+        public static final int pre_view_navigationBar_rightView = 0x7f0701b6;
+        public static final int pre_view_navigationBar_titleView = 0x7f0701b7;
+        public static final int progress = 0x7f0701b8;
+        public static final int progressBar1 = 0x7f0701b9;
+        public static final int sum = 0x7f070200;
+        public static final int title = 0x7f070220;
+        public static final int wait = 0x7f070295;
     }
     public static final class layout {
         public static final int gallery_container_layout = 0x7f090087;

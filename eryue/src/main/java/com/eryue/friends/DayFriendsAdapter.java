@@ -110,7 +110,7 @@ public class DayFriendsAdapter extends BaseAdapter implements ShareContentView.O
             viewHolder = new DayFriendsViewHolder();
             viewHolder.iv_icon = (ImageView) convertView.findViewById(R.id.iv_icon);
             viewHolder.tv_sendtitle = (TextView) convertView.findViewById(R.id.tv_sendtitle);
-            viewHolder.iv_share = (ImageView) convertView.findViewById(R.id.iv_share);
+            viewHolder.iv_share = (TextView) convertView.findViewById(R.id.iv_share);
             viewHolder.tv_sendcontent = (TextView) convertView.findViewById(R.id.tv_sendcontent);
             viewHolder.nineView = (NineViewGroup) convertView.findViewById(R.id.nineView);
             viewHolder.tv_sendtime = (TextView) convertView.findViewById(R.id.tv_sendtime);
@@ -161,7 +161,7 @@ public class DayFriendsAdapter extends BaseAdapter implements ShareContentView.O
 
             String sendTIme = convertTimesToDate(StringUtils.valueOfLong(timeLine.sendTime));
             if (!TextUtils.isEmpty(sendTIme)){
-                viewHolder.tv_sendtime.setText("建议发送时间 "+sendTIme);
+                viewHolder.tv_sendtime.setText(sendTIme.substring(5,sendTIme.length()));
             }
 
             viewHolder.layout_comment.removeAllViews();
@@ -377,7 +377,7 @@ public class DayFriendsAdapter extends BaseAdapter implements ShareContentView.O
     public class DayFriendsViewHolder {
         public ImageView iv_icon;
         public TextView tv_sendtitle;
-        public ImageView iv_share;
+        public TextView iv_share;
         public TextView tv_sendcontent;
         public NineViewGroup nineView;
         public TextView tv_sendtime;

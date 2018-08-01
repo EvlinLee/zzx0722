@@ -1,4 +1,4 @@
-#Mon Jul 30 13:54:24 CST 2018
-base.0=F\:\\work\\zzx0722\\eryue\\build\\intermediates\\transforms\\dexMerger\\debug\\22
+#Tue Jul 31 17:49:45 CST 2018
+base.0=F\:\\work\\zzx0722\\eryue\\build\\intermediates\\transforms\\dexMerger\\debug\\2
 renamed.0=classes.dex
-file.0=F\:\\work\\zzx0722\\eryue\\build\\intermediates\\transforms\\dexMerger\\debug\\22\\classes.dex
+file.0=F\:\\work\\zzx0722\\eryue\\build\\intermediates\\transforms\\dexMerger\\debug\\2\\classes.dex

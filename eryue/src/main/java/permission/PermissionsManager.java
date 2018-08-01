@@ -80,7 +80,7 @@ public class PermissionsManager {
      * This method retrieves all the permissions declared in the application's manifest.
      * It returns a non null array of permisions that can be declared.
      *
-     * @param activity the Activity necessary to check what permissions we have.
+     * @param activity the aaa necessary to check what permissions we have.
      * @return a non null array of permissions that are declared in the application manifest.
      */
     @NonNull
@@ -147,7 +147,7 @@ public class PermissionsManager {
      * It is basically a less verbose method of using {@link ActivityCompat#checkSelfPermission(Context, String)}
      * and will simply return a boolean whether or not you have the permission. If you pass
      * in a null Context object, it will return false as otherwise it cannot check the permission.
-     * However, the Activity parameter is nullable so that you can pass in a reference that you
+     * However, the aaa parameter is nullable so that you can pass in a reference that you
      * are not always sure will be valid or not (e.g. getActivity() from Fragment).
      *
      * @param context    the Context necessary to check the permission
@@ -165,7 +165,7 @@ public class PermissionsManager {
      * It is simpler than checking using {@link ActivityCompat#checkSelfPermission(Context, String)}
      * for each permission and will simply return a boolean whether or not you have all the permissions.
      * If you pass in a null Context object, it will return false as otherwise it cannot check the
-     * permission. However, the Activity parameter is nullable so that you can pass in a reference
+     * permission. However, the aaa parameter is nullable so that you can pass in a reference
      * that you are not always sure will be valid or not (e.g. getActivity() from Fragment).
      *
      * @param context     the Context necessary to check the permission
@@ -188,14 +188,14 @@ public class PermissionsManager {
      * This method will request all the permissions declared in your application manifest
      * for the specified {@link PermissionsResultAction}. The purpose of this method is to enable
      * all permissions to be requested at one shot. The PermissionsResultAction is used to notify
-     * you of the user allowing or denying each permission. The Activity and PermissionsResultAction
-     * parameters are both annotated Nullable, but this method will not work if the Activity
+     * you of the user allowing or denying each permission. The aaa and PermissionsResultAction
+     * parameters are both annotated Nullable, but this method will not work if the aaa
      * is null. It is only annotated Nullable as a courtesy to prevent crashes in the case
      * that you call this from a Fragment where {@link Fragment#getActivity()} could yield
      * null. Additionally, you will not receive any notification of permissions being granted
      * if you provide a null PermissionsResultAction.
      *
-     * @param activity the Activity necessary to request and check permissions.
+     * @param activity the aaa necessary to request and check permissions.
      * @param action   the PermissionsResultAction used to notify you of permissions being accepted.
      */
     @SuppressWarnings("unused")
@@ -214,9 +214,9 @@ public class PermissionsManager {
      * they need to be requested (i.e. we don't have permission yet) and will add the
      * PermissionsResultAction to the queue to be notified of permissions being granted or
      * denied. In the case of pre-Android Marshmallow, permissions will be granted immediately.
-     * The Activity variable is nullable, but if it is null, the method will fail to execute.
+     * The aaa variable is nullable, but if it is null, the method will fail to execute.
      * This is only nullable as a courtesy for Fragments where getActivity() may yeild null
-     * if the Fragment is not currently added to its parent Activity.
+     * if the Fragment is not currently added to its parent aaa.
      *
      * @param object      the object necessary to request the permissions.
      * @param permissions the list of permissions to request for the {@link PermissionsResultAction}.
@@ -250,7 +250,7 @@ public class PermissionsManager {
 
 
     private static void checkCallingObjectSuitability(Object object) {
-        // Make sure Object is an Activity or Fragment
+        // Make sure Object is an aaa or Fragment
         boolean isActivity = object instanceof Activity;
         boolean isSupportFragment = object instanceof Fragment;
         boolean isAppFragment = object instanceof android.app.Fragment;
@@ -261,7 +261,7 @@ public class PermissionsManager {
                 throw new IllegalArgumentException(
                         "Target SDK needs to be greater than 23 if caller is android.app.Fragment");
             } else {
-                throw new IllegalArgumentException("Caller must be an Activity or a Fragment.");
+                throw new IllegalArgumentException("Caller must be an aaa or a Fragment.");
             }
         }
     }
@@ -281,8 +281,8 @@ public class PermissionsManager {
 
     /**
      * This method notifies the PermissionsManager that the permissions have change. If you are making
-     * the permissions requests using an Activity, then this method should be called from the
-     * Activity callback onRequestPermissionsResult() with the variables passed to that method. If
+     * the permissions requests using an aaa, then this method should be called from the
+     * aaa callback onRequestPermissionsResult() with the variables passed to that method. If
      * you are passing a Fragment to make the permissions request, then you should call this in
      * the {@link Fragment#onRequestPermissionsResult(int, String[], int[])} method.
      * It will notify all the pending PermissionsResultAction objects currently
@@ -399,7 +399,7 @@ public class PermissionsManager {
      * NOTE: use of this method is optional, should be called from
      * {@link PermissionsResultAction#onResult(String, int)}
      *
-     * @param object                        the calling Activity or Fragment.
+     * @param object                        the calling aaa or Fragment.
      * @param deniedPerms                   the set of denied permissions.
      * @param negativeButtonOnClickListener negative button on click listener. If the
      *                                      user click the negative button, then this listener will

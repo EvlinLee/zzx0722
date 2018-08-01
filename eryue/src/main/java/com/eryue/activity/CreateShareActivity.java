@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.os.Message;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
+import android.util.DisplayMetrics;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -59,6 +61,7 @@ public class CreateShareActivity extends BaseActivity implements View.OnClickLis
 
     private long uid = StringUtils.valueOfLong(AccountUtil.getUID());
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,6 +73,7 @@ public class CreateShareActivity extends BaseActivity implements View.OnClickLis
         testImageScrollView();
 
         initData();
+
     }
 
     private void initViews() {
@@ -332,4 +336,5 @@ public class CreateShareActivity extends BaseActivity implements View.OnClickLis
         super.onDestroy();
         ImageUtils.getInstance(CreateShareActivity.this).setOnDownLoadListener(null);
     }
+
 }

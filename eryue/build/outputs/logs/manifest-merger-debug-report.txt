@@ -10,6 +10,7 @@ MERGED from [:calendarview] F:\work\zzx0722\calendarview\build\intermediates\man
 MERGED from [com.sunfusheng:marqueeview:1.2.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\marqueeview-1.2.0.aar\5d05767167bf874754a7fb874dd728b6\AndroidManifest.xml:2:1-17:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\AndroidManifest.xml:17:1-31:12
 MERGED from [com.github.JakeWharton:ViewPagerIndicator:2.4.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\ViewPagerIndicator-2.4.1.aar\1268089faecf0dc7fac21e9a78aed984\AndroidManifest.xml:2:1-11:12
+MERGED from [me.imid.swipebacklayout.lib:library:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\library-1.0.0.aar\374ae038ecc1e84f483b4e220fcec585\AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\dd31ee0acc622e97495c2ee485762d04\AndroidManifest.xml:17:1-31:12
 MERGED from [cn.jzvd:jiaozivideoplayer:6.2.7] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\jiaozivideoplayer-6.2.7.aar\f16c3f4d553aa3cc3251317aa84cd149\AndroidManifest.xml:2:1-13:12
 MERGED from [com.ali.auth.sdk:alibabauth_ui:1.4.3] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\alibabauth_ui-1.4.3.aar\df6066dbf819d540f6b433d889f52f61\AndroidManifest.xml:2:1-43:12
@@ -66,6 +67,8 @@ MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gr
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\AndroidManifest.xml:21:5-23:78
 MERGED from [com.github.JakeWharton:ViewPagerIndicator:2.4.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\ViewPagerIndicator-2.4.1.aar\1268089faecf0dc7fac21e9a78aed984\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.JakeWharton:ViewPagerIndicator:2.4.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\ViewPagerIndicator-2.4.1.aar\1268089faecf0dc7fac21e9a78aed984\AndroidManifest.xml:7:5-9:41
+MERGED from [me.imid.swipebacklayout.lib:library:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\library-1.0.0.aar\374ae038ecc1e84f483b4e220fcec585\AndroidManifest.xml:7:5-9:41
+MERGED from [me.imid.swipebacklayout.lib:library:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\library-1.0.0.aar\374ae038ecc1e84f483b4e220fcec585\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\dd31ee0acc622e97495c2ee485762d04\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\dd31ee0acc622e97495c2ee485762d04\AndroidManifest.xml:21:5-23:54
 MERGED from [cn.jzvd:jiaozivideoplayer:6.2.7] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\jiaozivideoplayer-6.2.7.aar\f16c3f4d553aa3cc3251317aa84cd149\AndroidManifest.xml:7:5-9:41
@@ -262,6 +265,8 @@ MERGED from [com.sunfusheng:marqueeview:1.2.0] C:\Users\Administrator\.gradle\ca
 MERGED from [com.sunfusheng:marqueeview:1.2.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\marqueeview-1.2.0.aar\5d05767167bf874754a7fb874dd728b6\AndroidManifest.xml:11:5-15:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\31a159ea2c8e0298988cbc9837182dd9\AndroidManifest.xml:25:5-29:19
+MERGED from [me.imid.swipebacklayout.lib:library:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\library-1.0.0.aar\374ae038ecc1e84f483b4e220fcec585\AndroidManifest.xml:11:5-20
+MERGED from [me.imid.swipebacklayout.lib:library:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\library-1.0.0.aar\374ae038ecc1e84f483b4e220fcec585\AndroidManifest.xml:11:5-20
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\dd31ee0acc622e97495c2ee485762d04\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\dd31ee0acc622e97495c2ee485762d04\AndroidManifest.xml:25:5-29:19
 MERGED from [com.ali.auth.sdk:alibabauth_ui:1.4.3] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\alibabauth_ui-1.4.3.aar\df6066dbf819d540f6b433d889f52f61\AndroidManifest.xml:16:5-41:19

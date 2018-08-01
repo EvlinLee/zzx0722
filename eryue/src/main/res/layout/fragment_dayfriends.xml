@@ -17,8 +17,8 @@
             android:layout_height="50dp"
             android:gravity="center"
             android:text="每日发圈"
-            android:textColor="@color/black"
-            android:textSize="18dp" />
+            android:textColor="@color/fragment_titile_color"
+            android:textSize="17sp" />
 
         <View
             android:layout_width="match_parent"

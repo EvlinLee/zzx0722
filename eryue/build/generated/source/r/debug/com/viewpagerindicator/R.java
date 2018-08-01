@@ -8,37 +8,37 @@ package com.viewpagerindicator;
 
 public final class R {
     public static final class attr {
-        public static final int centered = 0x7f020049;
-        public static final int clipPadding = 0x7f02004e;
-        public static final int fadeDelay = 0x7f020080;
-        public static final int fadeLength = 0x7f020081;
-        public static final int fades = 0x7f020082;
-        public static final int fillColor = 0x7f020083;
-        public static final int footerColor = 0x7f02008e;
-        public static final int footerIndicatorHeight = 0x7f02008f;
-        public static final int footerIndicatorStyle = 0x7f020090;
-        public static final int footerIndicatorUnderlinePadding = 0x7f020091;
-        public static final int footerLineHeight = 0x7f020092;
-        public static final int footerPadding = 0x7f020093;
-        public static final int gapWidth = 0x7f020095;
-        public static final int linePosition = 0x7f0200b2;
-        public static final int lineWidth = 0x7f0200b3;
-        public static final int pageColor = 0x7f0200d5;
-        public static final int radius = 0x7f0200e2;
-        public static final int selectedBold = 0x7f0200ed;
-        public static final int selectedColor = 0x7f0200ee;
-        public static final int snap = 0x7f0200f8;
-        public static final int strokeColor = 0x7f020103;
-        public static final int strokeWidth = 0x7f020104;
-        public static final int titlePadding = 0x7f02012d;
-        public static final int topPadding = 0x7f020136;
-        public static final int unselectedColor = 0x7f02013a;
-        public static final int vpiCirclePageIndicatorStyle = 0x7f02013c;
-        public static final int vpiIconPageIndicatorStyle = 0x7f02013d;
-        public static final int vpiLinePageIndicatorStyle = 0x7f02013e;
-        public static final int vpiTabPageIndicatorStyle = 0x7f02013f;
-        public static final int vpiTitlePageIndicatorStyle = 0x7f020140;
-        public static final int vpiUnderlinePageIndicatorStyle = 0x7f020141;
+        public static final int centered = 0x7f02004a;
+        public static final int clipPadding = 0x7f02004f;
+        public static final int fadeDelay = 0x7f020083;
+        public static final int fadeLength = 0x7f020084;
+        public static final int fades = 0x7f020085;
+        public static final int fillColor = 0x7f020086;
+        public static final int footerColor = 0x7f020091;
+        public static final int footerIndicatorHeight = 0x7f020092;
+        public static final int footerIndicatorStyle = 0x7f020093;
+        public static final int footerIndicatorUnderlinePadding = 0x7f020094;
+        public static final int footerLineHeight = 0x7f020095;
+        public static final int footerPadding = 0x7f020096;
+        public static final int gapWidth = 0x7f020098;
+        public static final int linePosition = 0x7f0200b5;
+        public static final int lineWidth = 0x7f0200b6;
+        public static final int pageColor = 0x7f0200d8;
+        public static final int radius = 0x7f0200e5;
+        public static final int selectedBold = 0x7f0200f0;
+        public static final int selectedColor = 0x7f0200f1;
+        public static final int snap = 0x7f0200fe;
+        public static final int strokeColor = 0x7f020109;
+        public static final int strokeWidth = 0x7f02010a;
+        public static final int titlePadding = 0x7f020133;
+        public static final int topPadding = 0x7f02013c;
+        public static final int unselectedColor = 0x7f020140;
+        public static final int vpiCirclePageIndicatorStyle = 0x7f020142;
+        public static final int vpiIconPageIndicatorStyle = 0x7f020143;
+        public static final int vpiLinePageIndicatorStyle = 0x7f020144;
+        public static final int vpiTabPageIndicatorStyle = 0x7f020145;
+        public static final int vpiTitlePageIndicatorStyle = 0x7f020146;
+        public static final int vpiUnderlinePageIndicatorStyle = 0x7f020147;
     }
     public static final class bool {
         public static final int default_circle_indicator_centered = 0x7f030005;
@@ -57,16 +57,16 @@ public final class R {
         public static final int default_title_indicator_selected_color = 0x7f04003c;
         public static final int default_title_indicator_text_color = 0x7f04003d;
         public static final int default_underline_indicator_selected_color = 0x7f04003e;
-        public static final int vpi__background_holo_dark = 0x7f040080;
-        public static final int vpi__background_holo_light = 0x7f040081;
-        public static final int vpi__bright_foreground_disabled_holo_dark = 0x7f040082;
-        public static final int vpi__bright_foreground_disabled_holo_light = 0x7f040083;
-        public static final int vpi__bright_foreground_holo_dark = 0x7f040084;
-        public static final int vpi__bright_foreground_holo_light = 0x7f040085;
-        public static final int vpi__bright_foreground_inverse_holo_dark = 0x7f040086;
-        public static final int vpi__bright_foreground_inverse_holo_light = 0x7f040087;
-        public static final int vpi__dark_theme = 0x7f040088;
-        public static final int vpi__light_theme = 0x7f040089;
+        public static final int vpi__background_holo_dark = 0x7f040081;
+        public static final int vpi__background_holo_light = 0x7f040082;
+        public static final int vpi__bright_foreground_disabled_holo_dark = 0x7f040083;
+        public static final int vpi__bright_foreground_disabled_holo_light = 0x7f040084;
+        public static final int vpi__bright_foreground_holo_dark = 0x7f040085;
+        public static final int vpi__bright_foreground_holo_light = 0x7f040086;
+        public static final int vpi__bright_foreground_inverse_holo_dark = 0x7f040087;
+        public static final int vpi__bright_foreground_inverse_holo_light = 0x7f040088;
+        public static final int vpi__dark_theme = 0x7f040089;
+        public static final int vpi__light_theme = 0x7f04008a;
     }
     public static final class dimen {
         public static final int default_circle_indicator_radius = 0x7f050059;
@@ -84,20 +84,20 @@ public final class R {
         public static final int default_title_indicator_top_padding = 0x7f050065;
     }
     public static final class drawable {
-        public static final int vpi__tab_indicator = 0x7f060197;
-        public static final int vpi__tab_selected_focused_holo = 0x7f060198;
-        public static final int vpi__tab_selected_holo = 0x7f060199;
-        public static final int vpi__tab_selected_pressed_holo = 0x7f06019a;
-        public static final int vpi__tab_unselected_focused_holo = 0x7f06019b;
-        public static final int vpi__tab_unselected_holo = 0x7f06019c;
-        public static final int vpi__tab_unselected_pressed_holo = 0x7f06019d;
+        public static final int vpi__tab_indicator = 0x7f0601f4;
+        public static final int vpi__tab_selected_focused_holo = 0x7f0601f5;
+        public static final int vpi__tab_selected_holo = 0x7f0601f6;
+        public static final int vpi__tab_selected_pressed_holo = 0x7f0601f7;
+        public static final int vpi__tab_unselected_focused_holo = 0x7f0601f8;
+        public static final int vpi__tab_unselected_holo = 0x7f0601f9;
+        public static final int vpi__tab_unselected_pressed_holo = 0x7f0601fa;
     }
     public static final class id {
-        public static final int bottom = 0x7f07003b;
-        public static final int none = 0x7f07019d;
-        public static final int top = 0x7f070231;
-        public static final int triangle = 0x7f070236;
-        public static final int underline = 0x7f07027e;
+        public static final int bottom = 0x7f07003c;
+        public static final int none = 0x7f070195;
+        public static final int top = 0x7f07022a;
+        public static final int triangle = 0x7f07022f;
+        public static final int underline = 0x7f070277;
     }
     public static final class integer {
         public static final int default_circle_indicator_orientation = 0x7f080004;
@@ -107,14 +107,14 @@ public final class R {
         public static final int default_underline_indicator_fade_length = 0x7f080008;
     }
     public static final class style {
-        public static final int TextAppearance_TabPageIndicator = 0x7f0c0111;
-        public static final int Theme_PageIndicatorDefaults = 0x7f0c012a;
-        public static final int Widget = 0x7f0c0132;
-        public static final int Widget_IconPageIndicator = 0x7f0c017d;
-        public static final int Widget_TabPageIndicator = 0x7f0c017e;
+        public static final int TextAppearance_TabPageIndicator = 0x7f0c0112;
+        public static final int Theme_PageIndicatorDefaults = 0x7f0c012b;
+        public static final int Widget = 0x7f0c0133;
+        public static final int Widget_IconPageIndicator = 0x7f0c017e;
+        public static final int Widget_TabPageIndicator = 0x7f0c017f;
     }
     public static final class styleable {
-        public static final int[] CirclePageIndicator = { 0x010100c4, 0x010100d4, 0x7f020049, 0x7f020083, 0x7f0200d5, 0x7f0200e2, 0x7f0200f8, 0x7f020103, 0x7f020104 };
+        public static final int[] CirclePageIndicator = { 0x010100c4, 0x010100d4, 0x7f02004a, 0x7f020086, 0x7f0200d8, 0x7f0200e5, 0x7f0200fe, 0x7f020109, 0x7f02010a };
         public static final int CirclePageIndicator_android_orientation = 0;
         public static final int CirclePageIndicator_android_background = 1;
         public static final int CirclePageIndicator_centered = 2;
@@ -124,7 +124,7 @@ public final class R {
         public static final int CirclePageIndicator_snap = 6;
         public static final int CirclePageIndicator_strokeColor = 7;
         public static final int CirclePageIndicator_strokeWidth = 8;
-        public static final int[] LinePageIndicator = { 0x010100d4, 0x7f020049, 0x7f020095, 0x7f0200b3, 0x7f0200ee, 0x7f020104, 0x7f02013a };
+        public static final int[] LinePageIndicator = { 0x010100d4, 0x7f02004a, 0x7f020098, 0x7f0200b6, 0x7f0200f1, 0x7f02010a, 0x7f020140 };
         public static final int LinePageIndicator_android_background = 0;
         public static final int LinePageIndicator_centered = 1;
         public static final int LinePageIndicator_gapWidth = 2;
@@ -132,7 +132,7 @@ public final class R {
         public static final int LinePageIndicator_selectedColor = 4;
         public static final int LinePageIndicator_strokeWidth = 5;
         public static final int LinePageIndicator_unselectedColor = 6;
-        public static final int[] TitlePageIndicator = { 0x01010095, 0x01010098, 0x010100d4, 0x7f02004e, 0x7f02008e, 0x7f02008f, 0x7f020090, 0x7f020091, 0x7f020092, 0x7f020093, 0x7f0200b2, 0x7f0200ed, 0x7f0200ee, 0x7f02012d, 0x7f020136 };
+        public static final int[] TitlePageIndicator = { 0x01010095, 0x01010098, 0x010100d4, 0x7f02004f, 0x7f020091, 0x7f020092, 0x7f020093, 0x7f020094, 0x7f020095, 0x7f020096, 0x7f0200b5, 0x7f0200f0, 0x7f0200f1, 0x7f020133, 0x7f02013c };
         public static final int TitlePageIndicator_android_textSize = 0;
         public static final int TitlePageIndicator_android_textColor = 1;
         public static final int TitlePageIndicator_android_background = 2;
@@ -148,13 +148,13 @@ public final class R {
         public static final int TitlePageIndicator_selectedColor = 12;
         public static final int TitlePageIndicator_titlePadding = 13;
         public static final int TitlePageIndicator_topPadding = 14;
-        public static final int[] UnderlinePageIndicator = { 0x010100d4, 0x7f020080, 0x7f020081, 0x7f020082, 0x7f0200ee };
+        public static final int[] UnderlinePageIndicator = { 0x010100d4, 0x7f020083, 0x7f020084, 0x7f020085, 0x7f0200f1 };
         public static final int UnderlinePageIndicator_android_background = 0;
         public static final int UnderlinePageIndicator_fadeDelay = 1;
         public static final int UnderlinePageIndicator_fadeLength = 2;
         public static final int UnderlinePageIndicator_fades = 3;
         public static final int UnderlinePageIndicator_selectedColor = 4;
-        public static final int[] ViewPagerIndicator = { 0x7f02013c, 0x7f02013d, 0x7f02013e, 0x7f02013f, 0x7f020140, 0x7f020141 };
+        public static final int[] ViewPagerIndicator = { 0x7f020142, 0x7f020143, 0x7f020144, 0x7f020145, 0x7f020146, 0x7f020147 };
         public static final int ViewPagerIndicator_vpiCirclePageIndicatorStyle = 0;
         public static final int ViewPagerIndicator_vpiIconPageIndicatorStyle = 1;
         public static final int ViewPagerIndicator_vpiLinePageIndicatorStyle = 2;
