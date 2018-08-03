@@ -41,6 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
+            android:id="@+id/share_page"
             android:padding="8dp"
             android:scaleType="fitXY"
             android:src="@drawable/icon_create_share_share" />
@@ -154,6 +155,42 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/layout_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="#8F8F8F" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="图文分享到"
+            android:textColor="#666666"
+            android:textSize="13dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="#8F8F8F" />
+
+    </LinearLayout>
+
+    <com.eryue.widget.ShareContentView
+        android:id="@+id/shareview"
+        android:layout_width="match_parent"
+        android:layout_height="90dp" />
 
 
 </LinearLayout>

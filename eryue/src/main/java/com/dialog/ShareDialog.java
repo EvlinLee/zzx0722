@@ -10,13 +10,12 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.eryue.R;
-import com.eryue.widget.ShareContentView;
 
 /**
- * Created by Administrator on 2018/8/3.
+ * Created by Administrator on 2018/1/31.
  */
 
-public class ShareDialog extends Dialog implements ShareContentView.OnShareClickListener{
+public class ShareDialog extends Dialog {
     private Button yes, no;//确定按钮
     private TextView titleTv;//消息标题文本
     private TextView messageTv;//消息提示文本
@@ -24,8 +23,6 @@ public class ShareDialog extends Dialog implements ShareContentView.OnShareClick
     private String messageStr;//从外界设置的消息文本
     //确定文本和取消文本的显示内容
     private String yesStr, noStr;
-
-    private ShareContentView shareview;
 
     private onNoOnclickListener noOnclickListener;//取消按钮被点击了的监听器
     private onYesOnclickListener yesOnclickListener;//确定按钮被点击了的监听器
@@ -80,10 +77,6 @@ public class ShareDialog extends Dialog implements ShareContentView.OnShareClick
      * 初始化界面的确定和取消监听器
      */
     private void initEvent() {
-
-        shareview.setCancelVisiblity(false);
-        shareview.setOnShareClickListener(this);
-
         //设置确定按钮被点击后，向外界提供监听
         yes.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -125,11 +118,10 @@ public class ShareDialog extends Dialog implements ShareContentView.OnShareClick
      * 初始化界面控件
      */
     private void initView() {
-
-
-        shareview = (ShareContentView) findViewById(R.id.shareview);
-
-
+        yes = (Button) findViewById(R.id.yes);
+        no = (Button) findViewById(R.id.no);
+        titleTv = (TextView) findViewById(R.id.title);
+        messageTv = (TextView) findViewById(R.id.message);
     }
 
     /**
@@ -174,4 +166,3 @@ public class ShareDialog extends Dialog implements ShareContentView.OnShareClick
         getWindow().setAttributes(layoutParams);
     }
 }
-

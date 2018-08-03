@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.dialog.ShareDialog;
 import com.eryue.AccountUtil;
 import com.eryue.ActivityHandler;
 import com.eryue.GoodsContants;
@@ -201,6 +202,12 @@ public class CreateShareActivityEx extends BaseActivity implements View.OnClickL
             this.finish();
         } else if (v == tv_selfend) {
             startActivity(new Intent(this, SelfEndActivity.class));
+        } else if (v == sharePage) {
+            final ShareDialog customDialog = new ShareDialog(CreateShareActivityEx.this);
+            customDialog.setTitle("消息提示");
+            customDialog.setMessage("点击确定进入下一个页面");
+
+            customDialog.show();
         }
     }
 
