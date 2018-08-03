@@ -275,7 +275,6 @@ public class SearchOrderActivity extends BaseActivity {
                     TextView jifen = (TextView) convertView.findViewById(R.id.jifen);
 
                     if (searchType == 2) {
-                        convertView.findViewById(R.id.bg_status).setVisibility(View.INVISIBLE);
                         pay.setText("退款金额:");
                         jifen.setVisibility(View.INVISIBLE);
                         jifen_value.setVisibility(View.INVISIBLE);

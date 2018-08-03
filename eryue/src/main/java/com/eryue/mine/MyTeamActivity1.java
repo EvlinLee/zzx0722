@@ -4,10 +4,13 @@ import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Message;
 import android.support.annotation.Nullable;
+import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
+import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -18,6 +21,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.request.target.BitmapImageViewTarget;
 import com.eryue.AccountUtil;
 import com.eryue.ActivityHandler;
 import com.eryue.R;
@@ -64,10 +70,6 @@ public class MyTeamActivity1 extends BaseActivity implements View.OnClickListene
 
     private View contain_0;
     private View contain_1;
-    private View line0;
-    private View line1;
-
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -145,9 +147,6 @@ public class MyTeamActivity1 extends BaseActivity implements View.OnClickListene
         contain_0.setOnClickListener(this);
         contain_1 = findViewById(R.id.contain_1);
         contain_1.setOnClickListener(this);
-        line0 = findViewById(R.id.line0);
-        line1 = findViewById(R.id.line1);
-
 
         time_contain = findViewById(R.id.time_contain);
         time_contain.setOnClickListener(this);
@@ -195,7 +194,7 @@ public class MyTeamActivity1 extends BaseActivity implements View.OnClickListene
 
             @Override
             public View getView(int position, View convertView, ViewGroup parent) {
-                ViewHolder viewHolder;
+                final ViewHolder viewHolder;
                 if (convertView == null) {
                     LayoutInflater inflater = getLayoutInflater();
                     convertView = inflater.inflate(R.layout.cell_my_team_1, null);
@@ -204,6 +203,7 @@ public class MyTeamActivity1 extends BaseActivity implements View.OnClickListene
                     viewHolder.wechat = (TextView) convertView.findViewById(R.id.wechat);
                     viewHolder.register_time = (TextView) convertView.findViewById(R.id.register_time);
                     viewHolder.take_cash = (TextView) convertView.findViewById(R.id.take_cash);
+                    viewHolder.profile_photo = (ImageView) convertView.findViewById(R.id.profile_photo);
                     convertView.setTag(viewHolder);
                 } else {
                     viewHolder = (ViewHolder) convertView.getTag();
@@ -322,20 +322,16 @@ public class MyTeamActivity1 extends BaseActivity implements View.OnClickListene
         currType = type;
         if (type == 0) {
             TextView tv1 = (TextView) findViewById(R.id.a_type);
-            tv1.setTextColor(Color.parseColor("#ff5533"));
-            line0.setVisibility(View.VISIBLE);
+            tv1.setTextColor(Color.parseColor("#fd5b68"));
 
             TextView tv2 = (TextView) findViewById(R.id.b_type);
-            tv2.setTextColor(Color.parseColor("#090909"));
-            line1.setVisibility(View.INVISIBLE);
+            tv2.setTextColor(Color.parseColor("#666666"));
         } else if (type == 1) {
             TextView tv1 = (TextView) findViewById(R.id.a_type);
-            tv1.setTextColor(Color.parseColor("#090909"));
-            line0.setVisibility(View.INVISIBLE);
+            tv1.setTextColor(Color.parseColor("#666666"));
 
             TextView tv2 = (TextView) findViewById(R.id.b_type);
-            tv2.setTextColor(Color.parseColor("#ff5533"));
-            line1.setVisibility(View.VISIBLE);
+            tv2.setTextColor(Color.parseColor("#fd5b68"));
 
             if (bTypeDataArr.size() == 0) {
                 getData(currType);
@@ -374,5 +370,6 @@ public class MyTeamActivity1 extends BaseActivity implements View.OnClickListene
         public TextView wechat ;
         public TextView register_time ;
         public TextView take_cash ;
+        public ImageView profile_photo;
     }
 }

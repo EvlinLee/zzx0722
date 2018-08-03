@@ -34,7 +34,6 @@ public class WeekView extends View {
         this.context = context;
         initAttrs(attrs);
         initPaint();
-        setBackgroundColor(Color.WHITE);
     }
 
     private void initAttrs(AttributeSet attrs) {

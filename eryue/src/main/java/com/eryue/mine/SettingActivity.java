@@ -44,14 +44,19 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
     private View modify0;
     private View modify1;
 
-    private View modifyPS;
-
     private TextView phone;
-    private TextView wechat;
-    private TextView qq;
     private TextView alipay;
     private TextView alipay_name;
     private TextView userName;
+
+    /**
+     * 用户ID
+     */
+    private TextView userId;
+    /**
+     * 退出登录
+     */
+    private TextView loginOut;
 
     private MineInterface.SearchUserInfoRsp.UserInfo userInfo;
 
@@ -80,15 +85,14 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
         modify1 = findViewById(R.id.modify_1);
         modify1.setOnClickListener(this);
 
-        modifyPS = findViewById(R.id.password_con);
-        modifyPS.setOnClickListener(this);
-
         phone = findViewById(R.id.phone);
-        wechat = findViewById(R.id.wechat);
-        qq = findViewById(R.id.qq);
         alipay = findViewById(R.id.alipay);
         alipay_name = findViewById(R.id.alipay_name);
         userName = findViewById(R.id.nick_name);
+        userId = findViewById(R.id.id_tv);
+
+        loginOut = findViewById(R.id.login_out);
+        loginOut.setOnClickListener(this);
     }
 
     public void getData() {
@@ -137,11 +141,10 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
                     return;
                 }
                 phone.setText(userInfo.phone);
-                wechat.setText(userInfo.wx);
-                qq.setText(userInfo.qq);
                 alipay.setText(userInfo.zfb);
                 alipay_name.setText(userInfo.realName);
                 userName.setText(userInfo.userName);
+                userId.setText(AccountUtil.getUID());
 
                 if (!TextUtils.isEmpty(userInfo.userName) && userInfo.userName.startsWith("user")) {
                     modify0.setVisibility(View.VISIBLE);
@@ -181,9 +184,10 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
                 intent.putExtra("phone", userInfo.phone);
             }
             startActivity(intent);
-        } else if (view == modifyPS) {
-            Intent intent = new Intent(SettingActivity.this, ModifyPasswordActivity.class);
-            startActivity(intent);
+        } else if (view == loginOut) {
+            //退出登录
+            AccountUtil.logout();
+            finish();
         }
     }
 

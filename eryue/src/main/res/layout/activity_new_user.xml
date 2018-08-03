@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff">
+    android:background="@color/comm_background">
 
     <TextView
         android:layout_width="match_parent"
@@ -10,100 +10,98 @@
         android:id="@+id/hint1"
         android:text="常见问题"
         android:textColor="#333333"
-        android:textSize="15dip"
+        android:textSize="14sp"
         android:gravity="left|center_vertical"
         android:background="#f3f2f7"
-        android:paddingLeft="24dip"/>
+        android:paddingLeft="28dp"/>
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="49dip"
+        android:layout_height="36dp"
         android:id="@+id/hint11"
         android:tag="11"
         android:text="什么是猪猪虾APP？"
-        android:textColor="#333333"
-        android:textSize="15dip"
+        android:textColor="#999999"
+        android:textSize="12sp"
         android:gravity="left|center_vertical"
-        android:background="#ffffff"
-        android:paddingLeft="24dip"/>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dip"
-        android:background="#e0e0e0"/>
+        android:background="@drawable/textview_list_shape"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="13dp"
+        android:paddingLeft="13dp"/>
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="49dip"
+        android:layout_height="36dp"
         android:id="@+id/hint12"
         android:tag="12"
         android:text="猪猪虾APP的亮点在哪？"
-        android:textColor="#333333"
-        android:textSize="15dip"
+        android:textColor="#999999"
+        android:textSize="12sp"
         android:gravity="left|center_vertical"
-        android:background="#ffffff"
-        android:paddingLeft="24dip"/>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dip"
-        android:background="#e0e0e0"/>
+        android:background="@drawable/textview_list_shape"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="13dp"/>
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="49dip"
+        android:layout_height="36dp"
         android:id="@+id/hint13"
         android:tag="13"
         android:text="如何使用猪猪虾APP网购省钱？"
-        android:textColor="#333333"
-        android:textSize="15dip"
+        android:textColor="#999999"
+        android:textSize="12sp"
         android:gravity="left|center_vertical"
-        android:background="#ffffff"
-        android:paddingLeft="24dip"/>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dip"
-        android:background="#e0e0e0"/>
+        android:background="@drawable/textview_list_shape"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="13dp"/>
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="49dip"
+        android:layout_height="36dp"
         android:id="@+id/hint14"
         android:tag="14"
         android:text="想知道今日最热最优惠的商品是什么吗？"
-        android:textColor="#333333"
-        android:textSize="15dip"
+        android:textColor="#999999"
+        android:textSize="12sp"
         android:gravity="left|center_vertical"
-        android:background="#ffffff"
-        android:paddingLeft="24dip"/>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dip"
-        android:background="#e0e0e0"/>
+        android:background="@drawable/textview_list_shape"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="13dp"/>
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="49dip"
+        android:layout_height="36dp"
         android:id="@+id/hint15"
         android:text="过年过节忘了买礼物怎么办？"
         android:tag="15"
-        android:textColor="#333333"
-        android:textSize="15dip"
+        android:textColor="#999999"
+        android:textSize="12sp"
         android:gravity="left|center_vertical"
-        android:background="#ffffff"
-        android:paddingLeft="24dip"/>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dip"
-        android:background="#e0e0e0"/>
+        android:background="@drawable/textview_list_shape"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="13dp"/>
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="49dip"
+        android:layout_height="36dp"
         android:id="@+id/hint16"
         android:tag="16"
         android:text="遇到心爱之物又有点犹豫怎么办？"
-        android:textColor="#333333"
-        android:textSize="15dip"
+        android:textColor="#999999"
+        android:textSize="12sp"
         android:gravity="left|center_vertical"
-        android:background="#ffffff"
-        android:paddingLeft="24dip"/>
+        android:background="@drawable/textview_list_shape"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="13dp"/>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dip"
@@ -111,45 +109,42 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="49dip"
+        android:layout_height="36dp"
         android:id="@+id/hint17"
         android:tag="17"
         android:text="如何分享商品给好友？"
-        android:textColor="#333333"
-        android:textSize="15dip"
+        android:textColor="#999999"
+        android:textSize="12sp"
         android:gravity="left|center_vertical"
-        android:background="#ffffff"
-        android:paddingLeft="24dip"/>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dip"
-        android:background="#e0e0e0"/>
-
+        android:background="@drawable/textview_list_shape"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="13dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="30dip"
         android:id="@+id/hint2"
         android:text="合伙人问题"
-        android:textColor="#333333"
-        android:textSize="15dip"
+        android:textColor="#666666"
+        android:textSize="14sp"
         android:gravity="left|center_vertical"
-        android:background="#f3f2f7"
-        android:paddingLeft="24dip"/>
+        android:paddingLeft="28dp"/>
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="49dip"
+        android:layout_height="36dp"
         android:id="@+id/hint21"
         android:tag="21"
         android:text="如何分享猪猪虾APP给好友？"
-        android:textColor="#333333"
-        android:textSize="15dip"
+        android:textColor="#999999"
+        android:textSize="12sp"
         android:gravity="left|center_vertical"
-        android:background="#ffffff"
-        android:paddingLeft="24dip"/>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dip"
-        android:background="#e0e0e0"/>
+        android:background="@drawable/textview_list_shape"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="13dp"/>
+
 
 </LinearLayout>

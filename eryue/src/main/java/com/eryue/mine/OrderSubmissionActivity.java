@@ -209,8 +209,8 @@ public class OrderSubmissionActivity extends BaseActivity  implements View.OnCli
             } else {
                 refreshHeaderView(0);
             }
-            normal_order.setTextColor(Color.parseColor("#333333"));
-            jingdong_order.setTextColor(Color.parseColor("#999999"));
+            normal_order.setTextColor(Color.parseColor("#fd5b68"));
+            jingdong_order.setTextColor(Color.parseColor("#666666"));
         } else if (v == jingdong_order) {
             curType = 0;
             if (JDaccountInfoRsp == null) {
@@ -218,8 +218,8 @@ public class OrderSubmissionActivity extends BaseActivity  implements View.OnCli
             } else {
                 refreshHeaderView(1);
             }
-            normal_order.setTextColor(Color.parseColor("#999999"));
-            jingdong_order.setTextColor(Color.parseColor("#333333"));
+            normal_order.setTextColor(Color.parseColor("#666666"));
+            jingdong_order.setTextColor(Color.parseColor("#fd5b68"));
         }
     }
 }

@@ -10,6 +10,7 @@ import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.eryue.AccountUtil;
@@ -51,6 +52,11 @@ public class HeHuoRenCashActivity extends BaseActivity implements View.OnClickLi
     private EditText amountET; // 提现
     private TextView input_alipayTV;
 
+    /**
+     * 提现记录按钮
+     */
+    private TextView presentRecord;
+
     private TextView valueTV0;
     private TextView valueTV1;
     private TextView valueTV2;
@@ -59,7 +65,6 @@ public class HeHuoRenCashActivity extends BaseActivity implements View.OnClickLi
     private TextView jingdongmiandan;
     private MineInterface.AccountInfoRsp accountInfoRsp;
     private MineInterface.AccountInfoRsp JDaccountInfoRsp;
-
     private int curType;
 
     private String baseIP = AccountUtil.getBaseIp();
@@ -112,9 +117,9 @@ public class HeHuoRenCashActivity extends BaseActivity implements View.OnClickLi
         input_alipayTV = (TextView)findViewById(R.id.input_alipay);
         input_alipayTV.setOnClickListener(this);
         findViewById(R.id.take_cash).setOnClickListener(this);
-        navigationBar.rightTV.setText("提现记录");
-        navigationBar.rightTV.setTextColor(Color.parseColor("#ff5533"));
-        navigationBar.rightTV.setOnClickListener(this);
+
+        presentRecord = (TextView) findViewById(R.id.present_record);
+        presentRecord.setOnClickListener(this);
 
         shareView = findViewById(R.id.share_img);
         shareView.setOnClickListener(this);
@@ -406,7 +411,7 @@ public class HeHuoRenCashActivity extends BaseActivity implements View.OnClickLi
             else if (curType == 1) {
                 JDAccountTiXian();
             }
-        } else if (v.equals(navigationBar.rightTV)) {
+        } else if (v == presentRecord) {
             Intent intent = new Intent(this, TiXianRecordActivity.class);
             intent.putExtra("type", curType);
             startActivity(intent);
@@ -418,8 +423,10 @@ public class HeHuoRenCashActivity extends BaseActivity implements View.OnClickLi
             } else {
                 refreshHeaderView(0);
             }
-            normal_account.setTextColor(Color.parseColor("#333333"));
-            jingdongmiandan.setTextColor(Color.parseColor("#999999"));
+            normal_account.setBackground(getResources().getDrawable(R.drawable.img_zhtx_ptzh));
+            jingdongmiandan.setBackground(getResources().getDrawable(R.drawable.two_arc_conners_right));
+            normal_account.setTextColor(Color.parseColor("#ffffffff"));
+            jingdongmiandan.setTextColor(Color.parseColor("#ffff4c4c"));
         } else if (v == jingdongmiandan) {
             curType = 1;
             if (JDaccountInfoRsp == null) {
@@ -427,8 +434,10 @@ public class HeHuoRenCashActivity extends BaseActivity implements View.OnClickLi
             } else {
                 refreshHeaderView(1);
             }
-            normal_account.setTextColor(Color.parseColor("#999999"));
-            jingdongmiandan.setTextColor(Color.parseColor("#333333"));
+            jingdongmiandan.setBackground(getResources().getDrawable(R.drawable.img_zhtx_ptzh));
+            normal_account.setBackground(getResources().getDrawable(R.drawable.two_arc_conners_left));
+            normal_account.setTextColor(Color.parseColor("#ffff4c4c"));
+            jingdongmiandan.setTextColor(Color.parseColor("#ffffffff"));
         }
         else if (v == shareView) {
             if (null == sharePopView){

@@ -11,7 +11,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="联系方式"
-            android:textColor="#999999"
+            android:textColor="#666666"
             android:textSize="13dip"
             android:layout_centerVertical="true"
             android:paddingLeft="15dip"/>
@@ -22,8 +22,8 @@
             android:layout_height="30dip"
             android:text="修改"
             android:id="@+id/modify_0"
-            android:textColor="#ff1a40"
-            android:textSize="15dip"
+            android:textColor="#fd5d68"
+            android:textSize="14sp"
             android:gravity="center_vertical|right"
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
@@ -32,90 +32,121 @@
 
     </RelativeLayout>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="49dip"
-        android:background="#ffffff"
-        android:id="@+id/phone_con">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="手机号码"
-            android:textColor="#333333"
-            android:textSize="15dip"
-            android:layout_centerVertical="true"
-            android:paddingLeft="15dip"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:id="@+id/phone"
-            android:textColor="#999999"
-            android:textSize="15dip"
-            android:layout_centerVertical="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="16dip"/>
-
-        
-
-        <View
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="17dp"
+        android:background="@drawable/textview_list_shape"
+        android:orientation="vertical">
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="1dip"
-            android:background="@color/line_color"
-            android:layout_alignParentBottom="true"
-            android:paddingLeft="15dip"
-            />
+            android:layout_height="49dip"
+            android:id="@+id/phone_con">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号码"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dip"/>
 
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="49dip"
-        android:background="#ffffff"
-        android:id="@+id/nick_name_con">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="用户名"
-            android:textColor="#333333"
-            android:textSize="15dip"
-            android:layout_centerVertical="true"
-            android:paddingLeft="15dip"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/phone"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dip"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:id="@+id/nick_name"
-            android:textColor="#999999"
-            android:textSize="15dip"
-            android:layout_centerVertical="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="16dip"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginRight="14dp"
+                android:layout_marginLeft="14dp"
+                android:background="@color/line_color"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="15dip"
+                />
 
-
-
-        <View
+        </RelativeLayout>
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="1dip"
-            android:background="@color/line_color"
-            android:layout_alignParentBottom="true"
-            android:paddingLeft="15dip"
-            />
+            android:layout_height="49dip"
+            android:id="@+id/nick_name_con">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dip"/>
 
-    </RelativeLayout>
-    <RelativeLayout
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nick_name"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dip"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/line_color"
+                android:layout_marginRight="14dp"
+                android:layout_marginLeft="14dp"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="15dip"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dip"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:id="@+id/id_tv"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dip"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+   <!-- <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="49dip"
         android:background="#ffffff"
         android:id="@+id/wechat_con"
-        android:visibility="gone">
+        android:visibility="gone"
+        >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="微信号"
             android:textColor="#333333"
-            android:textSize="15dip"
+            android:textSize="14sp"
             android:layout_centerVertical="true"
             android:paddingLeft="15dip"/>
 
@@ -167,7 +198,7 @@
             android:layout_marginRight="16dip"/>
         
 
-    </RelativeLayout>
+    </RelativeLayout>-->
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -176,7 +207,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="提现信息"
-            android:textColor="#999999"
+            android:textColor="#666666"
             android:textSize="13dip"
             android:layout_centerVertical="true"
             android:paddingLeft="15dip"/>
@@ -185,8 +216,8 @@
             android:layout_height="30dip"
             android:text="修改"
             android:id="@+id/modify_1"
-            android:textColor="#ff1a40"
-            android:textSize="15dip"
+            android:textColor="#fd5d68"
+            android:textSize="14sp"
             android:gravity="center_vertical|right"
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
@@ -194,88 +225,83 @@
 
 
     </RelativeLayout>
-    <RelativeLayout
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="49dip"
-        android:background="#ffffff"
-        android:id="@+id/alipay_con">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="支付宝账号"
-            android:textColor="#333333"
-            android:textSize="15dip"
-            android:layout_centerVertical="true"
-            android:paddingLeft="15dip"/>
-
-        <TextView
-            android:id="@+id/alipay"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:textColor="#999999"
-            android:textSize="15dip"
-            android:layout_centerVertical="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="16dip" />
-
-
-        <View
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_list_shape"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="17dp"
+        >
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="1dip"
-            android:background="@color/line_color"
-            android:layout_alignParentBottom="true"
-            android:paddingLeft="15dip"
-            />
+            android:layout_height="49dip"
+            android:id="@+id/alipay_con">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付宝账号"
+                android:textColor="#333333"
+                android:textSize="15dip"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dip"/>
 
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="49dip"
-        android:background="#ffffff"
-        android:id="@+id/alipay_name_con">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="支付宝姓名"
-            android:textColor="#333333"
-            android:textSize="15dip"
-            android:layout_centerVertical="true"
-            android:paddingLeft="15dip"/>
+            <TextView
+                android:id="@+id/alipay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#666666"
+                android:textSize="15dip"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dip" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/line_color"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="14dp"
+                android:layout_marginLeft="14dp"
+                android:paddingLeft="15dip"
+                />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:textColor="#999999"
-            android:id="@+id/alipay_name"
-            android:textSize="15dip"
-            android:layout_centerVertical="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="16dip"/>
-
-    
-
-        <View
+        </RelativeLayout>
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="1dip"
-            android:background="@color/line_color"
-            android:layout_alignParentBottom="true"
-            android:paddingLeft="15dip"
-            />
+            android:layout_height="49dip"
+            android:id="@+id/alipay_name_con">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付宝姓名"
+                android:textColor="#333333"
+                android:textSize="15dip"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dip"/>
 
-    </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#666666"
+                android:id="@+id/alipay_name"
+                android:textSize="15dip"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dip"/>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="10dip">
-    </RelativeLayout>
-    <RelativeLayout
+        </RelativeLayout>
+    </LinearLayout>
+
+   <!-- <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="49dip"
         android:background="#ffffff"
         android:id="@+id/password_con"
-        android:visibility="gone">
+        android:visibility="gone"
+        >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -305,53 +331,56 @@
             />
 
 
-    </RelativeLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dip"
-        android:background="@color/line_color"
-        android:layout_alignParentBottom="true"
-        android:paddingLeft="15dip"
-        />
+    </RelativeLayout>-->
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="49dip"
-        android:background="#ffffff"
-        android:visibility="gone">
+        android:background="@drawable/textview_list_shape"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/clear_con"
+        >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="清空缓存"
             android:textColor="#333333"
-            android:textSize="15dip"
+            android:textSize="14sp"
             android:layout_centerVertical="true"
             android:paddingLeft="15dip"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
-            android:textColor="#999999"
+            android:text="111M"
+            android:textColor="#333333"
             android:id="@+id/cache_text"
-            android:textSize="15dip"
+            android:textSize="14sp"
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="15dip"/>
-        
+            android:layout_marginRight="15dip"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/icon_setting_arrow"
+            />
 
     </RelativeLayout>
 
-    <!--立即登录-->
+
+    <!--退出登录-->
     <TextView
-        android:layout_width="140dip"
+        android:layout_width="match_parent"
         android:layout_height="45dip"
-        android:id="@+id/clear_con"
-        android:text="清空缓存"
+        android:id="@+id/login_out"
+        android:text="退出登录"
         android:layout_centerInParent="true"
         android:textColor="#ffffff"
         android:gravity="center"
-        android:layout_marginTop="30dip"
-        android:background="@drawable/bg_login_in"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="17dp"
+        android:background="@drawable/profile_button_login"
         android:textSize="@dimen/txtsize_16dip"
         android:layout_gravity="center_horizontal"/>
 

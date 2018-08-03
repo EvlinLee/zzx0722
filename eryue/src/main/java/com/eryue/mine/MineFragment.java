@@ -198,15 +198,14 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
     private void refreshLoginStateView() {
         String openid = DataCenterManager.Instance().get(getContext(), KeyFlag.WECHAT_OPON_ID);
         if (TextUtils.isEmpty(openid)) {
-            bindwx.setText("未绑定微信");
+            bindwx.setVisibility(View.GONE);
         } else {
-            bindwx.setText("已绑定微信");
+            bindwx.setText(View.VISIBLE);
         }
-        login_out.setVisibility(View.VISIBLE);
         loginTV.setVisibility(View.GONE);
         cell_contain_login.setVisibility(View.VISIBLE);
         cell_contain_no_login.setVisibility(View.GONE);
-        navigation_item_contain.setVisibility(View.VISIBLE);
+        button_list_login.setVisibility(View.VISIBLE);
         headview_login.setVisibility(View.VISIBLE);
         headview_no_login.setVisibility(View.GONE);
 
@@ -215,22 +214,18 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
         leijiduihuan.setText(DataCenterManager.Instance().get(getContext(), KeyFlag.LeiJiDuiHuan));
         zhanghuyue.setText(DataCenterManager.Instance().get(getContext(), KeyFlag.ZhangHuYuE));
 
-        id_tv.setText("ID: " + AccountUtil.getUID());
-
-
-        type.setText(DataCenterManager.Instance().get(getContext(), KeyFlag.PingTai));
-        class_type.setText(DataCenterManager.Instance().get(getContext(), KeyFlag.JueSe));
+//        type.setText(DataCenterManager.Instance().get(getContext(), KeyFlag.PingTai));
+//        class_type.setText(DataCenterManager.Instance().get(getContext(), KeyFlag.JueSe));
 
         setHeaderImage();
         setName();
     }
 
     private void refreshUnLoginStateView() {
-        getView().findViewById(R.id.login_out).setVisibility(View.GONE);
         loginTV.setVisibility(View.VISIBLE);
         cell_contain_login.setVisibility(View.GONE);
         cell_contain_no_login.setVisibility(View.VISIBLE);
-        navigation_item_contain.setVisibility(View.GONE);
+        button_list_login.setVisibility(View.GONE);
         headview_login.setVisibility(View.GONE);
         headview_no_login.setVisibility(View.VISIBLE);
     }
@@ -276,7 +271,6 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
         }
     }
 
-    private View login_out;
     private View shiyongbangzhu; // 使用帮助
     private View shiyongbangzhu_1; // 使用帮助
     private View tuiguangyaoqing; // 推广邀请
@@ -288,7 +282,7 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
 
     private View cell_contain_no_login;// 未登录状态下才显示的view
     private View cell_contain_login;// 登录状态下才显示的view
-    private View navigation_item_contain;
+    private View button_list_login;//登录状态下显示的按钮list
     private View headview_no_login;
     private View headview_login;
     private View wodetuandui; // 我的团队
@@ -303,15 +297,12 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
     private View liulanzuji_1; // 浏览足迹
     private View navigation_help;//
 
-
+    private View mine_account; // 账户栏
     private TextView yugujifen; // 预估积分
     private TextView leijiyouxiao; // 预估积分
     private TextView leijiduihuan; // 预估积分
     private TextView zhanghuyue; // 预估积分
-    private TextView id_tv; // id
     private TextView name; // 用户名
-    private TextView type; // 平台类型
-    private TextView class_type;//代理类型
     private ImageView header_imageview_login;//头像
 
     private TextView bindwx;
@@ -324,34 +315,33 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
         leijiyouxiao = getView().findViewById(R.id.leijiyouxiao);
         leijiduihuan = getView().findViewById(R.id.leijiduihuan);
         zhanghuyue = getView().findViewById(R.id.zhanghuyue);
-        id_tv = getView().findViewById(R.id.id_tv);
         name = getView().findViewById(R.id.name);
-        type = getView().findViewById(R.id.type);
-        class_type = getView().findViewById(R.id.class_type);
         header_imageview_login = getView().findViewById(R.id.header_imageview_login);
 
         cell_contain_login = getView().findViewById(R.id.cell_contain_login);
         cell_contain_no_login = getView().findViewById(R.id.cell_contain_no_login);
-        navigation_item_contain = getView().findViewById(R.id.navigation_item_contain);
+        button_list_login = getView().findViewById(R.id.button_list_login);
         headview_no_login = getView().findViewById(R.id.headview_no_login);
         headview_login = getView().findViewById(R.id.headview_login);
+        mine_account = getView().findViewById(R.id.mine_account_button_group);
+        mine_account.setOnClickListener(this);
         wodetuandui = getView().findViewById(R.id.wodetuandui);
-//        wodetuandui.setOnClickListener(this);
+        wodetuandui.setOnClickListener(this);
         zhanghutixian = getView().findViewById(R.id.zhanghutixian);
-//        zhanghutixian.setOnClickListener(this);
-    /*    dingdanxiangqing = getView().findViewById(R.id.dingdanxiangqing);
+        zhanghutixian.setOnClickListener(this);
+        dingdanxiangqing = getView().findViewById(R.id.dingdanxiangqing);
         dingdanxiangqing.setOnClickListener(this);
         dailirenxuexi = getView().findViewById(R.id.dailirenxuexi);
         dailirenxuexi.setOnClickListener(this);
-*/
+
         navigation_help = getView().findViewById(R.id.navigation_help);
         navigation_help.setOnClickListener(this);
         navigation_message = getView().findViewById(R.id.navigation_message);
         navigation_message.setOnClickListener(this);
         tuidanxiangqing = getView().findViewById(R.id.tuidanxiangqing);
-//        tuidanxiangqing.setOnClickListener(this);
+        tuidanxiangqing.setOnClickListener(this);
         dingdantijiao = getView().findViewById(R.id.dingdantijiao);
-//        dingdantijiao.setOnClickListener(this);
+        dingdantijiao.setOnClickListener(this);
         qiandao = getView().findViewById(R.id.qiandao);
         qiandao.setOnClickListener(this);
         liulanzuji = getView().findViewById(R.id.liulanzuji);
@@ -361,10 +351,6 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
 
         loginTV = (TextView) (getView().findViewById(R.id.login));
         loginTV.setOnClickListener(this);
-
-
-        login_out = getView().findViewById(R.id.login_out);
-        login_out.setOnClickListener(this);
 
         shiyongbangzhu = getView().findViewById(R.id.shiyongbangzhu);
         shiyongbangzhu.setOnClickListener(this);
@@ -448,14 +434,13 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
         } else if (v == shiyongbangzhu || v == shiyongbangzhu_1) {// 使用帮助
             Intent intent = new Intent(getContext(), NewUserActivity.class);
             startActivity(intent);
-        } else if (v == login_out) {// 退出登录
-            AccountUtil.logout();
-            //邀请码设置为用户输入的邀请码
-            this.inviteCode = AccountUtil.getInviteCode();
-
-            refreshView();
         } else if (v == bindwx) { // 绑定微信 或 解绑微信
             showBindTips();
+        } else if (v == mine_account) {
+            //账户栏  点击进入账户提现activity
+            Intent intent = new Intent(getContext(), HeHuoRenCashActivity.class);
+            startActivity(intent);
+
         }
     }
 

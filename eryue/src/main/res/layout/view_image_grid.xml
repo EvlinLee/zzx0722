@@ -2,18 +2,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/comm_background"
     android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/linearlayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="16dp"
         android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="选择图片"
-            android:textSize="14dp"
+            android:textSize="14sp"
             android:textColor="@color/txt_gray2"/>
         <View android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -21,8 +23,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="已选"
-            android:textSize="14dp"
+            android:text="已经选"
+            android:textSize="14sp"
             android:textColor="@color/txt_gray2"/>
         <TextView android:id="@+id/tv_selectnum"
             android:layout_width="wrap_content"
@@ -30,28 +32,39 @@
             android:layout_marginLeft="2dp"
             android:layout_marginRight="2dp"
             android:text="1"
-            android:textSize="14dp"
+            android:textSize="14sp"
             android:textColor="@color/txt_gray"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="张"
-            android:textSize="14dp"
+            android:textSize="14sp"
             android:textColor="@color/txt_gray2"/>
 
         <TextView android:id="@+id/tv_allselect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
             android:text="全选"
             android:textSize="14dp"
-            android:textColor="@color/txtcolor_red"/>
+            android:background="@drawable/bg_create_share_allselect"
+            android:textColor="@color/white"/>
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dedede"
+        />
     <com.eryue.ui.NoScrollGridView
         android:id="@+id/grid_image"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/comm_background"
+        android:paddingTop="15dp"
         android:numColumns="3"
         android:verticalSpacing="2dp"
         android:horizontalSpacing="2dp"

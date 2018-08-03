@@ -1,5 +1,6 @@
 package com.eryue.mine;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Message;
 import android.text.TextUtils;
@@ -27,6 +28,7 @@ import java.util.List;
 import java.util.logging.SimpleFormatter;
 
 import base.BaseActivity;
+import jp.wasabeef.glide.transformations.CropCircleTransformation;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -44,7 +46,6 @@ import static net.KeyFlag.KEY_DOMAIN;
 public class SignCenterActivity extends BaseActivity {
 
     private CalendarView calendarView;
-    private TextView nameTV;
     private TextView daysTV;
     private TextView hintTV;
 
@@ -70,7 +71,6 @@ public class SignCenterActivity extends BaseActivity {
 
     private void setupViews() {
         calendarView = (CalendarView) findViewById(R.id.calendar);
-        nameTV = findViewById(R.id.name);
         daysTV = findViewById(R.id.num);
         hintTV = findViewById(R.id.hint);
         image_view = findViewById(R.id.image_view);
@@ -78,12 +78,14 @@ public class SignCenterActivity extends BaseActivity {
 
         String url = AccountUtil.getHeaderImageUl();
         if (! TextUtils.isEmpty(url)) {
-            Glide.with(this).load(url).error(R.drawable.img_default_contract).into(image_view);
+            Glide.with(this).load(url)
+                    .bitmapTransform(new CropCircleTransformation(getApplicationContext()))
+                    .into(image_view);
         }
 
-        SimpleDateFormat sdf = new SimpleDateFormat("M月");
+        SimpleDateFormat sdf = new SimpleDateFormat("y年M月");
         String s = sdf.format(new Date());
-        hintTV.setText(s + "月签到表");
+        hintTV.setText(s);
     }
 
 
@@ -200,8 +202,7 @@ public class SignCenterActivity extends BaseActivity {
             @Override
             public void handleMessage(Message msg) {
                 if (signDayRsp != null) {
-                    nameTV.setText(signDayRsp.userName);
-                    daysTV.setText("您已连续签到" + signDayRsp.signCount + "天");
+                    daysTV.setText(signDayRsp.signCount + "天");
                 }
             }
         }).sendEmptyMessage(0);

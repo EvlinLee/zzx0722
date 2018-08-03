@@ -246,7 +246,7 @@ public class TiXianRecordActivity extends BaseActivity implements
                 }
 
                 viewHolder.name.setText(info.typeName);
-                viewHolder.date.setText(TimeUtils.getStrTime(info.exchangeTime + "", "yyyy-MM-dd"));
+                viewHolder.date.setText(TimeUtils.getStrTime(info.exchangeTime + "", "yyyy-MM-dd   HH:mm:ss"));
                 viewHolder.money.setText(info.exchangeNum + "");
                 viewHolder.status.setText(info.codeStatus );
 

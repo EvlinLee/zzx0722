@@ -6,8 +6,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dip"
-        android:id="@+id/contain_0">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/contain_0"
+        android:background="@drawable/lv_item_shape"
+        >
         <TextView
             android:layout_width="0dip"
             android:layout_weight="1"
@@ -15,8 +20,8 @@
             android:id="@+id/normal_account"
             android:text="普通账户"
             android:gravity="center"
-            android:textColor="#333333"
-            android:background="#ffffff"
+            android:textColor="@color/white"
+            android:background="@drawable/img_zhtx_ptzh"
             />
 
         <TextView
@@ -26,10 +31,10 @@
             android:id="@+id/jingdongmiandan"
             android:text="京东免单"
             android:gravity="center"
-            android:textColor="#999999"
+            android:textColor="@color/red"
             android:layout_toRightOf="@+id/normal_account"
             android:layout_marginLeft="1dip"
-            android:background="#ffffff"
+
             />
 
         <RelativeLayout
@@ -38,7 +43,8 @@
             android:layout_height="match_parent"
             android:layout_toRightOf="@+id/jingdongmiandan"
             android:layout_marginLeft="20dip"
-            android:visibility="gone">
+            android:visibility="gone"
+            >
 
             <TextView
                 android:id="@+id/hint00"
@@ -63,93 +69,137 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dip"
+        android:layout_height="167dp"
         android:id="@+id/contain_11"
+        android:layout_marginRight="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/img_zhtx_bg"
         android:layout_below="@+id/contain_0">
 
         <RelativeLayout
-            android:layout_width="0dip"
-            android:layout_height="100dip"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
             android:layout_weight="1"
-            android:background="#ffffff">
+            >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="提现记录"
+                android:id="@+id/present_record"
+                android:textColor="#FFFFFF"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/value0"
-                android:textColor="#333333"
-                android:textSize="18dip"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="21dip"/>
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:text="100"
+                android:textStyle="bold"
+                android:layout_above="@+id/hint0"
+                android:layout_centerHorizontal="true" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/hint0"
-                android:text="账户余额(元)"
-                android:textColor="#999999"
-                android:textSize="14dip"
+                android:text="可提现"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="21dip"
-                android:layout_below="@+id/value0"/>
-
-
+                android:layout_marginBottom="15dp"
+                android:layout_alignParentBottom="true" />
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="0dip"
-            android:layout_height="100dip"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
             android:layout_weight="1"
-            android:background="#ffffff">
+            >
 
-            <TextView
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="#FFFFFF"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/value1"
-                android:textColor="#333333"
-                android:textSize="18dip"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="21dip"/>
+                android:orientation="vertical"
+                android:layout_marginLeft="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/value1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:text="10001"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    />
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hint1"
+                    android:text="预估积分"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/value1"/>
+            </LinearLayout>
+
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/hint1"
-                android:text="预估积分(元)"
-                android:textColor="#999999"
-                android:textSize="14dip"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="21dip"
-                android:layout_below="@+id/value1"/>
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/value2"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:text="1000"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hint2"
+                    android:text="累计有效"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/value2"/>
 
+            </LinearLayout>
 
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="0dip"
-            android:layout_height="100dip"
-            android:layout_weight="1"
-            android:background="#ffffff">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/value2"
-                android:textColor="#333333"
-                android:textSize="18dip"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="21dip"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/hint2"
-                android:text="累计有效(元)"
-                android:textColor="#999999"
-                android:textSize="14dip"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="21dip"
-                android:layout_below="@+id/value2"/>
 
 
         </RelativeLayout>
@@ -160,7 +210,6 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ffffff"
         android:id="@+id/contain_2"
         android:layout_below="@+id/contain_11"
         android:layout_marginTop="10dip">
@@ -202,26 +251,23 @@
                 android:layout_marginRight="16dip"
                 />
         </RelativeLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dip"
-            android:background="#e0e0e0"
-            android:layout_below="@id/contain_1"
-            android:id="@+id/line1"/>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="49dip"
+            android:layout_height="43dp"
             android:id="@+id/contain_3"
+            android:background="@drawable/textview_list_shape"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
             android:layout_below="@+id/line1">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/hint4"
-                android:text="本次提现"
+                android:text="提现金额："
                 android:layout_marginLeft="16dip"
                 android:layout_centerVertical="true"
                 android:textColor="#333333"
-                android:textSize="15dip"/>
+                android:textSize="14sp"/>
 
             <EditText
                 android:layout_width="wrap_content"
@@ -229,8 +275,6 @@
                 android:id="@+id/cash"
                 android:layout_alignParentRight="true"
                 android:background="@null"
-                android:hint="请输入提现金额"
-                android:textColorHint="#aaaaaa"
                 android:textColor="#333333"
                 android:inputType="number"
                 android:maxLines="1"
@@ -238,36 +282,28 @@
                 android:layout_marginRight="16dip"/>
 
         </RelativeLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dip"
-            android:background="#e0e0e0"
-            android:layout_below="@id/contain_3"
-            android:id="@+id/line2"/>
     </RelativeLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/hint5"
         android:layout_below="@id/contain_2"
-        android:background="#ffffff"
-        android:paddingLeft="16dip"
-        android:paddingRight="16dip"
-        android:textSize="14dip"
+        android:paddingLeft="23dp"
+        android:text="提现说明"
+        android:textSize="12sp"
         android:textColor="#999999"
         android:paddingBottom="10dip"
-        android:paddingTop="10dip"/>
+        />
 
 
     <TextView
         android:id="@+id/take_cash"
-        android:layout_width="match_parent"
-        android:layout_height="40dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:background="@drawable/bg_red_textview"
+        android:background="@drawable/btn_tx"
         android:gravity="center"
-        android:text="确认提现"
         android:layout_below="@+id/hint5"
         android:textColor="#ffffff"
         android:textSize="16dip" />

@@ -27,7 +27,7 @@
     <color name="comm_background">#f3f2f7</color>
     <color name="cell_background">#ffffff</color>
     <color name="text_color_0">#030303</color>
-    <color name="line_color">#e0e0e0</color>
+    <color name="line_color">#F5F5F5</color>
 
     <color name="transparent_white">#66ffffff</color>
     <color name="transparent">#66000000</color>

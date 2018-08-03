@@ -4,24 +4,26 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 <RelativeLayout
-    android:layout_width="120dip"
-    android:layout_height="120dip">
-
+    android:layout_width="91dp"
+    android:layout_height="91dp"
+    android:layout_margin="5dp"
+    >
     <ImageView
-        android:layout_width="120dip"
-        android:layout_height="120dip"
+        android:layout_width="91dp"
+        android:layout_height="91dp"
         android:id="@+id/image_view"
         android:layout_centerInParent="true"
         android:scaleType="centerCrop"
         />
 
     <ImageView
-        android:layout_width="23dip"
-        android:layout_height="23dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
         android:id="@+id/check_image"
-        android:src="@drawable/ic_selected_normal"/>
+        android:src="@drawable/bt_cjsp_gx"/>
 
 </RelativeLayout>
 

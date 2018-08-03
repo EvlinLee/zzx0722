@@ -107,7 +107,7 @@ public class MessageCenterActivity extends BaseActivity  implements DragRefreshL
 
 
                 viewHolder.title.setText(info.title);
-                viewHolder.date.setText(TimeUtils.getStrTime(info.createDate + "", "yyyy.MM.dd HH:mm"));
+                viewHolder.date.setText(TimeUtils.getStrTime(info.createDate + "", "yyyy-MM-dd  HH:mm"));
                 viewHolder.smallTitle.setText(info.smallTitle);
                 convertView.setOnClickListener(new View.OnClickListener() {
                     @Override

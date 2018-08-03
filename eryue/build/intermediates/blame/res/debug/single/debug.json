@@ -452,6 +452,10 @@
         "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable-hdpi\\bg_mine_header_login.png"
     },
     {
+        "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_img_round.png.flat",
+        "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable-xhdpi\\img_round.png"
+    },
+    {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_friend_share.png.flat",
         "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable-hdpi\\ic_friend_share.png"
     },
@@ -700,12 +704,12 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\31a159ea2c8e0298988cbc9837182dd9\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_icon_message_grey.png.flat",
-        "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable-hdpi\\icon_message_grey.png"
-    },
-    {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\31a159ea2c8e0298988cbc9837182dd9\\res\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_icon_message_grey.png.flat",
+        "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable-hdpi\\icon_message_grey.png"
     },
     {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
@@ -760,6 +764,10 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\31a159ea2c8e0298988cbc9837182dd9\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
     },
     {
+        "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_img_round.png.flat",
+        "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable-hdpi\\img_round.png"
+    },
+    {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\31a159ea2c8e0298988cbc9837182dd9\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
@@ -774,6 +782,10 @@
     {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_jz_clarity_popwindow_bg.9.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\jiaozivideoplayer-6.2.7.aar\\f16c3f4d553aa3cc3251317aa84cd149\\res\\drawable-xxhdpi-v4\\jz_clarity_popwindow_bg.9.png"
+    },
+    {
+        "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable_two_arc_conners_upper.xml.flat",
+        "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable\\two_arc_conners_upper.xml"
     },
     {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_time.xml.flat",
@@ -1230,6 +1242,10 @@
     {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\layout_fragment_goodsabstract.xml.flat",
         "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\layout\\fragment_goodsabstract.xml"
+    },
+    {
+        "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_img_round.png.flat",
+        "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable-xxhdpi\\img_round.png"
     },
     {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal.9.png.flat",
@@ -1924,6 +1940,10 @@
         "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable-hdpi\\fund_tab_unfocus_center.9.png"
     },
     {
+        "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable_two_arc_conners_left.xml.flat",
+        "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable\\two_arc_conners_left.xml"
+    },
+    {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_icon_ny.png.flat",
         "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable-xhdpi\\icon_ny.png"
     },
@@ -1950,6 +1970,10 @@
     {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_login_btn.png.flat",
         "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable-xxhdpi\\login_btn.png"
+    },
+    {
+        "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_bg_create_share_allselect.png.flat",
+        "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable-hdpi\\bg_create_share_allselect.png"
     },
     {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
@@ -2180,6 +2204,10 @@
         "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\layout\\activity_modify_password.xml"
     },
     {
+        "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_icon_create_share_share.png.flat",
+        "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable-hdpi\\icon_create_share_share.png"
+    },
+    {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_jj.png.flat",
         "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable-xhdpi\\ic_jj.png"
     },
@@ -2296,6 +2324,10 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\31a159ea2c8e0298988cbc9837182dd9\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
+        "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_bg_create_share_allselect.png.flat",
+        "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable-xxhdpi\\bg_create_share_allselect.png"
+    },
+    {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\layout_activity_create_share.xml.flat",
         "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\layout\\activity_create_share.xml"
     },
@@ -2410,6 +2442,10 @@
     {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\layout_gallery_general_layout.xml.flat",
         "source": "F:\\work\\zzx0722\\mylibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\gallery_general_layout.xml"
+    },
+    {
+        "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable_textview_list_shape.xml.flat",
+        "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable\\textview_list_shape.xml"
     },
     {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable_bg_et_inviaion.xml.flat",
@@ -3500,6 +3536,10 @@
         "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable-hdpi\\profile_icon_3.png"
     },
     {
+        "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable_two_arc_conners_right.xml.flat",
+        "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable\\two_arc_conners_right.xml"
+    },
+    {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_bg_date.png.flat",
         "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable-xhdpi\\bg_date.png"
     },
@@ -4100,6 +4140,10 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\alibc_trade_biz-3.1.1.210.aar\\705890467771ec39de0d7158c05ec9a7\\res\\layout\\com_alibaba_bc_layout.xml"
     },
     {
+        "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\layout_dialog_share_wechat.xml.flat",
+        "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\layout\\dialog_share_wechat.xml"
+    },
+    {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_fl.png.flat",
         "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable-xhdpi\\ic_fl.png"
     },
@@ -4404,6 +4448,10 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\31a159ea2c8e0298988cbc9837182dd9\\res\\anim\\abc_popup_exit.xml"
     },
     {
+        "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_bg_create_share_share.png.flat",
+        "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable-xhdpi\\bg_create_share_share.png"
+    },
+    {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_img_home_pdd.png.flat",
         "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable-hdpi\\img_home_pdd.png"
     },
@@ -4446,6 +4494,10 @@
     {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_bg_oval.xml.flat",
         "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable-hdpi\\bg_oval.xml"
+    },
+    {
+        "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_bg_create_share_share.png.flat",
+        "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable-xxhdpi\\bg_create_share_share.png"
     },
     {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -4562,6 +4614,10 @@
     {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_icon_app.png.flat",
         "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable-hdpi\\icon_app.png"
+    },
+    {
+        "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_bg_create_share_allselect.png.flat",
+        "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable-xhdpi\\bg_create_share_allselect.png"
     },
     {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_hundred.png.flat",
@@ -4710,6 +4766,10 @@
     {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\31a159ea2c8e0298988cbc9837182dd9\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\drawable_two_arc_conners_lower.xml.flat",
+        "source": "F:\\work\\zzx0722\\eryue\\src\\main\\res\\drawable\\two_arc_conners_lower.xml"
     },
     {
         "merged": "F:\\work\\zzx0722\\eryue\\build\\intermediates\\res\\merged\\debug\\layout_popview_redpacket.xml.flat",

@@ -171,6 +171,9 @@ public class OrderDetailActivity1 extends BaseActivity implements DragRefreshLis
                     viewHolder.jifen = (TextView) convertView.findViewById(R.id.jifen);
                     viewHolder.time = (TextView) convertView.findViewById(R.id.time);
                     viewHolder.offer = (TextView) convertView.findViewById(R.id.offer);
+                    TextView pay = (TextView) convertView.findViewById(R.id.pay);
+                    pay.setText("￥:");
+                    pay.setTextColor(Color.parseColor("#fd5b68"));
                     convertView.setTag(viewHolder);
                 } else {
                     viewHolder = (ViewHolder) convertView.getTag();

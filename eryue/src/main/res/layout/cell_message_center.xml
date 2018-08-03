@@ -2,19 +2,19 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#ffffff"
-    android:layout_marginLeft="17dip"
-    android:layout_marginRight="17dip">
+    android:dividerHeight="10px"
+    android:background="@drawable/textview_list_shape"
+    android:layout_marginTop="10dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/title"
-        android:text="title"
-        android:layout_marginLeft="15dip"
-        android:layout_marginTop="14dip"
-        android:textSize="16dip"
-        android:textColor="#333333"
+        android:text="title111111111111111111"
+        android:layout_marginLeft="10dip"
+        android:layout_below="@+id/line1"
+        android:textSize="13sp"
+        android:textColor="#000000"
         android:maxLines="1"
         />
 
@@ -23,13 +23,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/smalltitle"
         android:text="title"
-        android:layout_marginLeft="15dip"
+        android:lines="2"
+        android:ellipsize="end"
+        android:layout_marginLeft="10dip"
         android:layout_marginRight="15dip"
         android:layout_below="@+id/title"
-        android:layout_marginTop="11dip"
-        android:layout_marginBottom="10dip"
-        android:textSize="12dip"
-        android:textColor="#aaaaaa"
+        android:textSize="12sp"
+        android:textColor="#666666"
         android:maxLines="1"
 
         />
@@ -37,7 +37,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dip"
-        android:background="@color/line_color"
+        android:background="#F5F5F5"
         android:id="@+id/line"
         android:layout_below="@+id/smalltitle"
         android:layout_marginTop="13dip"
@@ -47,40 +47,44 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/detail_hint"
-        android:text="查看详情"
+        android:text="点击详情"
         android:layout_marginLeft="15dip"
         android:layout_below="@+id/line"
-        android:layout_marginTop="10dip"
-        android:layout_marginBottom="10dip"
-        android:textSize="12dip"
+        android:layout_toLeftOf="@+id/imageview1"
+        android:textSize="9sp"
         android:textColor="#666666"
         android:maxLines="1"
 
         />
 
     <ImageView
-        android:layout_width="10dip"
-        android:layout_height="10dip"
-        android:layout_marginLeft="5dip"
+        android:id="@+id/imageview1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
         android:background="@drawable/icon_disclosure"
-        android:layout_toRightOf="@+id/detail_hint"
         android:layout_below="@+id/line"
-        android:layout_marginTop="13dip"/>
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        />
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/date"
-        android:layout_below="@+id/line"
-        android:layout_marginTop="10dip"
-        android:layout_marginBottom="10dip"
-        android:textSize="12dip"
-        android:textColor="#aaaaaa"
+        android:layout_alignParentTop="true"
+        android:textSize="9sp"
+        android:textColor="#666666"
         android:layout_alignParentRight="true"
         android:layout_marginRight="15dip"
         android:maxLines="1"
-
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#F5F5F5"
+        android:id="@id/line1"
+        android:layout_below="@+id/date"
         />
 
 

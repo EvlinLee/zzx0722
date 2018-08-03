@@ -13,6 +13,7 @@ MERGED from [com.github.JakeWharton:ViewPagerIndicator:2.4.1] C:\Users\Administr
 MERGED from [me.imid.swipebacklayout.lib:library:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\library-1.0.0.aar\374ae038ecc1e84f483b4e220fcec585\AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\dd31ee0acc622e97495c2ee485762d04\AndroidManifest.xml:17:1-31:12
 MERGED from [cn.jzvd:jiaozivideoplayer:6.2.7] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\jiaozivideoplayer-6.2.7.aar\f16c3f4d553aa3cc3251317aa84cd149\AndroidManifest.xml:2:1-13:12
+MERGED from [jp.wasabeef:glide-transformations:2.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\glide-transformations-2.0.0.aar\c7360f7c487ee481d997da5b93080d0b\AndroidManifest.xml:2:1-12:12
 MERGED from [com.ali.auth.sdk:alibabauth_ui:1.4.3] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\alibabauth_ui-1.4.3.aar\df6066dbf819d540f6b433d889f52f61\AndroidManifest.xml:2:1-43:12
 MERGED from [com.taobao.android:securityguardaar3:5.1.81] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\securityguardaar3-5.1.81.aar\d600074dcd636b778b194b1857e454f9\AndroidManifest.xml:2:1-29:12
 MERGED from [com.taobao.android:securitybodyaar3:5.1.25] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\securitybodyaar3-5.1.25.aar\ac7caf26c0dea58cc386474d2fbd3521\AndroidManifest.xml:2:1-19:12
@@ -73,6 +74,8 @@ MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Administrator\.grad
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\dd31ee0acc622e97495c2ee485762d04\AndroidManifest.xml:21:5-23:54
 MERGED from [cn.jzvd:jiaozivideoplayer:6.2.7] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\jiaozivideoplayer-6.2.7.aar\f16c3f4d553aa3cc3251317aa84cd149\AndroidManifest.xml:7:5-9:41
 MERGED from [cn.jzvd:jiaozivideoplayer:6.2.7] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\jiaozivideoplayer-6.2.7.aar\f16c3f4d553aa3cc3251317aa84cd149\AndroidManifest.xml:7:5-9:41
+MERGED from [jp.wasabeef:glide-transformations:2.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\glide-transformations-2.0.0.aar\c7360f7c487ee481d997da5b93080d0b\AndroidManifest.xml:8:5-10:41
+MERGED from [jp.wasabeef:glide-transformations:2.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\glide-transformations-2.0.0.aar\c7360f7c487ee481d997da5b93080d0b\AndroidManifest.xml:8:5-10:41
 MERGED from [com.ali.auth.sdk:alibabauth_ui:1.4.3] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\alibabauth_ui-1.4.3.aar\df6066dbf819d540f6b433d889f52f61\AndroidManifest.xml:7:5-9:41
 MERGED from [com.ali.auth.sdk:alibabauth_ui:1.4.3] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\alibabauth_ui-1.4.3.aar\df6066dbf819d540f6b433d889f52f61\AndroidManifest.xml:7:5-9:41
 MERGED from [com.taobao.android:securityguardaar3:5.1.81] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\securityguardaar3-5.1.81.aar\d600074dcd636b778b194b1857e454f9\AndroidManifest.xml:7:5-9:41

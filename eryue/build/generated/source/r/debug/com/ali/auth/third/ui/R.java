@@ -17,8 +17,8 @@ public final class R {
         public static final int ali_auth_titlebar_height = 0x7f050050;
     }
     public static final class drawable {
-        public static final int com_taobao_tae_sdk_web_view_title_bar_back = 0x7f06008c;
-        public static final int com_taobao_tae_sdk_web_view_title_bar_close = 0x7f06008d;
+        public static final int com_taobao_tae_sdk_web_view_title_bar_back = 0x7f06008e;
+        public static final int com_taobao_tae_sdk_web_view_title_bar_close = 0x7f06008f;
     }
     public static final class id {
         public static final int ali_auth_qrview = 0x7f070024;

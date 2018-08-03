@@ -150,7 +150,6 @@ public class ChargeBackActivity extends BaseActivity implements DragRefreshListV
                     viewHolder.pay_value = (TextView) convertView.findViewById(R.id.pay_value);
                     TextView pay = (TextView) convertView.findViewById(R.id.pay);
                     pay.setText("退款金额:");
-                    convertView.findViewById(R.id.bg_status).setVisibility(View.INVISIBLE);
                     viewHolder.jifen_value = (TextView) convertView.findViewById(R.id.jifen_value);
                     viewHolder.time = (TextView) convertView.findViewById(R.id.time);
                     viewHolder.offer = (TextView) convertView.findViewById(R.id.offer);

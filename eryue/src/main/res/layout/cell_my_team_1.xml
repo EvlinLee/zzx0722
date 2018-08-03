@@ -1,61 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="49dip"
+        android:layout_height="56dp"
         android:orientation="horizontal">
 
-        <TextView
+        <RelativeLayout
             android:layout_width="0dip"
             android:layout_height="match_parent"
-            android:layout_weight="4"
-            android:gravity="center|left"
-            android:maxLines="1"
-            android:ellipsize="end"
-            android:paddingLeft="10dip"
-            android:id="@+id/nick_name"
-            android:text="用户昵称"
-            android:textColor="#030303"
-            android:textSize="14dip"/>
+            android:layout_weight="1.2"
+            android:padding="13dp"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:id="@+id/profile_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:id="@+id/nick_name"
+                android:maxLines="1"
+                android:text="用户昵称"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/profile_photo"
+                android:textColor="#666666"
+                android:textSize="12sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wechat"
+                android:gravity="center|left"
+                android:layout_toRightOf="@+id/profile_photo"
+                android:layout_below="@+id/nick_name"
+                android:text="18628565564"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginLeft="3dp"
+                android:textColor="#666666"
+                android:textSize="12sp"
+                />
+        </RelativeLayout>
 
-        <TextView
+        <RelativeLayout
             android:layout_width="0dip"
             android:layout_height="match_parent"
-            android:layout_weight="4"
-            android:id="@+id/wechat"
-            android:gravity="center|left"
-            android:text="微信号"
-            android:textColor="#030303"
-            android:textSize="14dip"
-            />
-
-        <TextView
-            android:layout_width="0dip"
-            android:layout_height="match_parent"
-            android:layout_weight="4"
-            android:id="@+id/register_time"
+            android:layout_weight="1"
             android:gravity="center"
-            android:paddingLeft="5dip"
-            android:text="注册时间"
-            android:textColor="#030303"
-            android:textSize="14dip"
-            />
-        <TextView
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/register_time"
+                android:gravity="center"
+                android:paddingLeft="5dip"
+                android:text="注册时间"
+                android:textColor="#666666"
+                android:textSize="12sp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
             android:layout_width="0dip"
             android:layout_height="match_parent"
-            android:layout_weight="4"
-            android:id="@+id/take_cash"
+            android:layout_weight="1"
             android:gravity="center"
-            android:text="累计提现"
-            android:textColor="#030303"
-            android:textSize="14dip"
-            />
-
-
-
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/take_cash"
+                android:gravity="center"
+                android:text="累计提现"
+                android:textColor="#666666"
+                android:textSize="12sp"
+                />
+        </RelativeLayout>
     </LinearLayout>
     <View
         android:layout_width="match_parent"

@@ -82,11 +82,15 @@ public class ImageGridAdapter extends BaseAdapter {
             return view;
         }
 
-        Glide.with(context).load(imageModel.url).placeholder(R.drawable.img_default_contract).into(viewHolder.image_view);
+        Glide.with(context).load(imageModel.url)
+                .transform(new GlideRoundTransform(context,10))
+                .placeholder(R.drawable.img_default_contract)
+                .into(viewHolder.image_view);
+
         if (imageModel.isChecked) {
-            viewHolder.check_image.setImageResource(R.drawable.ic_selected_selected);
+            viewHolder.check_image.setImageResource(R.drawable.bt_cjsp_xz);
         } else {
-            viewHolder.check_image.setImageResource(R.drawable.ic_selected_normal);
+            viewHolder.check_image.setImageResource(R.drawable.bt_cjsp_gx);
         }
 
         final ArrayList browseImagelist = new ArrayList<>();
