@@ -60,7 +60,6 @@ public class ShareDialog extends Dialog {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dialog_share_wechat);
         //按空白处不能取消动画
         setCanceledOnTouchOutside(false);
 
@@ -118,8 +117,6 @@ public class ShareDialog extends Dialog {
      * 初始化界面控件
      */
     private void initView() {
-        yes = (Button) findViewById(R.id.yes);
-        no = (Button) findViewById(R.id.no);
         titleTv = (TextView) findViewById(R.id.title);
         messageTv = (TextView) findViewById(R.id.message);
     }

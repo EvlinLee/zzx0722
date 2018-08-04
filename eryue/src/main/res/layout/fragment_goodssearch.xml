@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/comm_background"
     android:orientation="vertical"
     android:padding="10dp">
 
@@ -20,11 +20,15 @@
             android:background="@drawable/shape_txt_search_gray"
             android:gravity="center_vertical">
 
-            <ImageView
-                android:layout_width="16dip"
-                android:layout_height="16dip"
-                android:layout_marginLeft="4dip"
-                android:src="@drawable/icon_search" />
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/nice_spinner"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                app:textTint="@color/black"
+                app:backgroundSelector="@drawable/multiline_textview_item_shape"
+                app:arrowTint="@color/light_gray"
+                />
 
             <EditText
                 android:id="@+id/tv_search_keyword"
@@ -116,10 +120,11 @@
                 app:item_textLineColor="#ffE3E3E3"
                 app:item_textLineMargin="8dp"
                 app:item_textPaddingBottom="4dp"
+                app:item_textBackground="@drawable/multiline_textview_item_shape"
                 app:item_textPaddingLeft="8dp"
                 app:item_textPaddingRight="8dp"
                 app:item_textPaddingTop="4dp"
-                app:item_textSize="15dp"
+                app:item_textSize="12sp"
                 app:item_textWordMargin="8dp"
                 app:linePadding="8dp" />
 
@@ -165,8 +170,9 @@
                 app:item_textPaddingLeft="8dp"
                 app:item_textPaddingRight="8dp"
                 app:item_textPaddingTop="4dp"
-                app:item_textSize="15dp"
+                app:item_textSize="12sp"
                 app:item_textWordMargin="8dp"
+                app:item_textBackground="@drawable/multiline_textview_item_shape"
                 app:linePadding="8dp" />
 
 

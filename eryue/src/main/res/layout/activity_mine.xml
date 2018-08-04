@@ -727,7 +727,7 @@
                         android:drawableLeft="@drawable/profile_icon_10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="代理教程"
+                        android:text="代理学习"
                         android:textSize="12sp"
                         android:textColor="#666666"
                         android:drawablePadding="15dp"

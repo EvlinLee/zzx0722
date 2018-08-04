@@ -4,6 +4,7 @@ import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Message;
 import android.text.Editable;
@@ -29,7 +30,11 @@ import com.eryue.ui.MultiLineTextView;
 import com.eryue.util.SharedPreferencesUtil;
 import com.library.util.ToastTools;
 
+import org.angmarch.views.NiceSpinner;
+
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -80,6 +85,13 @@ public class GoodsSuperSearchFragment extends BaseFragment implements View.OnCli
     private ImageView iv_clear;
 
     private LinearLayout layout_textclear;
+
+    /**
+     * 下拉选项
+     * @param savedInstanceState
+     */
+    private NiceSpinner niceSpinner;
+
 
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
@@ -163,6 +175,23 @@ public class GoodsSuperSearchFragment extends BaseFragment implements View.OnCli
         });
 
         iv_tip = getView().findViewById(R.id.iv_tip);
+
+        List<String> spinnerData = new LinkedList<>(Arrays.asList("淘宝", "天猫", "拼多多", "苏宁","京东",
+                "蘑菇街"));
+        niceSpinner = getView().findViewById(R.id.nice_spinner);
+        niceSpinner.attachDataSource(spinnerData);
+        niceSpinner.setTextColor(Color.RED);
+        niceSpinner.setBackground(getResources().getDrawable(R.drawable.lv_item_shape));
+        niceSpinner.setTextSize(11);
+        niceSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {}
+        });
 
     }
 
