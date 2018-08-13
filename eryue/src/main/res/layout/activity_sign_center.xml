@@ -9,7 +9,10 @@
         android:layout_height="91dp"
         android:background="@drawable/textview_list_shape"
         android:gravity="center"
-        android:layout_margin="16dp">
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        >
         <ImageView
             android:layout_width="55dp"
             android:layout_height="55dp"
@@ -41,9 +44,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dip"
         >
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -52,7 +53,7 @@
             android:textSize="16sp"
             android:layout_centerHorizontal="true"
             android:text="月份"
-            android:layout_marginTop="20dip"/>
+            android:layout_marginTop="10dip"/>
 
         <com.othershe.calendarview.weiget.WeekView
             android:layout_width="match_parent"

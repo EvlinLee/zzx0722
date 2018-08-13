@@ -251,7 +251,7 @@
                 android:layout_marginRight="16dip"
                 />
         </RelativeLayout>
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="43dp"
             android:id="@+id/contain_3"
@@ -270,18 +270,19 @@
                 android:textSize="14sp"/>
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/cash"
                 android:layout_alignParentRight="true"
                 android:background="@null"
+                android:layout_marginLeft="5dp"
                 android:textColor="#333333"
-                android:inputType="number"
+                android:inputType="number|numberDecimal"
                 android:maxLines="1"
                 android:textSize="15dip"
                 android:layout_marginRight="16dip"/>
 
-        </RelativeLayout>
+        </LinearLayout>
     </RelativeLayout>
     <TextView
         android:layout_width="match_parent"

@@ -162,7 +162,6 @@ public class SearchLiveFragment extends BaseFragment implements UISortTabView.On
 
         startRequest();
 
-
     }
 
     @Override

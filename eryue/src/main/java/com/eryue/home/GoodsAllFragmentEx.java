@@ -12,6 +12,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Message;
 import android.support.v7.app.NotificationCompat;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
@@ -113,7 +114,7 @@ public class GoodsAllFragmentEx extends BaseFragment implements DragRefreshListV
     /**
      * 置顶预览
      */
-    private RecyclerView rv_goodsTop;
+    private GridView rv_goodsTop;
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -149,6 +150,8 @@ public class GoodsAllFragmentEx extends BaseFragment implements DragRefreshListV
     private String jdImgUrl = baseIP + "cms/jdFreePic.jpg";
 
     private View view_space;
+
+    private GoodsListAdapterEx goodsListAdapterEx;
 
 
     @TargetApi(Build.VERSION_CODES.M)
@@ -398,13 +401,14 @@ public class GoodsAllFragmentEx extends BaseFragment implements DragRefreshListV
         iv_message = getView().findViewById(R.id.iv_message);
         iv_message.setOnClickListener(this);
 
-        rv_goodsTop = (RecyclerView) getView().findViewById(R.id.rv_top);
-        LinearLayoutManager layoutManager= new LinearLayoutManager(getActivity());
-        layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
-        //GridLayoutManager layoutManager=new GridLayoutManager(getActivity(),3);
-        //StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL);
-        rv_goodsTop.setLayoutManager(layoutManager);
-        rv_goodsTop.setAdapter(new GoodsTopCardViewAdapter(getActivity(),inintList()));
+        rv_goodsTop = (GridView) getView().findViewById(R.id.rv_top);
+
+        goodsListAdapterEx = new GoodsListAdapterEx(getActivity());
+
+        rv_goodsTop.setAdapter(goodsListAdapterEx);
+
+
+
 
         linearLayoutTop = (LinearLayout) getView().findViewById(R.id.ll_linear_top);
         final TextView textView1 = (TextView) getView().findViewById(R.id.aaa);
@@ -773,6 +777,10 @@ public class GoodsAllFragmentEx extends BaseFragment implements DragRefreshListV
                         goodsListAdapter.setDataList(allDataList);
                         goodsListAdapter.setLogin(AccountUtil.isLogin());
                         goodsListAdapter.notifyDataSetChanged();
+
+                        goodsListAdapterEx.setDataList(allDataList);
+                        goodsListAdapterEx.setLogin(AccountUtil.isLogin());
+                        goodsListAdapterEx.notifyDataSetChanged();
                     }
                 }
             }

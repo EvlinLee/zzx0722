@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:1:1-415:12
-INJECTED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:1:1-415:12
-INJECTED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:1:1-415:12
-INJECTED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:1:1-415:12
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:1:1-418:12
+INJECTED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:1:1-418:12
+INJECTED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:1:1-418:12
+INJECTED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:1:1-418:12
 MERGED from [:mylibrary] F:\work\zzx0722\mylibrary\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-10:12
 MERGED from [:jdong] F:\work\zzx0722\jdong\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-26:12
 MERGED from [:calendarview] F:\work\zzx0722\calendarview\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-17:12
@@ -34,9 +34,9 @@ MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Administrat
 MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\075a9b24a6d3afa7be21b9878e617d76\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\96036f1a4db6464f83e697148f43bf25\AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\441c1f938eb76bd36099830d0c4397b3\AndroidManifest.xml:17:1-30:12
-INJECTED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:1:1-415:12
-INJECTED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:1:1-415:12
-INJECTED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:1:1-415:12
+INJECTED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:1:1-418:12
+INJECTED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:1:1-418:12
+INJECTED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:1:1-418:12
 	package
 		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:3:5-24
 		INJECTED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml
@@ -262,7 +262,7 @@ ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:46:5-79
 	android:name
 		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:46:22-77
 application
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:50:5-413:19
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:50:5-416:19
 MERGED from [:jdong] F:\work\zzx0722\jdong\build\intermediates\manifests\full\debug\AndroidManifest.xml:9:5-24:19
 MERGED from [:jdong] F:\work\zzx0722\jdong\build\intermediates\manifests\full\debug\AndroidManifest.xml:9:5-24:19
 MERGED from [:calendarview] F:\work\zzx0722\calendarview\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-15:19
@@ -826,172 +826,180 @@ ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:309:9-311:51
 		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:310:13-74
 	android:name
 		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:309:19-63
-activity#com.eryue.activity.ImageBigActivity
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:313:9-315:51
+activity#com.eryue.mine.MyFavorite
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:312:9-314:51
 	android:screenOrientation
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:315:13-49
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:314:13-49
 	android:configChanges
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:314:13-74
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:313:13-74
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:313:19-69
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:312:19-59
+activity#com.eryue.activity.ImageBigActivity
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:316:9-318:51
+	android:screenOrientation
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:318:13-49
+	android:configChanges
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:317:13-74
+	android:name
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:316:19-69
 activity#com.eryue.mine.MyOrderChartsActivity
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:316:9-73
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:319:9-73
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:316:19-61
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:319:19-61
 receiver#com.eryue.AppRegister
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:318:9-324:20
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:321:9-327:20
 	android:permission
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:320:13-71
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:323:13-71
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:319:13-49
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:322:13-49
 intent-filter#com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:321:13-323:29
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:324:13-326:29
 action#com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:322:17-99
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:325:17-99
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:322:25-97
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:325:25-97
 receiver#com.eryue.push.MyPushMessageReceiver
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:327:9-336:20
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:330:9-339:20
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:327:19-70
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:330:19-70
 intent-filter#com.baidu.android.pushservice.action.MESSAGE+com.baidu.android.pushservice.action.RECEIVE+com.baidu.android.pushservice.action.notification.CLICK
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:328:13-335:29
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:331:13-338:29
 action#com.baidu.android.pushservice.action.MESSAGE
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:331:17-87
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:334:17-87
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:331:25-84
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:334:25-84
 action#com.baidu.android.pushservice.action.RECEIVE
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:333:17-87
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:336:17-87
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:333:25-84
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:336:25-84
 action#com.baidu.android.pushservice.action.notification.CLICK
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:334:17-98
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:337:17-98
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:334:25-95
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:337:25-95
 receiver#com.baidu.android.pushservice.PushServiceReceiver
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:339:9-352:20
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:342:9-355:20
 	android:process
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:340:13-44
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:343:13-44
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:339:19-83
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:342:19-83
 intent-filter#android.intent.action.ACTION_POWER_CONNECTED+android.intent.action.ACTION_POWER_DISCONNECTED+android.intent.action.BOOT_COMPLETED+android.intent.action.MEDIA_MOUNTED+android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE+com.baidu.android.pushservice.action.media.CLICK+com.baidu.android.pushservice.action.notification.SHOW
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:341:13-351:29
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:344:13-354:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:342:17-79
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:345:17-79
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:342:25-76
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:345:25-76
 action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:343:17-79
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:346:17-79
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:343:25-76
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:346:25-76
 action#com.baidu.android.pushservice.action.notification.SHOW
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:344:17-97
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:347:17-97
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:344:25-94
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:347:25-94
 action#com.baidu.android.pushservice.action.media.CLICK
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:345:17-91
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:348:17-91
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:345:25-88
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:348:25-88
 action#android.intent.action.MEDIA_MOUNTED
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:347:17-78
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:350:17-78
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:347:25-75
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:350:25-75
 action#android.intent.action.USER_PRESENT
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:348:17-77
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:351:17-77
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:348:25-74
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:351:25-74
 action#android.intent.action.ACTION_POWER_CONNECTED
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:349:17-87
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:352:17-87
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:349:25-84
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:352:25-84
 action#android.intent.action.ACTION_POWER_DISCONNECTED
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:350:17-90
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:353:17-90
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:350:25-87
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:353:25-87
 receiver#com.baidu.android.pushservice.RegistrationReceiver
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:353:9-364:20
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:356:9-367:20
 	android:process
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:354:13-44
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:357:13-44
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:353:19-84
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:356:19-84
 intent-filter#com.baidu.android.pushservice.action.BIND_SYNC+com.baidu.android.pushservice.action.METHOD
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:355:13-358:29
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:358:13-361:29
 action#com.baidu.android.pushservice.action.METHOD
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:356:17-86
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:359:17-86
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:356:25-83
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:359:25-83
 action#com.baidu.android.pushservice.action.BIND_SYNC
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:357:17-89
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:360:17-89
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:357:25-86
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:360:25-86
 intent-filter#android.intent.action.PACKAGE_REMOVED
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:359:13-363:29
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:362:13-366:29
 action#android.intent.action.PACKAGE_REMOVED
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:360:17-80
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:363:17-80
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:360:25-77
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:363:25-77
 data
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:362:17-50
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:365:17-50
 	android:scheme
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:362:23-47
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:365:23-47
 service#com.baidu.android.pushservice.PushService
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:366:9-373:19
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:369:9-376:19
 	android:process
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:369:13-44
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:372:13-44
 	android:exported
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:368:13-36
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:371:13-36
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:367:13-69
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:370:13-69
 intent-filter#com.baidu.android.pushservice.action.PUSH_SERVICE
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:370:13-372:29
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:373:13-375:29
 	android:priority
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:370:28-51
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:373:28-51
 action#com.baidu.android.pushservice.action.PUSH_SERVICE
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:371:17-92
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:374:17-92
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:371:25-89
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:374:25-89
 service#com.baidu.android.pushservice.CommandService
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:374:9-375:39
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:377:9-378:39
 	android:exported
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:375:13-36
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:378:13-36
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:374:18-77
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:377:18-77
 provider#com.baidu.android.pushservice.PushInfoProvider
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:378:9-383:39
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:381:9-386:39
 	android:authorities
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:380:13-61
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:383:13-61
 	android:protectionLevel
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:382:13-50
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:385:13-50
 	android:exported
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:383:13-36
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:386:13-36
 	android:writePermission
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:381:13-103
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:384:13-103
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:379:13-74
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:382:13-74
 meta-data#api_key
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:386:9-388:56
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:389:9-391:56
 	android:value
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:388:13-53
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:391:13-53
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:387:13-35
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:390:13-35
 receiver#com.eryue.BaiduBroadcastReceiver
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:397:9-406:20
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:400:9-409:20
 	android:enabled
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:399:13-35
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:402:13-35
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:398:13-60
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:401:13-60
 intent-filter#android.intent.action.BOOT_COMPLETED+android.net.conn.CONNECTIVITY_CHANGE+com.woman.RCTest
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:400:13-405:29
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:403:13-408:29
 category#com.woman.RCTest
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:404:17-61
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:407:17-61
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:404:27-58
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:407:27-58
 meta-data#android.max_aspect
-ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:410:9-412:35
+ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:413:9-415:35
 	android:value
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:412:13-32
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:415:13-32
 	android:name
-		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:411:13-46
+		ADDED from F:\work\zzx0722\eryue\src\main\AndroidManifest.xml:414:13-46
 activity#com.kepler.jd.sdk.KeplerBackActivity
 ADDED from [:jdong] F:\work\zzx0722\jdong\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:9-23:20
 	android:exported

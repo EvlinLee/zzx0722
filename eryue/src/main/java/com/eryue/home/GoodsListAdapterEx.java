@@ -76,7 +76,6 @@ public class GoodsListAdapterEx extends BaseAdapter implements ShareContentView.
     public GoodsListAdapterEx(Context context) {
         this.context = context;
 
-
         isLogin = AccountUtil.isLogin();
     }
 

@@ -82,19 +82,16 @@
     </LinearLayout>
 
 
-    <android.support.v7.widget.RecyclerView
+
+    <GridView
         android:id="@+id/rv_top"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:focusable="true"
-        android:clickable="true"
+        android:layout_height="180dp"
         android:background="#fef2f4"
-        app:cardCornerRadius="5dp"
-        app:cardElevation="40dp"
-        app:cardBackgroundColor="@color/colorPrimaryDark"
-        android:foreground="?android:attr/selectableItemBackground"
-        >
-    </android.support.v7.widget.RecyclerView>
+        android:numColumns="3"
+        android:divider="@null"
+        />
+
 
     <!--京东免单-->
     <LinearLayout android:id="@+id/layout_jd"

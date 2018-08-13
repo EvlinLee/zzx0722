@@ -81,7 +81,7 @@ public class LiveGoodsRecylerAdapter extends RecyclerView.Adapter<LiveGoodsRecyl
         holder.iv_goods.setLayoutParams(layoutParams);
         //商品图片
         //设置图片圆角角度
-        Glide.with(context).load(searchProductInfo.pictUrl).transform(new GlideRoundTransform(context,10))
+        Glide.with(context).load(searchProductInfo.pictUrl)
                 .into(holder.iv_goods);
 
         String goodsImgId = GoodsUtil.getGoodsBusinessRid((int) searchProductInfo.isMall,searchProductInfo.productType);

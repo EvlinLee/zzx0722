@@ -5,6 +5,7 @@ import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.media.Image;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Message;
@@ -56,6 +57,8 @@ public class MyTeamActivity1 extends BaseActivity implements View.OnClickListene
     private ImageView cash_IV;
 
     private ImageView searchImageView;
+
+    private ImageView navigation_back;
 
     private String sidx; //注册时间排序reg_date ，累计提现排序totalWithdraw
     private String sord; //降序desc，升序asc
@@ -146,6 +149,9 @@ public class MyTeamActivity1 extends BaseActivity implements View.OnClickListene
 
         searchImageView = findViewById(R.id.search_image);
         searchImageView.setOnClickListener(this);
+
+        navigation_back = findViewById(R.id.navigation_back);
+        navigation_back.setOnClickListener(this);
 
         time_contain = findViewById(R.id.time_contain);
         time_contain.setOnClickListener(this);
@@ -298,6 +304,8 @@ public class MyTeamActivity1 extends BaseActivity implements View.OnClickListene
             Intent intent = new Intent(this, SearchTeamActivity.class);
             intent.putExtra("type", currType);
             startActivity(intent);
+        } else if (v == navigation_back) {
+            finish();
         }
 
         // sidx 注册时间排序reg_date ，累计提现排序totalWithdraw

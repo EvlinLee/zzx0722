@@ -72,12 +72,11 @@
     <LinearLayout
         android:id="@+id/layout_toolbar"
         android:layout_width="fill_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:gravity="center"
         android:orientation="horizontal"
         android:paddingBottom="6dp"
-        android:paddingTop="2dp" >
+        android:paddingTop="4dp" >
 
         <!-- 功能模块按钮1 -->
 
@@ -90,18 +89,13 @@
             android:gravity="center"
             android:orientation="vertical" >
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
-
             <ImageView
                 android:id="@+id/iv1"
                 android:layout_width="@dimen/height_img_toolbar"
                 android:layout_height="@dimen/height_img_toolbar"
                 android:contentDescription="@string/string_bottom_tab01"
                 android:scaleType="fitCenter"
-                android:src="@drawable/m_home_normal" />
+                android:src="@drawable/tab_home_nomal" />
 
             <TextView
                 android:id="@+id/text1"
@@ -123,10 +117,7 @@
             android:background="@null"
             android:gravity="center"
             android:orientation="vertical" >
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
+
             <ImageView
                 android:id="@+id/iv3"
                 android:layout_width="@dimen/height_img_toolbar"
@@ -156,10 +147,6 @@
             android:orientation="vertical"
             android:visibility="visible" >
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
 
             <ImageView
                 android:id="@+id/iv4"
@@ -167,7 +154,7 @@
                 android:layout_height="@dimen/height_img_toolbar"
                 android:contentDescription="@string/string_bottom_tab04"
                 android:scaleType="fitCenter"
-                android:src="@drawable/m_category_normal" />
+                android:src="@drawable/tab_mrfq_nomal" />
 
             <TextView
                 android:id="@+id/text4"
@@ -189,18 +176,13 @@
             android:orientation="vertical"
             android:visibility="visible" >
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
-
             <ImageView
                 android:id="@+id/iv5"
                 android:layout_width="@dimen/height_img_toolbar"
                 android:layout_height="@dimen/height_img_toolbar"
                 android:contentDescription="@string/string_bottom_tab05"
                 android:scaleType="fitCenter"
-                android:src="@drawable/m_mine_normal" />
+                android:src="@drawable/tab_porfileo_nomal" />
 
             <TextView
                 android:id="@+id/text5"

@@ -557,6 +557,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="15dp"
+                    android:id="@+id/wodeshoucang"
                     android:layout_gravity="center_horizontal">
                     <TextView
                         android:drawableLeft="@drawable/profile_icon_5"
@@ -789,6 +790,7 @@
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
                     android:paddingBottom="15dp"
+                    android:visibility="gone"
                     android:id="@+id/navigation_help"
                     android:layout_gravity="center_horizontal">
                     <TextView

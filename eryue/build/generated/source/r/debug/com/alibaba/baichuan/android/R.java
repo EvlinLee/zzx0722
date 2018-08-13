@@ -11,12 +11,12 @@ public final class R {
         public static final int alibc_transparent = 0x7f05001a;
     }
     public static final class drawable {
-        public static final int com_alibaba_bc_auth_cancle_btn = 0x7f070097;
-        public static final int com_alibaba_bc_auth_ll_bg = 0x7f070098;
-        public static final int com_alibaba_bc_auth_success_btn = 0x7f070099;
-        public static final int com_alibc_trade_auth_close = 0x7f07009a;
-        public static final int com_taobao_nb_sdk_web_view_title_bar_back = 0x7f07009b;
-        public static final int com_taobao_nb_sdk_web_view_title_bar_close = 0x7f07009c;
+        public static final int com_alibaba_bc_auth_cancle_btn = 0x7f070099;
+        public static final int com_alibaba_bc_auth_ll_bg = 0x7f07009a;
+        public static final int com_alibaba_bc_auth_success_btn = 0x7f07009b;
+        public static final int com_alibc_trade_auth_close = 0x7f07009c;
+        public static final int com_taobao_nb_sdk_web_view_title_bar_back = 0x7f07009d;
+        public static final int com_taobao_nb_sdk_web_view_title_bar_close = 0x7f07009e;
     }
     public static final class id {
         public static final int com_alibc_auth_progressbar = 0x7f080067;
@@ -26,18 +26,18 @@ public final class R {
         public static final int com_taobao_nb_sdk_web_view_title_bar_title = 0x7f08006b;
         public static final int com_taobao_nb_sdk_webview_click = 0x7f08006c;
         public static final int com_taobao_tae_sdk_web_view_title_bar = 0x7f08006d;
-        public static final int open_auth_btn_cancel = 0x7f0801bf;
-        public static final int open_auth_btn_close = 0x7f0801c0;
-        public static final int open_auth_btn_grant = 0x7f0801c1;
-        public static final int open_auth_desc = 0x7f0801c2;
-        public static final int open_auth_rl = 0x7f0801c3;
-        public static final int open_auth_title = 0x7f0801c4;
-        public static final int webviewload_monitor_cancel_point = 0x7f0802f5;
+        public static final int open_auth_btn_cancel = 0x7f0801c0;
+        public static final int open_auth_btn_close = 0x7f0801c1;
+        public static final int open_auth_btn_grant = 0x7f0801c2;
+        public static final int open_auth_desc = 0x7f0801c3;
+        public static final int open_auth_rl = 0x7f0801c4;
+        public static final int open_auth_title = 0x7f0801c5;
+        public static final int webviewload_monitor_cancel_point = 0x7f0802f8;
     }
     public static final class layout {
-        public static final int com_alibc_auth_actiivty = 0x7f0a006e;
-        public static final int com_taobao_nb_sdk_web_view_activity = 0x7f0a006f;
-        public static final int com_taobao_nb_sdk_web_view_title_bar = 0x7f0a0070;
+        public static final int com_alibc_auth_actiivty = 0x7f0a006f;
+        public static final int com_taobao_nb_sdk_web_view_activity = 0x7f0a0070;
+        public static final int com_taobao_nb_sdk_web_view_title_bar = 0x7f0a0071;
     }
     public static final class raw {
         public static final int keep = 0x7f0b0000;

@@ -264,6 +264,7 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
     private View button_list_login;//登录状态下显示的按钮list
     private View headview_no_login;
     private View headview_login;
+    private View wodeshoucang; //我的收藏
     private View wodetuandui; // 我的团队
     private View zhanghutixian; // 账户提现
     private View dingdanxiangqing; // 订单详情
@@ -304,6 +305,8 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
         headview_login = getView().findViewById(R.id.headview_login);
         mine_account = getView().findViewById(R.id.mine_account_button_group);
         mine_account.setOnClickListener(this);
+        wodeshoucang = getView().findViewById(R.id.wodeshoucang);
+        wodeshoucang.setOnClickListener(this);
         wodetuandui = getView().findViewById(R.id.wodetuandui);
         wodetuandui.setOnClickListener(this);
         zhanghutixian = getView().findViewById(R.id.zhanghutixian);
@@ -388,7 +391,10 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
         } else if (v == zhanghutixian) { // 账户提现
             Intent intent = new Intent(getContext(), HeHuoRenCashActivity.class);
             startActivity(intent);
-        } else if (v == wodetuandui) { // 我的团队
+        }else if(v == wodeshoucang){   //我的收藏
+            Intent intent = new Intent(getContext(), MyFavorite.class);
+            startActivity(intent);
+        }else if (v == wodetuandui) { // 我的团队
             Intent intent = new Intent(getContext(), MyTeamActivity1.class);
             startActivity(intent);
         } else if (v == tuiguangyaoqing || v == tuiguangyaoqing_1) { //推广邀请

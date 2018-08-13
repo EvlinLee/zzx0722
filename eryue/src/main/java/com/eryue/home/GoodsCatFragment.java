@@ -193,7 +193,7 @@ public class GoodsCatFragment extends BaseFragment implements AdapterView.OnItem
         for (int i = 0; i < images.length; i++) {
             map = new HashMap<String, Object>();
             map.put("image", images[i]);
-            map.put("title", titles[i]);
+            map.put("title", femaleClothing[i]);
             map.put("cat", cats[i]);
             list.add(map);
         }
@@ -227,7 +227,7 @@ public class GoodsCatFragment extends BaseFragment implements AdapterView.OnItem
 
         if (null!=list&&position<list.size()){
 
-            String title = (String) list.get(position).get("title");
+            String title = classify_list_title.getText().toString()+"+"+(String) list.get(position).get("title");
             String cat = (String) list.get(position).get("cat");
             Intent intent = new Intent(getContext(), GoodsSearchResultActivity.class);
             intent.putExtra("title",title);

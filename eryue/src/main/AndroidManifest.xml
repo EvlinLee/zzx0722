@@ -309,6 +309,9 @@
         <activity android:name="com.eryue.jd.SearchJDActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"/>
+        <activity android:name="com.eryue.mine.MyFavorite"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
 
         <activity android:name="com.eryue.activity.ImageBigActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
