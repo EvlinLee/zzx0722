@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/comm_background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_goods"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_goods" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:maxLines="1"
+        android:text="夹克男2018春装新款韩剧"
+        android:textColor="@color/txt_gray"
+        android:textSize="12sp" />
+
+    <!--券后价格-->
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="6dp"
+        android:layout_gravity="center"
+        android:text="¥74.9"
+        android:textColor="#fd7d6f"
+        android:textSize="12sp" />
+
+
+
+</LinearLayout>

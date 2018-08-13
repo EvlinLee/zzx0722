@@ -8,91 +8,91 @@ package com.alibaba.baichuan.android;
 
 public final class R {
     public static final class color {
-        public static final int alibc_transparent = 0x7f04001a;
+        public static final int alibc_transparent = 0x7f05001a;
     }
     public static final class drawable {
-        public static final int com_alibaba_bc_auth_cancle_btn = 0x7f060088;
-        public static final int com_alibaba_bc_auth_ll_bg = 0x7f060089;
-        public static final int com_alibaba_bc_auth_success_btn = 0x7f06008a;
-        public static final int com_alibc_trade_auth_close = 0x7f06008b;
-        public static final int com_taobao_nb_sdk_web_view_title_bar_back = 0x7f06008c;
-        public static final int com_taobao_nb_sdk_web_view_title_bar_close = 0x7f06008d;
+        public static final int com_alibaba_bc_auth_cancle_btn = 0x7f070097;
+        public static final int com_alibaba_bc_auth_ll_bg = 0x7f070098;
+        public static final int com_alibaba_bc_auth_success_btn = 0x7f070099;
+        public static final int com_alibc_trade_auth_close = 0x7f07009a;
+        public static final int com_taobao_nb_sdk_web_view_title_bar_back = 0x7f07009b;
+        public static final int com_taobao_nb_sdk_web_view_title_bar_close = 0x7f07009c;
     }
     public static final class id {
-        public static final int com_alibc_auth_progressbar = 0x7f07005e;
-        public static final int com_taobao_nb_sdk_web_view_title_bar = 0x7f07005f;
-        public static final int com_taobao_nb_sdk_web_view_title_bar_back_button = 0x7f070060;
-        public static final int com_taobao_nb_sdk_web_view_title_bar_close_button = 0x7f070061;
-        public static final int com_taobao_nb_sdk_web_view_title_bar_title = 0x7f070062;
-        public static final int com_taobao_nb_sdk_webview_click = 0x7f070063;
-        public static final int com_taobao_tae_sdk_web_view_title_bar = 0x7f070064;
-        public static final int open_auth_btn_cancel = 0x7f0701a2;
-        public static final int open_auth_btn_close = 0x7f0701a3;
-        public static final int open_auth_btn_grant = 0x7f0701a4;
-        public static final int open_auth_desc = 0x7f0701a5;
-        public static final int open_auth_rl = 0x7f0701a6;
-        public static final int open_auth_title = 0x7f0701a7;
-        public static final int webviewload_monitor_cancel_point = 0x7f07029f;
+        public static final int com_alibc_auth_progressbar = 0x7f080067;
+        public static final int com_taobao_nb_sdk_web_view_title_bar = 0x7f080068;
+        public static final int com_taobao_nb_sdk_web_view_title_bar_back_button = 0x7f080069;
+        public static final int com_taobao_nb_sdk_web_view_title_bar_close_button = 0x7f08006a;
+        public static final int com_taobao_nb_sdk_web_view_title_bar_title = 0x7f08006b;
+        public static final int com_taobao_nb_sdk_webview_click = 0x7f08006c;
+        public static final int com_taobao_tae_sdk_web_view_title_bar = 0x7f08006d;
+        public static final int open_auth_btn_cancel = 0x7f0801bf;
+        public static final int open_auth_btn_close = 0x7f0801c0;
+        public static final int open_auth_btn_grant = 0x7f0801c1;
+        public static final int open_auth_desc = 0x7f0801c2;
+        public static final int open_auth_rl = 0x7f0801c3;
+        public static final int open_auth_title = 0x7f0801c4;
+        public static final int webviewload_monitor_cancel_point = 0x7f0802f5;
     }
     public static final class layout {
-        public static final int com_alibc_auth_actiivty = 0x7f09006d;
-        public static final int com_taobao_nb_sdk_web_view_activity = 0x7f09006e;
-        public static final int com_taobao_nb_sdk_web_view_title_bar = 0x7f09006f;
+        public static final int com_alibc_auth_actiivty = 0x7f0a006e;
+        public static final int com_taobao_nb_sdk_web_view_activity = 0x7f0a006f;
+        public static final int com_taobao_nb_sdk_web_view_title_bar = 0x7f0a0070;
     }
     public static final class raw {
-        public static final int keep = 0x7f0a0000;
+        public static final int keep = 0x7f0b0000;
     }
     public static final class string {
-        public static final int alisdk_message_10008_action = 0x7f0b0020;
-        public static final int alisdk_message_10008_message = 0x7f0b0021;
-        public static final int alisdk_message_10008_name = 0x7f0b0022;
-        public static final int alisdk_message_10008_type = 0x7f0b0023;
-        public static final int alisdk_message_10009_action = 0x7f0b0024;
-        public static final int alisdk_message_10009_message = 0x7f0b0025;
-        public static final int alisdk_message_10009_name = 0x7f0b0026;
-        public static final int alisdk_message_10009_type = 0x7f0b0027;
-        public static final int alisdk_message_14_message = 0x7f0b0028;
-        public static final int alisdk_message_801_action = 0x7f0b002d;
-        public static final int alisdk_message_801_message = 0x7f0b002e;
-        public static final int alisdk_message_801_name = 0x7f0b002f;
-        public static final int alisdk_message_801_type = 0x7f0b0030;
-        public static final int alisdk_message_802_action = 0x7f0b0031;
-        public static final int alisdk_message_802_message = 0x7f0b0032;
-        public static final int alisdk_message_802_name = 0x7f0b0033;
-        public static final int alisdk_message_802_type = 0x7f0b0034;
-        public static final int alisdk_message_803_action = 0x7f0b0035;
-        public static final int alisdk_message_803_message = 0x7f0b0036;
-        public static final int alisdk_message_803_name = 0x7f0b0037;
-        public static final int alisdk_message_803_type = 0x7f0b0038;
-        public static final int alisdk_message_804_action = 0x7f0b0039;
-        public static final int alisdk_message_804_message = 0x7f0b003a;
-        public static final int alisdk_message_804_name = 0x7f0b003b;
-        public static final int alisdk_message_804_type = 0x7f0b003c;
-        public static final int alisdk_message_805_action = 0x7f0b003d;
-        public static final int alisdk_message_805_message = 0x7f0b003e;
-        public static final int alisdk_message_805_name = 0x7f0b003f;
-        public static final int alisdk_message_805_type = 0x7f0b0040;
-        public static final int alisdk_message_806_action = 0x7f0b0041;
-        public static final int alisdk_message_806_message = 0x7f0b0042;
-        public static final int alisdk_message_806_name = 0x7f0b0043;
-        public static final int alisdk_message_806_type = 0x7f0b0044;
-        public static final int alisdk_message_807_action = 0x7f0b0045;
-        public static final int alisdk_message_807_message = 0x7f0b0046;
-        public static final int alisdk_message_807_name = 0x7f0b0047;
-        public static final int alisdk_message_807_type = 0x7f0b0048;
-        public static final int alisdk_message_808_action = 0x7f0b0049;
-        public static final int alisdk_message_808_message = 0x7f0b004a;
-        public static final int alisdk_message_808_name = 0x7f0b004b;
-        public static final int alisdk_message_808_type = 0x7f0b004c;
-        public static final int alisdk_message_809_message = 0x7f0b004d;
-        public static final int app_name = 0x7f0b0050;
-        public static final int com_alibc_auth_actiivty_auth_ok = 0x7f0b006e;
-        public static final int com_alibc_auth_actiivty_cancel = 0x7f0b006f;
-        public static final int com_alibc_auth_actiivty_get = 0x7f0b0070;
-        public static final int com_taobao_nb_sdk_loading_progress_message = 0x7f0b0071;
-        public static final int init_success = 0x7f0b007e;
+        public static final int alisdk_message_10008_action = 0x7f0c0020;
+        public static final int alisdk_message_10008_message = 0x7f0c0021;
+        public static final int alisdk_message_10008_name = 0x7f0c0022;
+        public static final int alisdk_message_10008_type = 0x7f0c0023;
+        public static final int alisdk_message_10009_action = 0x7f0c0024;
+        public static final int alisdk_message_10009_message = 0x7f0c0025;
+        public static final int alisdk_message_10009_name = 0x7f0c0026;
+        public static final int alisdk_message_10009_type = 0x7f0c0027;
+        public static final int alisdk_message_14_message = 0x7f0c0028;
+        public static final int alisdk_message_801_action = 0x7f0c002d;
+        public static final int alisdk_message_801_message = 0x7f0c002e;
+        public static final int alisdk_message_801_name = 0x7f0c002f;
+        public static final int alisdk_message_801_type = 0x7f0c0030;
+        public static final int alisdk_message_802_action = 0x7f0c0031;
+        public static final int alisdk_message_802_message = 0x7f0c0032;
+        public static final int alisdk_message_802_name = 0x7f0c0033;
+        public static final int alisdk_message_802_type = 0x7f0c0034;
+        public static final int alisdk_message_803_action = 0x7f0c0035;
+        public static final int alisdk_message_803_message = 0x7f0c0036;
+        public static final int alisdk_message_803_name = 0x7f0c0037;
+        public static final int alisdk_message_803_type = 0x7f0c0038;
+        public static final int alisdk_message_804_action = 0x7f0c0039;
+        public static final int alisdk_message_804_message = 0x7f0c003a;
+        public static final int alisdk_message_804_name = 0x7f0c003b;
+        public static final int alisdk_message_804_type = 0x7f0c003c;
+        public static final int alisdk_message_805_action = 0x7f0c003d;
+        public static final int alisdk_message_805_message = 0x7f0c003e;
+        public static final int alisdk_message_805_name = 0x7f0c003f;
+        public static final int alisdk_message_805_type = 0x7f0c0040;
+        public static final int alisdk_message_806_action = 0x7f0c0041;
+        public static final int alisdk_message_806_message = 0x7f0c0042;
+        public static final int alisdk_message_806_name = 0x7f0c0043;
+        public static final int alisdk_message_806_type = 0x7f0c0044;
+        public static final int alisdk_message_807_action = 0x7f0c0045;
+        public static final int alisdk_message_807_message = 0x7f0c0046;
+        public static final int alisdk_message_807_name = 0x7f0c0047;
+        public static final int alisdk_message_807_type = 0x7f0c0048;
+        public static final int alisdk_message_808_action = 0x7f0c0049;
+        public static final int alisdk_message_808_message = 0x7f0c004a;
+        public static final int alisdk_message_808_name = 0x7f0c004b;
+        public static final int alisdk_message_808_type = 0x7f0c004c;
+        public static final int alisdk_message_809_message = 0x7f0c004d;
+        public static final int app_name = 0x7f0c0050;
+        public static final int com_alibc_auth_actiivty_auth_ok = 0x7f0c0071;
+        public static final int com_alibc_auth_actiivty_cancel = 0x7f0c0072;
+        public static final int com_alibc_auth_actiivty_get = 0x7f0c0073;
+        public static final int com_taobao_nb_sdk_loading_progress_message = 0x7f0c0074;
+        public static final int init_success = 0x7f0c0081;
     }
     public static final class style {
-        public static final int alibc_auth_dialog = 0x7f0c0181;
+        public static final int alibc_auth_dialog = 0x7f0d019e;
     }
 }

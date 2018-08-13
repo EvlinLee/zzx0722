@@ -30,6 +30,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="40dip"
+                    android:layout_marginTop="20dp"
                     android:id="@+id/navigation">
                     <ImageView
                         android:layout_width="wrap_content"
@@ -70,7 +71,7 @@
                         android:layout_height="50dip"
                         android:id="@+id/header_imageview_no_login"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="37dip"
+                        android:layout_marginTop="17dip"
                         android:background="@drawable/ic_launcher"/>
                 </RelativeLayout>
 
@@ -91,15 +92,15 @@
                             android:id="@+id/header_imageview_login"
                             android:layout_marginLeft="15dip"
                             android:src="@drawable/ic_launcher"
-                            android:layout_marginTop="35dip"/>
+                            android:layout_marginTop="15dip"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:id="@+id/name"
                             android:text="猪猪女孩"
-                            android:textSize="16sp"
-                            android:layout_marginTop="36dip"
+                            android:textSize="17sp"
+                            android:layout_marginTop="16dip"
                             android:layout_marginLeft="10dip"
                             android:layout_toRightOf="@+id/header_imageview_login"
                             android:textColor="#ffffff"/>
@@ -108,17 +109,17 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:visibility="gone"
                             android:id="@+id/bindwx"
-                            android:textSize="10sp"
+                            android:textSize="11sp"
                             android:drawableLeft="@drawable/profile_icon_14"
                             android:text="已绑定微信"
                             android:drawablePadding="3dp"
                             android:layout_below="@+id/name"
                             android:layout_toRightOf="@+id/header_imageview_login"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="8dp"
-                            android:background="#DE5A53"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="6dp"
+                            android:padding="3dp"
+                            android:background="@drawable/bg_bindwx_shape"
                             android:textColor="#ffffff"/>
 
                         <!--签到-->
@@ -562,7 +563,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="我的收藏"
-                        android:textSize="12sp"
+                        android:textSize="14sp"
                         android:textColor="#666666"
                         android:drawablePadding="15dp"
                         android:layout_marginBottom="10dp"
@@ -596,7 +597,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="订单提交"
-                        android:textSize="12sp"
+                        android:textSize="14sp"
                         android:textColor="#666666"
                         android:drawablePadding="15dp"
                         android:layout_marginBottom="10dp"
@@ -629,7 +630,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="浏览足迹"
-                        android:textSize="12sp"
+                        android:textSize="14sp"
                         android:textColor="#666666"
                         android:drawablePadding="15dp"
                         android:layout_marginBottom="10dp"
@@ -662,7 +663,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="推广邀请"
-                        android:textSize="12sp"
+                        android:textSize="14sp"
                         android:textColor="#666666"
                         android:drawablePadding="15dp"
                         android:layout_marginBottom="10dp"
@@ -695,7 +696,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="使用帮助"
-                        android:textSize="12sp"
+                        android:textSize="14sp"
                         android:textColor="#666666"
                         android:drawablePadding="15dp"
                         android:layout_marginBottom="10dp"
@@ -728,7 +729,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="代理学习"
-                        android:textSize="12sp"
+                        android:textSize="14sp"
                         android:textColor="#666666"
                         android:drawablePadding="15dp"
                         android:layout_marginBottom="10dp"
@@ -761,7 +762,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="联系客服"
-                        android:textSize="12sp"
+                        android:textSize="14sp"
                         android:textColor="#666666"
                         android:drawablePadding="15dp"
                         android:layout_marginBottom="10dp"
@@ -795,7 +796,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="代理教程"
-                        android:textSize="12sp"
+                        android:textSize="14sp"
                         android:textColor="#666666"
                         android:drawablePadding="15dp"
                         android:layout_marginBottom="10dp"
@@ -827,7 +828,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="关于我们"
-                        android:textSize="12sp"
+                        android:textSize="14sp"
                         android:textColor="#666666"
                         android:drawablePadding="15dp"
                         android:layout_marginBottom="10dp"

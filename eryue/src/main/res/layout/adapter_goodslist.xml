@@ -55,11 +55,14 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <ImageView
+                <TextView
                     android:id="@+id/iv_business"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/img_tb" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    android:background="@drawable/bg_create_share_allselect"
+                     />
 
                 <TextView
                     android:id="@+id/tv_name"

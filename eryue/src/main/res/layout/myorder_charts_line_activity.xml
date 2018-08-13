@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_background"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_profile_bg2"
+        >
+            <!--导航栏-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="20dp"
+                android:id="@+id/navigation"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/navigation_back"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/img_ddxq_arrow"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单详情"
+                    android:layout_centerInParent="true"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/navigation_message"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_message"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:layout_marginRight="15dip"/>
+            </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="88.88"
+            android:textSize="36dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/yugujifen"
+            android:layout_below="@+id/navigation"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="七日预估积分"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/yugujifen"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/linear_layout1"
+        android:orientation="horizontal"
+        android:background="@drawable/lv_item_shape"
+        >
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/value0"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:text="1111"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hint0"
+                    android:text="七日有效积分"
+                    android:textColor="#666666"
+                    android:textSize="12sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/value0"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:background="#fd5b68" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/value1"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:layout_centerHorizontal="true"
+                    android:text="1111"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hint1"
+                    android:text="七日订单数量"
+                    android:textColor="#666666"
+                    android:textSize="12sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/value1"/>
+
+            </RelativeLayout>
+    </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="260dp"
+            android:background="@drawable/lv_item_shape"
+            android:id="@+id/relative_layout1"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/linear_layout1"
+            >
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:clickable="true"
+                android:paddingBottom="2dp"
+                android:text="七日预估积分"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_below="@+id/tv_date"
+                android:layout_height="1dp"
+                android:id="@+id/line"
+                android:background="#f5f5f5" />
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart"
+                android:layout_below="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看详情"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:id="@+id/check_detail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/relative_layout1"
+            android:background="@drawable/profile_button_login"
+            />
+
+</RelativeLayout>

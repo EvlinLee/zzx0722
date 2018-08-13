@@ -34,7 +34,7 @@ public class SearchLiveActivity extends BaseActivity {
         bundle.putString("title",title);
         bundle.putString("type",type);
 
-        SearchLiveFragment searchLiveFragment = SearchLiveFragment.newInstatnce();
+        SearchLiveFragmentEx searchLiveFragment = SearchLiveFragmentEx.newInstatnce();
         searchLiveFragment.setArguments(bundle);
 
         showFragment(searchLiveFragment);

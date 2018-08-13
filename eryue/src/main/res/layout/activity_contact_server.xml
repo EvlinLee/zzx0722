@@ -5,6 +5,7 @@
 
     <TextView
         android:id="@+id/hint"
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dip"
@@ -13,77 +14,93 @@
         android:textColor="#333333"
         android:textSize="15dip" />
 
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="200dip"
-        android:layout_height="200dip"
-        android:layout_below="@id/hint"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dip" />
-
-    <LinearLayout
-        android:id="@+id/wechat_contain"
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="30dip"
-        android:layout_below="@+id/image"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_list_shape"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dip"
-        android:orientation="horizontal">
+        android:layout_marginTop="50dp"
+        >
 
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginRight="33dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip" />
         <TextView
             android:id="@+id/wechat_hint"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
             android:text="客服微信号："
-            android:textSize="15dip"
-            android:textColor="#999999" />
+            android:layout_marginLeft="33dp"
+            android:layout_marginRight="8dp"
+            android:textSize="13sp"
+            android:textColor="#666666" />
 
         <TextView
             android:id="@+id/wechat"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:textColor="#333333"
-            android:textSize="15dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_toRightOf="@id/wechat_hint"
+            android:textColor="#666666"
+            android:textSize="13sp"
             />
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wechat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:id="@+id/copy"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:text="复制微信号"
+                android:textColor="#666666"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"/>
 
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dip"
+                android:gravity="center"
+                android:text="保存二维码"
+                android:layout_below="@+id/wechat_hint"
+                android:layout_toRightOf="@id/copy"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+        </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/button_contain"
+    </RelativeLayout>
+
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/wechat_contain"
+        android:src="@drawable/img_lxkf"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dip"
-        android:orientation="horizontal">
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        />
 
-        <TextView
-            android:id="@+id/copy"
-            android:layout_width="120dip"
-            android:layout_height="40dip"
-            android:layout_below="@+id/wechat_contain"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/corner4"
-            android:gravity="center"
-            android:text="复制微信号"
-            android:textColor="#ffffff"
-            android:textSize="16dip" />
-
-        <TextView
-            android:id="@+id/save"
-            android:layout_width="120dip"
-            android:layout_height="40dip"
-            android:layout_below="@+id/wechat_contain"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="10dip"
-            android:background="@drawable/corner4"
-            android:gravity="center"
-            android:text="保存二维码"
-            android:textColor="#ffffff"
-            android:textSize="16dip" />
-
-    </LinearLayout>
 
 
 </RelativeLayout>

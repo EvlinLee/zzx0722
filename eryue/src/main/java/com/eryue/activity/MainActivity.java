@@ -4,6 +4,7 @@ import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -34,6 +35,7 @@ import com.eryue.home.GoodsAllFragmentEx;
 import com.eryue.home.InvitationDialog;
 import com.eryue.home.MainPresenter;
 import com.eryue.live.SearchLiveFragment;
+import com.eryue.live.SearchLiveFragmentEx;
 import com.eryue.mine.AboutUsActivity;
 import com.eryue.mine.MineFragment;
 import com.eryue.mine.login.LoginActivity1;
@@ -73,8 +75,6 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 
     private LinearLayout layout4;
 
-    private LinearLayout layout5;
-
     private ImageView imgTab1;
 
     private ImageView imgTab2;
@@ -82,8 +82,6 @@ public class MainActivity extends BaseActivity implements OnClickListener {
     private ImageView imgTab3;
 
     private ImageView imgTab4;
-
-    private ImageView imgTab5;
 
     private TextView tvTab1;
 
@@ -93,10 +91,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 
     private TextView tvTab4;
 
-    private TextView tvTab5;
-
     public static final int TAB_HOME = 0;
-    public static final int TAB_SEARCH = 1;
     public static final int TAB_LIVE = 2;
     public static final int TAB_FRIEND = 3;
     public static final int TAB_MINE = 4;
@@ -114,7 +109,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        StatusBarCompat.setStatusBarColor(this, 0xFFFF1A40);
+        StatusBarCompat.setStatusBarColor(this,Color.TRANSPARENT,Color.TRANSPARENT);
         super.onCreate(savedInstanceState);
         hideNavigationBar(true);
         Log.i("com.vshangxiu.vshangxiu", this.getClass().getSimpleName());
@@ -204,26 +199,23 @@ public class MainActivity extends BaseActivity implements OnClickListener {
         // layoutMain = (FrameLayout) findViewById(R.id.containerBody);
         layout1 = (LinearLayout) findViewById(R.id.t1Layout);
         layout1.setTag(0);
-        layout2 = (LinearLayout) findViewById(R.id.t2Layout);
+
+        layout2 = (LinearLayout) findViewById(R.id.t3Layout);
         layout2.setTag(1);
-        layout3 = (LinearLayout) findViewById(R.id.t3Layout);
+        layout3 = (LinearLayout) findViewById(R.id.t4Layout);
         layout3.setTag(2);
-        layout4 = (LinearLayout) findViewById(R.id.t4Layout);
+        layout4 = (LinearLayout) findViewById(R.id.t5Layout);
         layout4.setTag(3);
-        layout5 = (LinearLayout) findViewById(R.id.t5Layout);
-        layout5.setTag(4);
 
         imgTab1 = (ImageView) findViewById(R.id.iv1);
-        imgTab2 = (ImageView) findViewById(R.id.iv2);
-        imgTab3 = (ImageView) findViewById(R.id.iv3);
-        imgTab4 = (ImageView) findViewById(R.id.iv4);
-        imgTab5 = (ImageView) findViewById(R.id.iv5);
+        imgTab2 = (ImageView) findViewById(R.id.iv3);
+        imgTab3 = (ImageView) findViewById(R.id.iv4);
+        imgTab4 = (ImageView) findViewById(R.id.iv5);
 
         tvTab1 = (TextView) findViewById(R.id.text1);
-        tvTab2 = (TextView) findViewById(R.id.text2);
-        tvTab3 = (TextView) findViewById(R.id.text3);
-        tvTab4 = (TextView) findViewById(R.id.text4);
-        tvTab5 = (TextView) findViewById(R.id.text5);
+        tvTab2 = (TextView) findViewById(R.id.text3);
+        tvTab3 = (TextView) findViewById(R.id.text4);
+        tvTab4 = (TextView) findViewById(R.id.text5);
 
     }
 
@@ -326,7 +318,6 @@ public class MainActivity extends BaseActivity implements OnClickListener {
         layout2.setOnClickListener(this);
         layout3.setOnClickListener(this);
         layout4.setOnClickListener(this);
-        layout5.setOnClickListener(this);
     }
 
 
@@ -345,13 +336,13 @@ public class MainActivity extends BaseActivity implements OnClickListener {
     GoodsSuperSearchFragment goodsSearchFramgent;
 
     //实时播
-    SearchLiveFragment searchLiveFragment;
+    SearchLiveFragmentEx searchLiveFragment;
     DayFriendsFragment friendsFragment;
     MineFragment mineFragment;//个人中心
 
     private void setCondition(int index) {
 
-        if (index == 3) {
+        if (index == 2) {
             //如果没有登录就进入到登录页
             //点击消息、每日发圈、列表分享、详情分享、立即购买、联系客服,需要登录
             if (!AccountUtil.checkLogin(this)) {
@@ -369,7 +360,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
                 }
                 showFragment(goodsAllFragment);
                 break;
-            case 1:
+           /* case 1:
 //                if (hotFragment == null) {
 //                    hotFragment = GoodsListFragment.newInstance(false);
 //                    Bundle bundle = new Bundle();
@@ -387,8 +378,8 @@ public class MainActivity extends BaseActivity implements OnClickListener {
                 }
                 showFragment(goodsSearchFramgent);
 
-                break;
-            case 2:
+                break;*/
+            case 1:
 //                if (vedioFragment == null) {
 //                    vedioFragment = GoodsListFragment.newInstance(true);
 //                    Bundle bundle = new Bundle();
@@ -401,25 +392,25 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 //                showFragment(vedioFragment);
 
                 if (searchLiveFragment == null) {
-                    searchLiveFragment = new SearchLiveFragment();
+                    searchLiveFragment = new SearchLiveFragmentEx();
                     String title = "实时播";
                     Bundle bundle = new Bundle();
                     bundle.putString("title", title);
                     searchLiveFragment.setArguments(bundle);
                 } else {
-                    searchLiveFragment.refreshView();
+//                    searchLiveFragment.refreshView();
                 }
                 showFragment(searchLiveFragment);
                 break;
-            case 3:
+            case 2:
                 if (null == friendsFragment) {
                     friendsFragment = new DayFriendsFragment();
                 } else {
-                    friendsFragment.refreshContent();
+//                    friendsFragment.refreshContent();
                 }
                 showFragment(friendsFragment);
                 break;
-            case 4:
+            case 3:
                 if (mineFragment == null) {
                     mineFragment = new MineFragment();
                 } else {
@@ -472,8 +463,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if (v == layout1 || v == layout2 || v == layout3 || v == layout4
-                || v == layout5) {
+        if (v == layout1 || v == layout2 || v == layout3 || v == layout4) {
             setCondition(Integer.parseInt(v.getTag().toString()));
         }
     }
@@ -517,36 +507,30 @@ public class MainActivity extends BaseActivity implements OnClickListener {
     }
 
     private void setStyle(int index) {
-        imgTab1.setImageResource(R.drawable.m_home_normal);
-        imgTab2.setImageResource(R.drawable.m_goods_normal);
-        imgTab3.setImageResource(R.drawable.m_video_normal);
-        imgTab4.setImageResource(R.drawable.m_category_normal);
-        imgTab5.setImageResource(R.drawable.m_mine_normal);
+        imgTab1.setImageResource(R.drawable.tab_home_nomal);
+        imgTab2.setImageResource(R.drawable.tab_ssb_nomal);
+        imgTab3.setImageResource(R.drawable.tab_mrfq_nomal);
+        imgTab4.setImageResource(R.drawable.tab_porfileo_nomal);
 
         tvTab1.setTextColor(getResources().getColor(R.color.main_text_color));
         tvTab2.setTextColor(getResources().getColor(R.color.main_text_color));
         tvTab3.setTextColor(getResources().getColor(R.color.main_text_color));
         tvTab4.setTextColor(getResources().getColor(R.color.main_text_color));
-        tvTab5.setTextColor(getResources().getColor(R.color.main_text_color));
         if (index == 0) {
-            imgTab1.setImageResource(R.drawable.m_home_selected);
+            imgTab1.setImageResource(R.drawable.tab_home);
             tvTab1.setTextColor(getResources().getColor(R.color.red));
 
         } else if (index == 1) {
-            imgTab2.setImageResource(R.drawable.m_goods_selected);
+            imgTab2.setImageResource(R.drawable.tab_ssb);
             tvTab2.setTextColor(getResources().getColor(R.color.red));
 
         } else if (index == 2) {
-            imgTab3.setImageResource(R.drawable.m_video_selected);
+            imgTab3.setImageResource(R.drawable.tab_mrfq);
             tvTab3.setTextColor(getResources().getColor(R.color.red));
 
         } else if (index == 3) {
-            imgTab4.setImageResource(R.drawable.m_category_selected);
+            imgTab4.setImageResource(R.drawable.tab_porfile_red);
             tvTab4.setTextColor(getResources().getColor(R.color.red));
-
-        } else if (index == 4) {
-            imgTab5.setImageResource(R.drawable.m_mine_selected);
-            tvTab5.setTextColor(getResources().getColor(R.color.red));
 
         }
     }

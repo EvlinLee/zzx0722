@@ -7,15 +7,220 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/textview_list_shape"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:id="@+id/linear_layout1"
         android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textview_list_shape"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="全部"
+                    android:padding="3dp"
+                    android:clickable="true"
+                    android:id="@+id/tv_data_all"
+                    android:textSize="13sp"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/charge_radio_group_selector"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="今日"
+                    android:padding="3dp"
+                    android:layout_margin="5dp"
+                    android:id="@+id/tv_data_today"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:clickable="true"
+                    android:background="@drawable/charge_radio_group_selector"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="七天"
+                    android:layout_margin="5dp"
+                    android:id="@+id/tv_data_week"
+                    android:textSize="13sp"
+                    android:clickable="true"
+                    android:textColor="@color/black"
+                    android:background="@drawable/charge_radio_group_selector"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本月"
+                    android:clickable="true"
+                    android:id="@+id/tv_data_month"
+                    android:textSize="13sp"
+                    android:padding="3dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/charge_radio_group_selector"
+                    android:layout_margin="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:clickable="true"
+                    android:layout_height="wrap_content"
+                    android:text="上月"
+                    android:layout_margin="5dp"
+                    android:padding="3dp"
+                    android:id="@+id/tv_data_last"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/charge_radio_group_selector"                />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:padding="3dp"
+                    android:layout_height="wrap_content"
+                    android:text="全部"
+                    android:id="@+id/tv_order_1"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/charge_radio_group_selector"                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="我的订单"
+                    android:layout_margin="5dp"
+                    android:padding="3dp"
+                    android:id="@+id/tv_order_2"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/charge_radio_group_selector"            />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_margin="5dp"
+                    android:text="代理订单"
+                    android:id="@+id/tv_order_3"
+                    android:padding="3dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/charge_radio_group_selector"                />
+
+            </LinearLayout>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:layout_margin="5dp"
+                        android:text="全部"
+                        android:padding="3dp"
+                        android:id="@+id/tv_platform_1"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"
+                        android:background="@drawable/charge_radio_group_selector"                />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:layout_margin="5dp"
+                        android:text="淘宝"
+                        android:padding="3dp"
+                        android:id="@+id/tv_platform_2"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"
+                        android:background="@drawable/charge_radio_group_selector"                />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:layout_margin="5dp"
+                        android:text="京东"
+                        android:id="@+id/tv_platform_3"
+                        android:textSize="13sp"
+                        android:padding="3dp"
+                        android:textColor="@color/black"
+                        android:background="@drawable/charge_radio_group_selector"                />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:clickable="true"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="拼多多"
+                        android:padding="3dp"
+                        android:id="@+id/tv_platform_4"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"
+                        android:background="@drawable/charge_radio_group_selector"                />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:clickable="true"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="蘑菇街"
+                        android:padding="3dp"
+                        android:id="@+id/tv_platform_5"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"
+                        android:background="@drawable/charge_radio_group_selector"                />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:layout_margin="5dp"
+                        android:text="苏宁"
+                        android:id="@+id/tv_platform_6"
+                        android:padding="3dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"
+                        android:background="@drawable/charge_radio_group_selector"                />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:layout_margin="5dp"
+                        android:text="京东免单"
+                        android:padding="3dp"
+                        android:id="@+id/tv_platform_7"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"
+                        android:background="@drawable/charge_radio_group_selector"                />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+        </LinearLayout>
+
         <LinearLayout
             android:id="@+id/layout_toolbar"
             android:layout_width="match_parent"
             android:layout_height="40dip"
+            android:visibility="gone"
+            android:background="@color/comm_background"
             android:orientation="horizontal">
 
             <RelativeLayout
@@ -125,18 +330,14 @@
 
         </LinearLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dip"
-            android:id="@+id/line"
-            android:layout_below="@+id/layout_toolbar"
-            android:background="@color/line_color" />
 
         <LinearLayout
             android:id="@+id/down_view"
             android:layout_width="match_parent"
             android:layout_height="60dip"
             android:layout_below="@+id/line"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/textview_list_shape_red"
             android:orientation="horizontal">
 
             <RelativeLayout
@@ -151,7 +352,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:text="0"
-                    android:textColor="#333333"
+                    android:textColor="#ffffff"
                     android:textSize="14sp" />
 
                 <TextView
@@ -161,7 +362,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="6dip"
                     android:text="预估积分"
-                    android:textColor="#999999"
+                    android:textColor="#ffffff"
                     android:textSize="12sp" />
 
                 <View
@@ -169,7 +370,7 @@
                     android:layout_height="30dip"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:background="#fd5b68" />
+                    android:background="@color/white" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -184,7 +385,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:text="0"
-                    android:textColor="#333333"
+                    android:textColor="#ffffff"
                     android:textSize="14sp" />
 
                 <TextView
@@ -194,7 +395,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="6dip"
                     android:text="有效积分"
-                    android:textColor="#999999"
+                    android:textColor="#ffffff"
                     android:textSize="12sp" />
 
                 <View
@@ -202,7 +403,7 @@
                     android:layout_height="30dip"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:background="#fd5b68" />
+                    android:background="@color/white" />
             </RelativeLayout>
 
 
@@ -218,7 +419,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:text="0"
-                    android:textColor="#333333"
+                    android:textColor="#ffffff"
                     android:textSize="14sp" />
 
                 <TextView
@@ -228,7 +429,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="6dip"
                     android:text="订单数量"
-                    android:textColor="#999999"
+                    android:textColor="#ffffff"
                     android:textSize="12sp" />
 
             </RelativeLayout>

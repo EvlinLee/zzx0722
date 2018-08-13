@@ -5,12 +5,14 @@ import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.os.Message;
+import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -25,8 +27,9 @@ import com.eryue.R;
 import com.eryue.activity.BaseFragment;
 import com.eryue.activity.CreateShareActivity;
 import com.eryue.activity.CreateShareActivityEx;
-import com.eryue.home.GoodsListAdapter;
+import com.eryue.home.GoodsListAdapterEx;
 import com.eryue.home.GoodsUtil;
+import com.eryue.ui.HorizontalListView;
 import com.eryue.ui.NoScrollListView;
 import com.eryue.ui.UIScrollView;
 import com.eryue.util.counttime.CountDownTimerSupport;
@@ -54,7 +57,7 @@ public class GoodsDetailFragmentEx extends BaseFragment implements AdapterView.O
     /**
      * 商品渠道
      */
-    private ImageView iv_business;
+    private TextView iv_business;
 
     /**
      * 商品标题
@@ -79,17 +82,17 @@ public class GoodsDetailFragmentEx extends BaseFragment implements AdapterView.O
     private TextView tv_sellnum;
 
     /**
-     * 积分
+     * 购买
      */
-    private TextView tv_jf;
+    private TextView tv_buy;
 
     private RelativeLayout layout_share;
     private ImageView iv_share;
     /**
      * 猜你喜欢
      */
-    private NoScrollListView listview_like;
-    private GoodsListAdapter likeListAdapter;
+    private GridView listview_like;
+    private GoodsListAdapterEx likeListAdapter;
 
     private ImageView iv_rocket;
 
@@ -146,9 +149,9 @@ public class GoodsDetailFragmentEx extends BaseFragment implements AdapterView.O
 
 
         autoScrollViewPager = (AutoScrollViewPager) headerview.findViewById(R.id.viewPager_goodsimg);
-        listview_like = (NoScrollListView) headerview.findViewById(R.id.listview_like);
+        listview_like = (GridView) headerview.findViewById(R.id.listview_like);
 
-        iv_business = (ImageView) headerview.findViewById(R.id.iv_business);
+        iv_business = (TextView) headerview.findViewById(R.id.iv_business);
         tv_goodstitle = (TextView) headerview.findViewById(R.id.tv_goodstitle);
         tv_afterpaper = (TextView) headerview.findViewById(R.id.tv_afterpaper);
         tv_nowprice = (TextView) headerview.findViewById(R.id.tv_nowprice);
@@ -158,7 +161,8 @@ public class GoodsDetailFragmentEx extends BaseFragment implements AdapterView.O
         tv_paperprice = (TextView) headerview.findViewById(R.id.tv_paperprice);
         tv_sellnum = (TextView) headerview.findViewById(R.id.tv_sellnum);
 
-        tv_jf = (TextView) headerview.findViewById(R.id.tv_jf);
+        tv_buy = (TextView) headerview.findViewById(R.id.tv_buy);
+        tv_buy.setOnClickListener(this);
 
         layout_share = headerview.findViewById(R.id.layout_share);
         iv_share = headerview.findViewById(R.id.iv_share);
@@ -195,7 +199,7 @@ public class GoodsDetailFragmentEx extends BaseFragment implements AdapterView.O
         autoScrollViewPager.setAdapter(pagerAdapter);
 
 
-        likeListAdapter = new GoodsListAdapter(getContext());
+        likeListAdapter = new GoodsListAdapterEx(getContext());
 //        String[] horizontalArray = {"加厚高领修身羊毛衫","2018春季新款针织衫","2017新款韩版百搭衫","韩版2017秋冬新款百搭","2017秋冬新款加厚羊毛","半高领羊毛女秋冬毛衣",
 //        "花愿秋冬新韩版毛衣","时尚宽松刺绣棒球外套"};
 //        List<String> horizontalList = new ArrayList<>();
@@ -258,7 +262,7 @@ public class GoodsDetailFragmentEx extends BaseFragment implements AdapterView.O
                 tv_nowprice.setText("¥" + CommonFunc.fixText(detailInfo.discountPrice, 2));
                 tv_paperprice.setText(CommonFunc.fixText(detailInfo.quanPrice, 0));
                 tv_sellnum.setText("月销" + String.valueOf(detailInfo.soldQuantity));
-                tv_jf.setText("购买可得" + CommonFunc.fixText(detailInfo.jf, 2) + "积分");
+//                tv_jf.setText("购买可得" + CommonFunc.fixText(detailInfo.jf, 2) + "积分");
 
                 //商品状态
                 if (detailInfo.couponStatus == -1) {
@@ -268,7 +272,7 @@ public class GoodsDetailFragmentEx extends BaseFragment implements AdapterView.O
                     Glide.with(getContext()).load(GoodsUtil.getGoodsStatusRid(true, detailInfo.couponStatus)).asBitmap().into(iv_status);
                 }
                 //商品渠道
-                Glide.with(getContext()).load(GoodsUtil.getGoodsBusinessRid(detailInfo.isMall, detailInfo.productType)).asBitmap().into(iv_business);
+                iv_business.setText(GoodsUtil.getGoodsBusinessRid(detailInfo.isMall, detailInfo.productType).toString());
 
             }
         });
@@ -308,6 +312,8 @@ public class GoodsDetailFragmentEx extends BaseFragment implements AdapterView.O
             intent.setClass(getContext(), CreateShareActivityEx.class);
             intent.putExtra("itemId", detailInfo.itemId);
             startActivity(intent);
+        } else if (view == tv_buy){
+            //点击购买
         }
     }
 

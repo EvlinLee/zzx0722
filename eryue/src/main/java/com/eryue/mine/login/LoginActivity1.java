@@ -54,7 +54,7 @@ import retrofit2.http.Query;
 
 public class LoginActivity1 extends BaseActivityTransparent implements View.OnClickListener{
 
-    private ImageView wechat_login;
+    private TextView wechat_login;
 
     private TextView account_login;
 

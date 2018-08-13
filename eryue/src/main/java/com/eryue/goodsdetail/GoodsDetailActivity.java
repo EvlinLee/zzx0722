@@ -74,9 +74,6 @@ public class GoodsDetailActivity extends BaseActivity implements View.OnClickLis
     Drawable ic_star;
     Drawable ic_star_selected;
 
-    private TextView tv_home;
-    private TextView tv_mine;
-    private TextView tv_serice;
     private TextView tv_detail_share;
     private TextView tv_buy;
     private String uid = AccountUtil.getUID();
@@ -99,15 +96,9 @@ public class GoodsDetailActivity extends BaseActivity implements View.OnClickLis
         iv_detailback.setOnClickListener(this);
 
 
-        tv_home = findViewById(R.id.tv_home);
-        tv_mine = findViewById(R.id.tv_mine);
-        tv_serice = findViewById(R.id.tv_serice);
         tv_detail_share = findViewById(R.id.tv_detail_share);
         tv_buy = findViewById(R.id.tv_buy);
 
-        tv_home.setOnClickListener(this);
-        tv_mine.setOnClickListener(this);
-        tv_serice.setOnClickListener(this);
         tv_detail_share.setOnClickListener(this);
         tv_buy.setOnClickListener(this);
 
@@ -237,19 +228,6 @@ public class GoodsDetailActivity extends BaseActivity implements View.OnClickLis
                 intent.putExtra("itemId",productDetailInfo.itemId);
                 startActivity(intent);
             }
-        }else if (v == tv_home){
-            //首页
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
-        }else if (v == tv_mine){
-            //我的
-            Intent intent = new Intent(this, MainActivity.class);
-            intent.putExtra("selectIndex",4);
-            startActivity(intent);
-        }else if (v == tv_serice){
-            //客服
-            Intent intent = new Intent(this.getBaseContext(), ContactServerActivity.class);
-            startActivity(intent);
         }
 
     }

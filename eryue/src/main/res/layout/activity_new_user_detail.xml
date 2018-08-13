@@ -4,23 +4,23 @@
     android:layout_height="match_parent"
     android:background="#ffffff">
 
-    <TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/title1"
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title1"
         android:layout_marginTop="15dip"
-    android:text="如何分享商品给好友？"
-    android:textColor="#333333"
-    android:textSize="22dip"
-    android:gravity="left|center_vertical"
-    android:background="#ffffff"
-    android:paddingLeft="24dip"
+        android:text="如何分享商品给好友？"
+        android:textColor="#333333"
+        android:textSize="20sp"
+        android:gravity="left|center_vertical"
+        android:background="#ffffff"
+        android:paddingLeft="24dip"
         android:paddingRight="24dip"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dip"
+        android:layout_marginTop="15dp"
         android:id="@+id/content"
         android:text="如何分享商品给好友？"
         android:textColor="#636363"

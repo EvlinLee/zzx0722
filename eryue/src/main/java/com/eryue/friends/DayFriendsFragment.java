@@ -1,177 +1,191 @@
 package com.eryue.friends;
 
+import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.view.ViewPager;
+import android.util.Log;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
-import com.eryue.AccountUtil;
 import com.eryue.R;
 import com.eryue.activity.BaseFragment;
-import com.library.ui.dragrefresh.DragRefreshListView;
-import com.library.ui.dragrefresh.ListViewFooter;
-
-import net.InterfaceManager;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 /**
- * Created by bli.Jason on 2018/2/27.
+ * Created by Administrator on 2018/8/11.
  */
 
-public class DayFriendsFragment extends BaseFragment implements DayFriendPresenter.IFriendsListener,DragRefreshListView.DragRefreshListViewListener,DayFriendPresenter.IFriendsExListener {
+public class DayFriendsFragment  extends BaseFragment implements View.OnClickListener{
+    /**
+     *     UI Object
+     */
+    private TextView tv_recommend;
+    private TextView tv_material;
+    private TextView tv_newcomers;
 
-    private DragRefreshListView listview_dayfriends;
-    private DayFriendsAdapter adapter;
+    private ViewPager viewpager;
 
-    private DayFriendPresenter presenter;
+
+    /**
+     * Fragment Object
+     */
+    private DayFriendsMaterialFragment fgMaterial;
+    private DayFriendsNewcomersFragment fgNercomer;
+    private DayFriendsRecommendFragment fgRrecommend;
+    private android.support.v4.app.FragmentManager fManager;
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        setContentView(R.layout.fragment_dayfriends);
-        initView();
-        initData();
-    }
+            super.onActivityCreated(savedInstanceState);
+            setContentView(R.layout.fragment_dayfriends_vierpager);
 
-    private void initView(){
-        listview_dayfriends = (DragRefreshListView) getView().findViewById(R.id.listview_dayfriends);
-        adapter = new DayFriendsAdapter(getContext());
-        listview_dayfriends.setAdapter(adapter);
-        listview_dayfriends.setFooterDividersEnabled(false);
-        listview_dayfriends.setFooterViewState(ListViewFooter.STATE_HIDE);
-        listview_dayfriends.setAutoLoadMore(true);
-        listview_dayfriends.refreshComplete(true, new Date().getTime());
-    }
+            View mStateBarFixer =getView().findViewById(R.id.status_bar_fix_view);
+            mStateBarFixer.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                    getStatusBarHeight(getActivity())));
+            mStateBarFixer.setBackgroundColor(getResources().getColor(R.color.gray));
 
-    private void initData(){
-
-        presenter = new DayFriendPresenter();
-        presenter.setFriendsListener(this);
-        presenter.setFriendsExListener(this);
-
-
-//        List<InterfaceManager.TimeLineEx> dataList = new ArrayList<>();
-//        dataList.add(new InterfaceManager.TimeLineEx());
-//        dataList.add(new InterfaceManager.TimeLineEx());
-//        dataList.add(new InterfaceManager.TimeLineEx());
-//        adapter.setDataList(dataList);
-//        adapter.notifyDataSetChanged();
-        listview_dayfriends.setDragRefreshListViewListener(this);
-        listview_dayfriends.setHeaderViewState();
-
-        //初始化表情
-//        Map<String,EmojiEntity> emojiMap = JsonParseUtil.parseEmojiMap(FileUtil.readAssetsFile(getContext(), "EmojiList.json"));
-
-//        Log.d("libo","emojiList----"+emojiMap.size());
+            setVp();
+            initView();
 
     }
 
-    @Override
-    public void onFriendsDataBack(final List<InterfaceManager.TimeLine> dataList) {
-
-//        post(new Runnable() {
-//            @Override
-//            public void run() {
-//                if (null!=adapter&&null!=dataList&&!dataList.isEmpty()){
-//                    listview_dayfriends.refreshComplete(true, new Date().getTime());
-//                    adapter.setDataList(dataList);
-//                    adapter.notifyDataSetChanged();
-//                }
-//            }
-//        });
-
-
-    }
-
-    private int pageNo = 1;
-    boolean isLastPage;
-    private List<InterfaceManager.TimeLineEx> allDataList = new ArrayList<InterfaceManager.TimeLineEx>();
-
-    @Override
-    public void onFriendsDataError() {
-        listview_dayfriends.refreshComplete(true, new Date().getTime());
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        if (null!=presenter){
-            //切换ip，刷新数据
-            if (!AccountUtil.getBaseIp().equals(presenter.getBaseIP())){
-                refreshContent();
-            }
+    public static int getStatusBarHeight(Activity a) {
+        int result = 0;
+        int resourceId = a.getResources().getIdentifier("status_bar_height",
+                "dimen", "android");
+        if (resourceId > 0) {
+            result = a.getResources().getDimensionPixelSize(resourceId);
         }
+        return result;
     }
 
-    @Override
-    public void onRefresh() {
+    /**
+     *     UI组件初始化与事件绑定
 
-        if (null!=presenter){
-            isLastPage = false;
-            pageNo = 1;
-            presenter.requestTimeLineEx(pageNo);
-        }
+     */
+    private void initView() {
+        tv_recommend = (TextView) getView().findViewById(R.id.tv_recommend);
+        tv_material = (TextView) getView().findViewById(R.id.tv_material);
+        tv_newcomers = (TextView) getView().findViewById(R.id.tv_newcomers);
 
+        tv_newcomers.setOnClickListener(this);
+        tv_recommend.setOnClickListener(this);
+        tv_material.setOnClickListener(this);
     }
 
-    @Override
-    public void onLoadMore() {
-        if (isLastPage) {
-            return;
-        }
+    private void setVp() {
 
-        pageNo++;
-        //获取数据
-//        presenter.searchProduct(pageNo, "");
-        if (null!=presenter){
-            showProgressMum();
-            presenter.requestTimeLineEx(pageNo);
-        }
+        viewpager=getView().findViewById(R.id.vp);
+        //获取ViewPager
+        viewpager=(ViewPager) getView().findViewById(R.id.vp);
+        //new一个List<Fragment>
+        List listfragment=new ArrayList<Fragment>();
 
-    }
+        //添加三个fragment到集合
+        DayFriendsMaterialFragment f1 = new DayFriendsMaterialFragment();
+        DayFriendsNewcomersFragment f2 = new DayFriendsNewcomersFragment();
+        DayFriendsRecommendFragment f3 = new DayFriendsRecommendFragment();
+        listfragment.add(f1);
+        listfragment.add(f2);
+        listfragment.add(f3);
 
-    public void refreshContent(){
-        listview_dayfriends.setSelection(0);
-        listview_dayfriends.setHeaderViewState();
+        FragmentManager fm=getFragmentManager();
 
-    }
+        //new myFragmentPagerAdater记得带上两个参数
+        MyPagerAdapter mfpa=new MyPagerAdapter(fm, listfragment);
 
-    @Override
-    public void onFriendsDataExBack(final List<InterfaceManager.TimeLineEx> dataList) {
-        hideProgressMum();
-        post(new Runnable() {
+        viewpager.setAdapter(mfpa);
+
+        //设置当前页是第一页
+        viewpager.setCurrentItem(0);
+
+        //添加viewpager的滑动事件
+        viewpager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+
             @Override
-            public void run() {
-                if (null==getActivity()||getActivity().isFinishing()){
-                    return;
+            public void onPageSelected(int arg0) {
+                if (arg0 == 0) {
+                    setSelected();
+                    tv_recommend.setSelected(true);
+                    tv_recommend.setTextColor(Color.parseColor("#333333"));
+                    tv_recommend.setTextSize(17);
+                } else if (arg0 == 1) {
+                    setSelected();
+                    tv_material.setSelected(true);
+                    tv_material.setTextColor(Color.parseColor("#333333"));
+                    tv_material.setTextSize(17);
+                    viewpager.setCurrentItem(1);
+                } else if (arg0 == 2) {
+                    setSelected();
+                    tv_newcomers.setSelected(true);
+                    tv_newcomers.setTextColor(Color.parseColor("#333333"));
+                    tv_newcomers.setTextSize(17);
                 }
-                if (null!=listview_dayfriends){
-                    listview_dayfriends.refreshComplete(true, new Date().getTime());
-                }
-                if (null==dataList||dataList.isEmpty()){
-                    isLastPage = true;
-                }else{
-                    if (pageNo == 1) {
-                        allDataList.clear();
-                    }
+            }
 
-                    allDataList.addAll(dataList);
+            @Override
+            public void onPageScrolled(int arg0, float arg1, int arg2) {
+                // TODO Auto-generated method stub
 
-                    if (null!=adapter&&null!=allDataList&&!allDataList.isEmpty()){
-                        adapter.setDataList(allDataList);
-                        adapter.notifyDataSetChanged();
-                    }
-                }
+            }
 
+            @Override
+            public void onPageScrollStateChanged(int arg0) {
+                // TODO Auto-generated method stub
             }
         });
+
     }
 
     @Override
-    public void onFriendsDataExError() {
-        hideProgressMum();
-        listview_dayfriends.refreshComplete(true, new Date().getTime());
-        isLastPage = true;
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.tv_recommend:
+                setSelected();
+                tv_recommend.setSelected(true);
+                tv_recommend.setTextColor(Color.parseColor("#333333"));
+                tv_recommend.setTextSize(17);
+                viewpager.setCurrentItem(0);
+                break;
+            case R.id.tv_material:
+                setSelected();
+                tv_material.setSelected(true);
+                tv_material.setTextColor(Color.parseColor("#333333"));
+                tv_material.setTextSize(17);
+                viewpager.setCurrentItem(1);
+                break;
+            case R.id.tv_newcomers:
+                setSelected();
+                tv_newcomers.setSelected(true);
+                tv_newcomers.setTextColor(Color.parseColor("#333333"));
+                tv_newcomers.setTextSize(17);
+                viewpager.setCurrentItem(2);
+                break;
+            default:
+        }
+    }
 
+    /**
+     *     重置所有文本的选中状态
+
+     */
+    private void setSelected(){
+        tv_recommend.setSelected(false);
+        tv_material.setSelected(false);
+        tv_newcomers.setSelected(false);
+        tv_recommend.setTextSize(14);
+        tv_material.setTextSize(14);
+        tv_newcomers.setTextSize(14);
+        tv_recommend.setTextColor(Color.parseColor("#999999"));
+        tv_material.setTextColor(Color.parseColor("#999999"));
+        tv_newcomers.setTextColor(Color.parseColor("#999999"));
     }
 }

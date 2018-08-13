@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.eryue.ui.UISortTabView
+            android:id="@+id/tabview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/bg_line" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#f3f2f7" />
+    </LinearLayout>
+
+  <!--      <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:clickable="true"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="40dp"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+        <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+
+
+    <!--    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_rocket"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_detailtop"
+            android:visibility="gone" />-->
+
+</LinearLayout>

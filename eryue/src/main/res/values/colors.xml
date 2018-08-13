@@ -24,7 +24,7 @@
     <color name="common_normal_text_w">#000000</color>
     <color name="common_lite_text_w">#5F5F5F</color>
 
-    <color name="comm_background">#f3f2f7</color>
+    <color name="comm_background">#f5f5f5</color>
     <color name="cell_background">#ffffff</color>
     <color name="text_color_0">#030303</color>
     <color name="line_color">#F5F5F5</color>
@@ -35,9 +35,13 @@
     <color name="color_txthint">#aaaaaa</color>
     <color name="txtcolor_red">#FF1A40</color>
 
+    <color name="money_color_red">#fd7d6f</color>
+
     <!--综合、价格、销量、券价-->
     <color name="txtcolor_tab">#888888</color>
     <color name="txtcolor_business">#666666</color>
 
     <color name="fragment_titile_color">#333333</color>
+
+    <color name="classify_item_bg">#D9D9D9</color>
 </resources>

@@ -92,6 +92,10 @@ public class OrderDetailActivity1 extends BaseActivity implements DragRefreshLis
     private TextView youxiaojifen;
     private TextView dingdanshuliang;
 
+    private TextView tv_data_1,tv_data_2,tv_data_3,tv_data_4,tv_data_5;
+    private TextView tv_order_1,tv_order_2,tv_order_3;
+    private TextView tv_platform_1,tv_platform_2,tv_platform_3,tv_platform_4,tv_platform_5,tv_platform_6, tv_platform_7;
+
 
     //分享
     SharePopView sharePopView;
@@ -110,10 +114,86 @@ public class OrderDetailActivity1 extends BaseActivity implements DragRefreshLis
         navigationBar.searchImageView.setVisibility(View.VISIBLE);
         navigationBar.searchImageView.setOnClickListener(this);
 
+        initTextView();
         setupViews();
-
         getData();
         getData1();
+        setInitData();
+    }
+
+    //设置打开时数据
+    private void setInitData(){
+        hintIndex0 = 4;
+        hintIndex1 = 0;
+        hintIndex3 = 0;
+        tvDataSetSelected();
+        tvOrderSetSelected();
+        tvPlatformSetSelected();
+        tv_data_1.setSelected(true);
+        tv_order_1.setSelected(true);
+        tv_platform_1.setSelected(true);
+        getDataByChangeType();
+    }
+
+    private void initTextView(){
+        tv_data_1 = (TextView) findViewById(R.id.tv_data_all);
+        tv_data_2 = (TextView) findViewById(R.id.tv_data_today);
+        tv_data_3 = (TextView) findViewById(R.id.tv_data_week);
+        tv_data_4 = (TextView) findViewById(R.id.tv_data_month);
+        tv_data_5 = (TextView) findViewById(R.id.tv_data_last);
+
+        tv_order_1 = (TextView) findViewById(R.id.tv_order_1);
+        tv_order_2 = (TextView) findViewById(R.id.tv_order_2);
+        tv_order_3 = (TextView) findViewById(R.id.tv_order_3);
+
+        tv_platform_1 = (TextView) findViewById(R.id.tv_platform_1);
+        tv_platform_2 = (TextView) findViewById(R.id.tv_platform_2);
+        tv_platform_3 = (TextView) findViewById(R.id.tv_platform_3);
+        tv_platform_4 = (TextView) findViewById(R.id.tv_platform_4);
+        tv_platform_5 = (TextView) findViewById(R.id.tv_platform_5);
+        tv_platform_6 = (TextView) findViewById(R.id.tv_platform_6);
+        tv_platform_7 = (TextView) findViewById(R.id.tv_platform_7);
+
+        tv_data_1.setOnClickListener(this);
+        tv_data_2.setOnClickListener(this);
+        tv_data_3.setOnClickListener(this);
+        tv_data_4.setOnClickListener(this);
+        tv_data_5.setOnClickListener(this);
+
+        tv_order_1.setOnClickListener(this);
+        tv_order_2.setOnClickListener(this);
+        tv_order_3.setOnClickListener(this);
+
+        tv_platform_1.setOnClickListener(this);
+        tv_platform_2.setOnClickListener(this);
+        tv_platform_3.setOnClickListener(this);
+        tv_platform_4.setOnClickListener(this);
+        tv_platform_5.setOnClickListener(this);
+        tv_platform_6.setOnClickListener(this);
+        tv_platform_7.setOnClickListener(this);
+
+
+    }
+    private void tvDataSetSelected(){
+        tv_data_1.setSelected(false);
+        tv_data_2.setSelected(false);
+        tv_data_3.setSelected(false);
+        tv_data_4.setSelected(false);
+        tv_data_5.setSelected(false);
+    }
+    private void tvOrderSetSelected(){
+        tv_order_1.setSelected(false);
+        tv_order_2.setSelected(false);
+        tv_order_3.setSelected(false);
+    }
+    private void tvPlatformSetSelected(){
+        tv_platform_1.setSelected(false);
+        tv_platform_2.setSelected(false);
+        tv_platform_3.setSelected(false);
+        tv_platform_4.setSelected(false);
+        tv_platform_5.setSelected(false);
+        tv_platform_6.setSelected(false);
+        tv_platform_7.setSelected(false);
     }
 
     private void setupViews() {
@@ -501,6 +581,81 @@ public class OrderDetailActivity1 extends BaseActivity implements DragRefreshLis
             }
 
             sharePopView.showPopView();
+        } else if (v == tv_data_1) {
+            tvDataSetSelected();
+            tv_data_1.setSelected(true);
+            hintIndex0 = 4;
+            getDataByChangeType();
+        }else if (v == tv_data_2) {
+            tvDataSetSelected();
+            tv_data_2.setSelected(true);
+            hintIndex0 = 0;
+            getDataByChangeType();
+        }else if (v == tv_data_3) {
+            tvDataSetSelected();
+            tv_data_3.setSelected(true);
+            hintIndex0 = 1;
+            getDataByChangeType();
+        }else if (v == tv_data_4) {
+            tvDataSetSelected();
+            tv_data_4.setSelected(true);
+            hintIndex0 = 2;
+            getDataByChangeType();
+        }else if (v == tv_data_5) {
+            tvDataSetSelected();
+            tv_data_5.setSelected(true);
+            hintIndex0 = 3;
+            getDataByChangeType();
+        }else if (v == tv_order_1) {
+            tvOrderSetSelected();
+            tv_order_1.setSelected(true);
+            hintIndex1 = 0;
+            getDataByChangeType();
+        }else if (v == tv_order_2) {
+            tvOrderSetSelected();
+            tv_order_2.setSelected(true);
+            hintIndex1 = 1;
+            getDataByChangeType();
+        }else if (v == tv_order_3) {
+            tvOrderSetSelected();
+            tv_order_3.setSelected(true);
+            hintIndex1 = 2;
+            getDataByChangeType();
+        }else if (v == tv_platform_1) {
+            tvPlatformSetSelected();
+            tv_platform_1.setSelected(true);
+            hintIndex3 = 0;
+            getDataByChangeType();
+        }else if (v == tv_platform_2) {
+            tvPlatformSetSelected();
+            tv_platform_2.setSelected(true);
+            hintIndex3 = 1;
+            getDataByChangeType();
+        }else if (v == tv_platform_3) {
+            tvPlatformSetSelected();
+            tv_platform_3.setSelected(true);
+            hintIndex3 = 2;
+            getDataByChangeType();
+        }else if (v == tv_platform_4) {
+            tvPlatformSetSelected();
+            tv_platform_4.setSelected(true);
+            hintIndex3 = 5;
+            getDataByChangeType();
+        }else if (v == tv_platform_5) {
+            tvPlatformSetSelected();
+            tv_platform_5.setSelected(true);
+            hintIndex3 = 4;
+            getDataByChangeType();
+        }else if (v == tv_platform_6) {
+            tvPlatformSetSelected();
+            tv_platform_6.setSelected(true);
+            hintIndex3 = 5;
+            getDataByChangeType();
+        }else if (v == tv_platform_7) {
+            tvPlatformSetSelected();
+            tv_platform_7.setSelected(true);
+            hintIndex3 = 3;
+            getDataByChangeType();
         }
     }
 

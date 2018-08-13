@@ -62,7 +62,7 @@ public class CreateShareActivityEx extends BaseActivity implements View.OnClickL
     /**
      * 分享
      */
-//    private ShareContentView shareview;
+    private ShareContentView shareview;
 
     private WXShare wxShare;
 
@@ -105,10 +105,10 @@ public class CreateShareActivityEx extends BaseActivity implements View.OnClickL
         iv_back.setOnClickListener(this);
         tv_selfend.setOnClickListener(this);
 
-/*
+
         shareview = (ShareContentView) findViewById(R.id.shareview);
         shareview.setCancelVisiblity(false);
-        shareview.setOnShareClickListener(this);*/
+        shareview.setOnShareClickListener(this);
 
         layout_tkl = findViewById(R.id.layout_tkl);
         et_tkl = findViewById(R.id.et_tkl);

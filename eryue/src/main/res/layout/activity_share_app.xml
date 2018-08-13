@@ -1,25 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#f3f2f7"
+    android:background="@color/comm_background"
     >
 
-
-    <android.support.v4.view.ViewPager
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/view_pager"
-        android:background="@color/cell_background">
+        android:layout_height="400dp"
+        android:clipChildren="false"
+        >
+        <android.support.v4.view.ViewPager
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_pager"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/comm_background">
 
-    </android.support.v4.view.ViewPager>
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+
+
 
     <LinearLayout
         android:layout_width="50dip"
         android:layout_height="10dip"
         android:id="@+id/indicator_view"
         android:orientation="horizontal"
+        android:visibility="gone"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="70dip"
@@ -76,39 +87,72 @@
 
     <RelativeLayout android:id="@+id/layout_mycode"
         android:layout_width="wrap_content"
-        android:layout_height="40dip"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="10dip"
+        android:layout_gravity="center_horizontal"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true">
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/hint1"
-            android:textSize="15dip"
-            android:textColor="#333333"
-            android:layout_centerVertical="true"
-            android:text="我的邀请码 "/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/yaoqingma"
-            android:layout_centerVertical="true"
-            android:textSize="18dip"
-            android:textColor="#333333"
-            android:layout_toRightOf="@+id/hint1"/>
-
-        <TextView
-            android:layout_width="120dip"
-            android:layout_height="40dip"
+            android:background="@drawable/img_bg_up"
             android:id="@+id/copy_yqm"
-            android:layout_toRightOf="@+id/yaoqingma"
-            android:text="复制邀请码"
-            android:gravity="center"
-            android:textColor="#ffffff"
-            android:layout_centerInParent="true"
-            android:layout_marginLeft="25dip"
-            android:background="@drawable/bg_login_in"/>
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:text="点击复制邀请码"
+                android:layout_toRightOf="@+id/hint1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/yaoqingma"
+                android:textSize="29sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:textColor="#fd5b67"
+                android:text="1111111"
+                android:layout_toRightOf="@+id/hint1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/copy_yqm"
+            android:background="@drawable/img_bg_down"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hint1"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button"
+                android:gravity="center"
+                android:text="我的商城"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邀请好友"
+                android:id="@+id/share_weixin"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:layout_centerInParent="true"
+                android:background="@drawable/button"
+                />
+        </LinearLayout>
+
     </RelativeLayout>
 
 
-</RelativeLayout>
+</LinearLayout>

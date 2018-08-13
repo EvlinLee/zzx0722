@@ -596,7 +596,7 @@ public class InterfaceManager {
     }
 
     public class ExchangeResponse {
-        public int status; //0=余额不足 1=成功 -1=未绑定支付宝 -2=发送过快 -3未到提现日期 -4 不满足提现门槛
+        public int status; //0=余额不足 1=成功 -1=未绑定支付宝 -2=发送过快 -3未到提现日期 -4 不满足提现门槛 -5用户被封禁
     }
 
 

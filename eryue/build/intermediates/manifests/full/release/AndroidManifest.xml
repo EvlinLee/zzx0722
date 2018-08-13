@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eryue.zhuzhuxia"
+    android:versionCode="2001002"
+    android:versionName="2.1.2" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- Push service 运行需要的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <!-- 富媒体需要声明的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 适配Android N系统必需的ContentProvider写权限声明，写权限包含应用包名 -->
+    <uses-permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.eryue.zhuzhuxia" />
+
+    <permission
+        android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.eryue.zhuzhuxia"
+        android:protectionLevel="normal" />
+
+    <!-- 京东的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- 微信分享 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" /> <!-- for mta statistics -->
+    <!-- 微信分享 -->
+    <application
+        android:name="com.eryue.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.eryue.activity.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/ActivityAlphaTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.eryue.activity.WelcomeGuideActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityAlphaBackground"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.eryue.activity.WelcomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityAlphaBackground"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.eryue.activity.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityAlphaBackground"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 视频播放 -->
+        <activity
+            android:name="com.eryue.activity.VideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityAlphaBackground" /> <!-- or android:screenOrientation="landscape" -->
+        <activity
+            android:name="com.eryue.goodsdetail.GoodsDetailActivityEx"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name="com.eryue.mine.GeneratePosterActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.RegisterActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.AboutUsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.ShareAppActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.search.GoodsSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name="com.eryue.search.GoodsSearchListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name="com.eryue.mine.MyTeamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.MyTeamActivity1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.AppActivatorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.HeHuoRenActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.OrderDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.OrderDetailActivity1"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.XieYiActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.OrderSubmissionActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.ProxyLearnActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.SignCenterActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.ModifyContactActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.ModifyCashWayActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.ModifyPasswordActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.WebViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.ChargeBackActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.SearchTeamActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.MessageCenterActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.VisitTraceActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.HeHuoRenCashActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.ForgetPasswordActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.BindAlipayActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.TiXianRecordActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.login.LoginActivity1"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.activity.ImageBrowserActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.activity.CreateShareActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.activity.CreateShareActivityEx"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- <activity -->
+        <!-- android:name=".huizhuan.wxapi.WXEntryActivity" -->
+        <!-- android:label="@string/app_name" -->
+        <!-- android:exported="true" -->
+        <!-- android:launchMode="singleTop" -->
+        <!-- android:theme="@style/AppTheme.Fullscreen.Translucent"/> -->
+
+        <activity
+            android:name="com.eryue.zhuzhuxia.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.Fullscreen.Translucent" />
+        <activity
+            android:name="com.eryue.mine.ContactServerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.login.InputInviteCodeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.login.VertifyCodeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.login.BindPhoneActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.SearchOrderActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.NewUserActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.MyLiveActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.mine.NewUserDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <!-- 自定义小尾巴 -->
+        <activity
+            android:name="com.eryue.activity.SelfEndActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.goodsdetail.GoodsWebActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.activity.HideSettingActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.search.GoodsSearchActivityEx"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.search.GoodsSearchResultActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.home.GoodsCatActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.live.SearchLiveActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.home.GoodsNoticeDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.jd.SearchJDActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eryue.activity.ImageBigActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.eryue.mine.MyOrderChartsActivity" />
+
+        <receiver
+            android:name="com.eryue.AppRegister"
+            android:permission="com.tencent.mm.plugin.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <!-- push应用定义消息receiver声明 -->
+        <receiver android:name="com.eryue.push.MyPushMessageReceiver" >
+            <intent-filter>
+
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收bind,unbind,fetch,delete等反馈消息 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+
+        <!-- push必须的receviver和service声明 -->
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+                <!-- 以下四项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1" >
+            <intent-filter android:priority="1000" >
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.baidu.android.pushservice.CommandService"
+            android:exported="true" />
+
+        <!-- 适配Android N系统必需的ContentProvider声明，写权限包含应用包名 -->
+        <provider
+            android:name="com.baidu.android.pushservice.PushInfoProvider"
+            android:authorities="com.eryue.zhuzhuxia.bdpush"
+            android:exported="true"
+            android:protectionLevel="signature"
+            android:writePermission="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.eryue.zhuzhuxia" />
+
+        <!-- 在百度开发者中心查询应用的API Key -->
+        <meta-data
+            android:name="api_key"
+            android:value="BlkWPnugpRDNhvBUUyj9pyvR" />
+
+        <!-- 惠赚在百度开发者中心查询应用的API Key -->
+        <!-- <meta-data -->
+        <!-- android:name="api_key" -->
+        <!-- android:value="vs5fKFgWClsvNWYGlWOzF0jduhTyvGGX" /> -->
+
+
+        <!-- 静态注册接收器 -->
+        <receiver
+            android:name="com.eryue.BaiduBroadcastReceiver"
+            android:enabled="true" >
+            <intent-filter>
+
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" /> <!-- 开机广播 -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> <!-- 网络状态改变广播 -->
+                <category android:name="com.woman.RCTest" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 在百度开发者中心查询应用的API Key -->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+        <!-- 直接回呼 -->
+        <activity
+            android:name="com.kepler.jd.sdk.KeplerBackActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="sdkbackeb629e520e114bdc9f6addfb46eb512a" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+
+        <activity
+            android:name="com.ali.auth.third.ui.webview.BaseWebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.ali.auth.third.ui.LoginWebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.ali.auth.third.ui.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!--  -->
+        <activity
+            android:name="com.ali.auth.third.accountlink.ui.BindResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.ali.auth.third.accountlink.ui.UnbindWebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity android:name="com.ali.auth.third.ui.QrLoginConfirmActivity" />
+        <activity
+            android:name="com.ali.auth.third.ui.QrLoginActivity"
+            android:theme="@style/ali_auth_qr_activity_style" />
+        <activity
+            android:name="com.alibaba.alibclinkpartner.ui.ALPWebviewActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize" />
+        <activity
+            android:name="com.alibaba.alibclinkpartner.ui.ALPCallbackActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.alibaba.alibclinkpartner.ui.ALPEntranceActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize" >
+            <intent-filter>
+                <action android:name="com.alibaba.intent.action.GETWAY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="linkpartner"
+                    android:pathPrefix="/entrance"
+                    android:scheme="tbopen" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.alibaba.baichuan.trade.biz.auth.AlibcAuthActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="com.alibaba.baichuan.android.trade.ui.AlibcWebViewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="COM_TAOBAO_TAE_SDK_TRADE_WEB_VIEW_ACTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.alibaba.baichuan.android.trade.ui.AlibcBackActivity"
+            android:exported="true"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="alisdk" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+
+        <uses-library android:name="android.test.runner" />
+
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+    </application>
+
+</manifest>

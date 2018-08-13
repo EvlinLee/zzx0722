@@ -18,6 +18,7 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.Scroller;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.library.R;
 import com.library.util.CommonFunc;
@@ -39,7 +40,10 @@ public class DragRefreshListView extends ListView implements OnScrollListener {
 
     private static final String TAG = DragRefreshListView.class.getName();
 
+
     private float mLastY = -1; // save event y
+    private float y1 = 0;
+    private float y2 = 0;
     private Scroller mScroller; // used for scroll back
 //	private OnScrollListener mScrollListener; // user's scroll listener
 
@@ -98,6 +102,7 @@ public class DragRefreshListView extends ListView implements OnScrollListener {
     public void setOnScrollListener() {
         setOnScrollListener(this);
     }
+
 
     private void initWithContext(Context context) {
         mScroller = new Scroller(context, new DecelerateInterpolator());
@@ -487,18 +492,24 @@ public class DragRefreshListView extends ListView implements OnScrollListener {
      */
     private boolean isRefreshExist = true;
 
+
+
     @Override
     public boolean onTouchEvent(MotionEvent ev) {
         if (mLastY == -1) {
             mLastY = ev.getY();
             isLoadMoreExist = false;
         }
-
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 mLastY = ev.getY();
                 isLoadMoreExist = false;
+                y1 = ev.getY();
                 break;
+            case MotionEvent.ACTION_UP:
+                //当手指离开时
+                y2 = ev.getY();
+
             case MotionEvent.ACTION_MOVE:
                 final float deltaY = ev.getY() - mLastY;
                 mLastY = ev.getY();

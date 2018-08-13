@@ -34,6 +34,8 @@ import com.library.util.StringUtils;
 import com.library.util.ToastTools;
 import com.library.util.UIScreen;
 
+import org.w3c.dom.Text;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.ArrayList;
@@ -55,6 +57,7 @@ public class ShareAppActivity extends BaseActivity implements View.OnClickListen
 
     private TextView yqmTV;
 
+    private TextView share_weixin;
     private String inviteCode = AccountUtil.getInviteCode();
     private String serverURL = AccountUtil.getServerURL();
 
@@ -74,9 +77,7 @@ public class ShareAppActivity extends BaseActivity implements View.OnClickListen
         setContentView(R.layout.activity_share_app);
 
         navigationBar.setTitle("推广邀请");
-        navigationBar.rightTV.setVisibility(View.VISIBLE);
-        navigationBar.rightTV.setText("分享");
-        navigationBar.rightTV.setOnClickListener(this);
+        navigationBar.rightTV.setVisibility(View.INVISIBLE);
 
         indicatorView = (LinearLayout) findViewById(R.id.indicator_view);
 
@@ -84,6 +85,8 @@ public class ShareAppActivity extends BaseActivity implements View.OnClickListen
         yqmTV = (TextView)findViewById(R.id.yaoqingma);
         yqmTV.setText(inviteCode);
 
+        share_weixin = findViewById(R.id.share_weixin);
+        share_weixin.setOnClickListener(this);
 
         final Context context = this;
         findViewById(R.id.copy_yqm).setOnClickListener(new View.OnClickListener() {
@@ -109,7 +112,7 @@ public class ShareAppActivity extends BaseActivity implements View.OnClickListen
         }
 
 
-        curIndex = 0;
+        curIndex = 1;
 
         pager = (ViewPager) findViewById(R.id.view_pager);
         List<View> pages = getPages();
@@ -119,6 +122,7 @@ public class ShareAppActivity extends BaseActivity implements View.OnClickListen
         PagerAdapter adapter = new ViewAdapter(pages);
         pager.setAdapter(adapter);
         pager.setPageTransformer(true, new SlidePageTransformer());
+        pager.setCurrentItem(1);
         pager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -136,7 +140,7 @@ public class ShareAppActivity extends BaseActivity implements View.OnClickListen
 
             }
         });
-        showIndictorView(0);
+        showIndictorView(1);
 
     }
 
@@ -156,7 +160,6 @@ public class ShareAppActivity extends BaseActivity implements View.OnClickListen
         itemArr.add(R.id.item_0);
         itemArr.add(R.id.item_1);
         itemArr.add(R.id.item_2);
-        itemArr.add(R.id.item_3);
         for (int i = 0; i < itemArr.size(); i++) {
             View view = findViewById(itemArr.get(i));
             if (index == i) {
@@ -190,14 +193,10 @@ public class ShareAppActivity extends BaseActivity implements View.OnClickListen
         ImageView imageView2 = new ImageView(this);
         createMap2(imageView2, erweimaBitmap, R.drawable.shareapp2);
 
-        ImageView imageView3 = new ImageView(this);
-        createMap3(imageView3, erweimaBitmap, R.drawable.shareapp3);
-
 
         pages.add(imageView0);
         pages.add(imageView1);
         pages.add(imageView2);
-        pages.add(imageView3);
 
         return pages;
     }
@@ -390,7 +389,7 @@ public class ShareAppActivity extends BaseActivity implements View.OnClickListen
 
     @Override
     public void onClick(View view) {
-        if (view == navigationBar.rightTV) {
+        if (view == share_weixin) {
 
 
             if (null == sharePopView){

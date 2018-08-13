@@ -144,7 +144,7 @@ public class GoodsListAdapter extends BaseAdapter implements ShareContentView.On
             viewHolder.iv_status = (ImageView) convertView.findViewById(R.id.iv_status);
             viewHolder.iv_goods = (ImageView) convertView.findViewById(R.id.iv_goods);
 
-            viewHolder.iv_business = (ImageView) convertView.findViewById(R.id.iv_business);
+            viewHolder.iv_business = (TextView) convertView.findViewById(R.id.iv_business);
             viewHolder.tv_name = (TextView) convertView.findViewById(R.id.tv_name);
 
             viewHolder.tv_price_paper = (TextView) convertView.findViewById(R.id.tv_price_paper);
@@ -174,14 +174,14 @@ public class GoodsListAdapter extends BaseAdapter implements ShareContentView.On
         Glide.with(context).load(searchProductInfo.pictUrl).transform(new GlideRoundTransform(context,10))
                 .into(viewHolder.iv_goods);
 
-        int goodsImgId = GoodsUtil.getGoodsBusinessRid((int) searchProductInfo.isMall,searchProductInfo.productType);
+        String goodsImgId = GoodsUtil.getGoodsBusinessRid((int) searchProductInfo.isMall,searchProductInfo.productType);
 
         //商品渠道
-        if (goodsImgId == -1){
+        if (goodsImgId == null){
             viewHolder.iv_business.setVisibility(View.GONE);
         }else{
             viewHolder.iv_business.setVisibility(View.VISIBLE);
-            Glide.with(context).load(GoodsUtil.getGoodsBusinessRid((int) searchProductInfo.isMall,searchProductInfo.productType)).asBitmap().into(viewHolder.iv_business);
+            viewHolder.iv_business.setText(GoodsUtil.getGoodsBusinessRid((int) searchProductInfo.isMall,searchProductInfo.productType).toString());
         }
 
         //名称
@@ -338,7 +338,7 @@ public class GoodsListAdapter extends BaseAdapter implements ShareContentView.On
         public ImageView iv_status;
         public ImageView iv_goods;
 
-        public ImageView iv_business;
+        public TextView iv_business;
         public TextView tv_name;
 
         public TextView tv_price_paper;

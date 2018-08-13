@@ -13,79 +13,39 @@
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
-
-            <TextView
-                android:id="@+id/tv_home"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:drawablePadding="2dp"
-                android:drawableTop="@drawable/icon_detail_home"
-                android:gravity="center_horizontal"
-                android:text="首页"
-                android:textColor="@color/gray_goods"
-                android:textSize="15dp" />
-
-            <TextView
-                android:id="@+id/tv_mine"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:drawablePadding="2dp"
-                android:drawableTop="@drawable/icon_detail_mine"
-                android:gravity="center_horizontal"
-                android:text="我的"
-                android:textColor="@color/gray_goods"
-                android:textSize="15dp" />
-
-            <TextView
-                android:id="@+id/tv_serice"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:drawablePadding="2dp"
-                android:drawableTop="@drawable/icon_detail_service"
-                android:gravity="center_horizontal"
-                android:text="客服"
-                android:textColor="@color/gray_goods"
-                android:textSize="15dp" />
-
-
-        </LinearLayout>
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/icon_xq_sc"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawablePadding="3dp"
+            android:text="收藏"
+            android:textColor="#666666"
+            />
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:background="@drawable/btn_xqy_fs"
             android:gravity="center">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_jf"
+                android:text="分享可赚"
+                />
             <TextView
                 android:id="@+id/tv_detail_share"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#33ff1a40"
                 android:gravity="center"
                 android:text="分享商品"
                 android:textColor="@color/red_lite"
                 android:textSize="15dp" />
 
-            <TextView android:id="@+id/tv_buy"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/red_lite"
-                android:gravity="center"
-                android:text="立即购买"
-                android:textColor="@color/white"
-                android:textSize="15dp" />
 
         </LinearLayout>
 
@@ -195,14 +155,14 @@
 
         <ImageView
             android:id="@+id/iv_detailback"
-            android:layout_width="22dp"
-            android:layout_height="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:scaleType="fitXY"
-            android:src="@drawable/icon_back_detail" />
+            android:src="@drawable/icon_back" />
 
     </RelativeLayout>
 

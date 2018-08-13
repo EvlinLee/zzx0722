@@ -450,8 +450,9 @@ public interface JudgeReq {
                        @Query("phone") String phone, //手机号
                        @Query("pictUrl") String pictUrl//头像地址
     );
-    }
+    }   //status:1   0=邀请码不存在 1=成功 -2=用户名已经存在 -3=手机号存在 -1=验证码不存在 -5用户被封禁
     public class JudgeRsp extends BaseRsp {
+//        public int status;
         public JudgeInfo result;
     }
 

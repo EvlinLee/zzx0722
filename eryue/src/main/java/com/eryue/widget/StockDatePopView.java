@@ -60,7 +60,7 @@ public class StockDatePopView implements AdapterView.OnItemClickListener {
         window.setWidth(LinearLayout.LayoutParams.WRAP_CONTENT);
         window.setHeight(LinearLayout.LayoutParams.WRAP_CONTENT);
 
-//        window.setBackgroundDrawable(R.drawable.bg_date_pop_black);
+        window.setBackgroundDrawable(context.getResources().getDrawable(R.drawable.lv_item_shape));
         window.setFocusable(true);
         window.setTouchable(true);
         window.setOutsideTouchable(false);

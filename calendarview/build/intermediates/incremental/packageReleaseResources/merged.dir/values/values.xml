@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CalendarView"><attr format="boolean" name="show_lunar"/><attr format="boolean" name="show_last_next"/><attr format="boolean" name="show_holiday"/><attr format="boolean" name="show_term"/><attr format="color" name="solar_color"/><attr format="integer" name="solar_size"/><attr format="color" name="lunar_color"/><attr format="integer" name="lunar_size"/><attr format="color" name="holiday_color"/><attr format="color" name="choose_color"/><attr format="reference" name="day_bg"/><attr format="boolean" name="switch_choose"/><attr format="enum" name="choose_type">
+            <enum name="single" value="0"/>
+            <enum name="multi" value="1"/>
+        </attr></declare-styleable>
+    <declare-styleable name="WeekView"><attr format="string" name="week_str"/><attr format="color" name="week_color"/><attr format="integer" name="week_size"/></declare-styleable>
+    <string name="app_name">CalendarView</string>
+</resources>

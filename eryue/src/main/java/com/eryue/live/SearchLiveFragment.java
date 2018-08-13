@@ -1,11 +1,16 @@
 package com.eryue.live;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.os.Message;
+import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.eryue.AccountUtil;
 import com.eryue.ActivityHandler;
@@ -39,7 +44,7 @@ public class SearchLiveFragment extends BaseFragment implements UISortTabView.On
     private UISortTabView tabView;
 
     private DragRefreshListView listview_goods;
-    private GoodsListAdapter goodsListAdapter;
+    private GoodsListAdapter searchLiveAdapter;
 
     private SearchLivePresenter presenter;
 
@@ -63,6 +68,13 @@ public class SearchLiveFragment extends BaseFragment implements UISortTabView.On
 
         setContentView(R.layout.fragment_searchlive);
         initView();
+
+
+        View mStateBarFixer =getView().findViewById(R.id.status_bar_fix);
+        mStateBarFixer.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                getStatusBarHeight(getActivity())));
+        mStateBarFixer.setBackgroundColor(getResources().getColor(R.color.gray));
+
         presenter = new SearchLivePresenter();
         presenter.setSearchLiveListener(this);
 
@@ -84,7 +96,16 @@ public class SearchLiveFragment extends BaseFragment implements UISortTabView.On
 
         startRequest();
 
+    }
 
+    public static int getStatusBarHeight(Activity a) {
+        int result = 0;
+        int resourceId = a.getResources().getIdentifier("status_bar_height",
+                "dimen", "android");
+        if (resourceId > 0) {
+            result = a.getResources().getDimensionPixelSize(resourceId);
+        }
+        return result;
     }
 
     private void initView() {
@@ -97,8 +118,8 @@ public class SearchLiveFragment extends BaseFragment implements UISortTabView.On
         tabView.setOnTabClickListener(this);
 
         listview_goods = getView().findViewById(R.id.listview_goods);
-        goodsListAdapter = new GoodsListAdapter(getContext());
-        listview_goods.setAdapter(goodsListAdapter);
+        searchLiveAdapter = new GoodsListAdapter(getContext());
+        listview_goods.setAdapter(searchLiveAdapter);
 
         listview_goods.setDragRefreshListViewListener(this);
         listview_goods.setFooterDividersEnabled(false);
@@ -122,6 +143,7 @@ public class SearchLiveFragment extends BaseFragment implements UISortTabView.On
                 break;
             case 3:
                 break;
+            default:
 
         }
 
@@ -133,9 +155,9 @@ public class SearchLiveFragment extends BaseFragment implements UISortTabView.On
 
         sidx = sidxArray[index];
 
-        if (null!=goodsListAdapter){
-            goodsListAdapter.clearData();
-            goodsListAdapter.notifyDataSetChanged();
+        if (null!=searchLiveAdapter){
+            searchLiveAdapter.clearData();
+            searchLiveAdapter.notifyDataSetChanged();
         }
 
         startRequest();
@@ -161,10 +183,10 @@ public class SearchLiveFragment extends BaseFragment implements UISortTabView.On
                         allDataList.clear();
                     }
                     allDataList.addAll(result);
-                    if (null != goodsListAdapter) {
-                        goodsListAdapter.setDataList(allDataList);
-                        goodsListAdapter.setLogin(AccountUtil.isLogin());
-                        goodsListAdapter.notifyDataSetChanged();
+                    if (null != searchLiveAdapter) {
+                        searchLiveAdapter.setDataList(allDataList);
+                        searchLiveAdapter.setLogin(AccountUtil.isLogin());
+                        searchLiveAdapter.notifyDataSetChanged();
                     }
                 }
             }
@@ -183,10 +205,10 @@ public class SearchLiveFragment extends BaseFragment implements UISortTabView.On
                         iv_rocket.setVisibility(View.GONE);
                     }
                     allDataList.clear();
-                    if (null != goodsListAdapter) {
-                        goodsListAdapter.setDataList(allDataList);
-                        goodsListAdapter.setLogin(AccountUtil.isLogin());
-                        goodsListAdapter.notifyDataSetChanged();
+                    if (null != searchLiveAdapter) {
+                        searchLiveAdapter.setDataList(allDataList);
+                        searchLiveAdapter.setLogin(AccountUtil.isLogin());
+                        searchLiveAdapter.notifyDataSetChanged();
                     }
                 }
             }

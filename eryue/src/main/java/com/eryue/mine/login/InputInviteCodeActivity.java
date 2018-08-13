@@ -124,7 +124,6 @@ public class InputInviteCodeActivity extends BaseActivityTransparent implements 
         if (view == nextStepTV) {
             inviteCodeStr = inviteCodeET.getText().toString();
             if (TextUtils.isEmpty(inviteCodeStr)) {
-                ToastTools.showShort(InputInviteCodeActivity.this, "请输入邀请码");
                 return;
             }
 
@@ -240,10 +239,10 @@ public class InputInviteCodeActivity extends BaseActivityTransparent implements 
 
     private void checkInput(CharSequence charSequence) {
         if (TextUtils.isEmpty(charSequence) || TextUtils.isEmpty(charSequence.toString())) {
-            nextStepTV.setBackgroundResource(R.drawable.bg_invite_code_0);
+            nextStepTV.setBackgroundResource(R.drawable.login_btn);
             return;
         }
 
-        nextStepTV.setBackgroundResource(R.drawable.bg_invite_code_1);
+        nextStepTV.setBackgroundResource(R.drawable.login_btn_pre);
     }
 }

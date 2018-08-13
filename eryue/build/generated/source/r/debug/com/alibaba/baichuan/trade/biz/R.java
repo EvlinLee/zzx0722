@@ -8,12 +8,12 @@ package com.alibaba.baichuan.trade.biz;
 
 public final class R {
     public static final class id {
-        public static final int webviewload_monitor_cancel_point = 0x7f07029f;
+        public static final int webviewload_monitor_cancel_point = 0x7f0802f5;
     }
     public static final class layout {
-        public static final int com_alibaba_bc_layout = 0x7f09006c;
+        public static final int com_alibaba_bc_layout = 0x7f0a006d;
     }
     public static final class string {
-        public static final int app_name = 0x7f0b0050;
+        public static final int app_name = 0x7f0c0050;
     }
 }

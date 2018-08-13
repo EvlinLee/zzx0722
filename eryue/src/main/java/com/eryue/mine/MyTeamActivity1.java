@@ -4,15 +4,12 @@ import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Message;
 import android.support.annotation.Nullable;
-import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
-import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,15 +18,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.request.target.BitmapImageViewTarget;
 import com.eryue.AccountUtil;
 import com.eryue.ActivityHandler;
 import com.eryue.R;
 import com.library.ui.dragrefresh.DragRefreshListView;
 import com.library.ui.dragrefresh.ListViewFooter;
-import com.library.util.StringUtils;
 import com.library.util.ToastTools;
 
 import net.MineInterface;
@@ -46,8 +39,6 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-import static com.eryue.mine.SearchOrderActivity.SearchType;
-
 // 我的团队
 public class MyTeamActivity1 extends BaseActivity implements View.OnClickListener, DragRefreshListView.DragRefreshListViewListener{
     private DragRefreshListView listView;
@@ -55,7 +46,6 @@ public class MyTeamActivity1 extends BaseActivity implements View.OnClickListene
     private int currType = 0; // 0我的团队，1团队邀请
     private int page1 = 1; // 我的团队
     private int page2 = 1; // 团队邀请
-
 
     private List<MineInterface.TeamInfo> aTypeDataArr = new ArrayList<>();
     private List<MineInterface.TeamInfo> bTypeDataArr = new ArrayList<>();
@@ -65,6 +55,8 @@ public class MyTeamActivity1 extends BaseActivity implements View.OnClickListene
     private ImageView time_IV;
     private ImageView cash_IV;
 
+    private ImageView searchImageView;
+
     private String sidx; //注册时间排序reg_date ，累计提现排序totalWithdraw
     private String sord; //降序desc，升序asc
 
@@ -73,12 +65,16 @@ public class MyTeamActivity1 extends BaseActivity implements View.OnClickListene
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        if (Build.VERSION.SDK_INT >= 21) {
+            View decorView = getWindow().getDecorView();
+            decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+            getWindow().setStatusBarColor(Color.TRANSPARENT);
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_team_1);
-        navigationBar.setTitle("我的团队");
+        navigationBar.setHidden(true);
 
-        navigationBar.searchImageView.setVisibility(View.VISIBLE);
-        navigationBar.searchImageView.setOnClickListener(this);
 
         sidx = "reg_date";
         sord = "desc";
@@ -148,6 +144,9 @@ public class MyTeamActivity1 extends BaseActivity implements View.OnClickListene
         contain_1 = findViewById(R.id.contain_1);
         contain_1.setOnClickListener(this);
 
+        searchImageView = findViewById(R.id.search_image);
+        searchImageView.setOnClickListener(this);
+
         time_contain = findViewById(R.id.time_contain);
         time_contain.setOnClickListener(this);
         cash_contain = findViewById(R.id.cash_contain);
@@ -161,6 +160,9 @@ public class MyTeamActivity1 extends BaseActivity implements View.OnClickListene
         listView.setDragRefreshListViewListener(this);
         listView.setHeaderViewEnable(false);
         listView.setAutoLoadMore(true);
+
+        View headerView = LayoutInflater.from(MyTeamActivity1.this).inflate(R.layout.myteam_header,null);
+        listView.addHeaderView(headerView);
 
         adapter = new BaseAdapter() {
             @Override
@@ -210,14 +212,10 @@ public class MyTeamActivity1 extends BaseActivity implements View.OnClickListene
                 }
 
                 MineInterface.TeamInfo info = (MineInterface.TeamInfo) getItem(position);
-                if (null == info) {
-                    return convertView;
-                }
-
 
                 viewHolder.nick_name.setText(info.userName);
                 viewHolder.wechat.setText(info.phone);
-                viewHolder.register_time.setText(TimeUtils.getStrTime(info.regDate + "", "yyyy-MM-dd"));
+                viewHolder.register_time.setText("注册时间： "+TimeUtils.getStrTime(info.regDate + "", "yyyy-MM-dd"));
                 viewHolder.take_cash.setText(info.totalWithdraw + "");
 
 
@@ -244,8 +242,10 @@ public class MyTeamActivity1 extends BaseActivity implements View.OnClickListene
             }
         };
 
+
         listView.setAdapter(adapter);
     }
+
 
     private void refreshListView() {
         ActivityHandler.getInstance(new ActivityHandler.ActivityHandlerListener() {
@@ -294,7 +294,7 @@ public class MyTeamActivity1 extends BaseActivity implements View.OnClickListene
             }
 
             getDataBySort();
-        } else if (v == navigationBar.searchImageView) {
+        } else if (v == searchImageView) {
             Intent intent = new Intent(this, SearchTeamActivity.class);
             intent.putExtra("type", currType);
             startActivity(intent);

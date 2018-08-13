@@ -17,47 +17,78 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:orientation="horizontal"
             android:background="@drawable/shape_txt_search_gray"
             android:gravity="center_vertical">
 
-            <org.angmarch.views.NiceSpinner
+            <LinearLayout
                 android:id="@+id/nice_spinner"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:textColor="@color/red"
-                app:textTint="@color/black"
-                app:backgroundSelector="@drawable/multiline_textview_item_shape"
-                app:arrowTint="@color/light_gray"
-                />
-
-            <EditText
-                android:id="@+id/tv_search_keyword"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#00000000"
-                android:layout_marginLeft="9dip"
-                android:gravity="center|left"
-                android:hint="请输入关键词"
-                android:imeOptions="actionSearch"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:textColorHint="#A8A8A8"
-                android:textColor="#A8A8A8"
-                android:textSize="14dp" />
+                android:orientation="horizontal"
+                android:background="@drawable/btn_bg"
+                android:gravity="center"
+                android:textColor="@color/black"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_text"
+                    android:textSize="14sp"
+                    android:text="淘宝"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_arrow_search"
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/tv_search_keyword"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_round_corner_shape"
+                    android:layout_marginLeft="9dip"
+                    android:gravity="center|left"
+                    android:drawablePadding="6dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:drawableLeft="@drawable/icon_search"
+                    android:hint="请输入关键词"
+                    android:imeOptions="actionSearch"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColorHint="#A8A8A8"
+                    android:textColor="#A8A8A8"
+                    android:textSize="14dp" />
+                <ImageView android:id="@+id/iv_clear"
+                    android:layout_width="16dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="16dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:visibility="gone"
+                    android:src="@drawable/icon_et_delete" />
+            </RelativeLayout>
 
             <LinearLayout android:id="@+id/layout_textclear"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:gravity="center_vertical"
-                android:visibility="gone"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp">
-                <ImageView android:id="@+id/iv_clear"
-                    android:layout_width="16dip"
-                    android:layout_height="16dip"
-                    android:src="@drawable/icon_et_delete" />
+
 
             </LinearLayout>
 
@@ -70,7 +101,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:background="@drawable/bg_tv_copycomment"
+            android:background="@drawable/btn_bg"
             android:paddingLeft="15dp"
             android:paddingTop="8dp"
             android:paddingRight="15dp"
@@ -78,7 +109,7 @@
             android:singleLine="true"
             android:text="搜索"
             android:textColor="@color/white"
-            android:textSize="14dp" />
+            android:textSize="14sp" />
 
     </LinearLayout>
 
@@ -120,11 +151,11 @@
                 app:item_textLineColor="#ffE3E3E3"
                 app:item_textLineMargin="8dp"
                 app:item_textPaddingBottom="4dp"
-                app:item_textBackground="@drawable/multiline_textview_item_shape"
                 app:item_textPaddingLeft="8dp"
+                app:item_textBackground="@drawable/multiline_textview_item_shape"
                 app:item_textPaddingRight="8dp"
                 app:item_textPaddingTop="4dp"
-                app:item_textSize="12sp"
+                app:item_textSize="14sp"
                 app:item_textWordMargin="8dp"
                 app:linePadding="8dp" />
 
@@ -166,13 +197,13 @@
                 app:item_textColor="@color/common_normal_text_w"
                 app:item_textLineColor="#ffE3E3E3"
                 app:item_textLineMargin="8dp"
+                app:item_textBackground="@drawable/multiline_textview_item_shape"
                 app:item_textPaddingBottom="4dp"
                 app:item_textPaddingLeft="8dp"
                 app:item_textPaddingRight="8dp"
                 app:item_textPaddingTop="4dp"
-                app:item_textSize="12sp"
+                app:item_textSize="14sp"
                 app:item_textWordMargin="8dp"
-                app:item_textBackground="@drawable/multiline_textview_item_shape"
                 app:linePadding="8dp" />
 
 

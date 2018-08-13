@@ -5,27 +5,6 @@
     android:background="@color/white"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/layout_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/tv_navigation"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="center"
-            android:text="每日发圈"
-            android:textColor="@color/fragment_titile_color"
-            android:textSize="17sp" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:background="@color/gray" />
-    </LinearLayout>
-
     <com.library.ui.dragrefresh.DragRefreshListView
         android:id="@+id/listview_dayfriends"
         android:layout_width="match_parent"

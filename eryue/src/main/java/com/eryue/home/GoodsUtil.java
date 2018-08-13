@@ -68,33 +68,33 @@ public class GoodsUtil {
      * @param isMall
      * @return
      */
-    public static int getGoodsBusinessRid(int isMall,String productType) {
+    public static String getGoodsBusinessRid(int isMall,String productType) {
 
-        int rid = -1;
+        String rid = null;
         if (!TextUtils.isEmpty(productType)){
 
             if (productType.equals("tb")||productType.equals("tbActivity")){
 
                 if (isMall == 1){
                     //天猫
-                    rid = R.drawable.tmall;
+                    rid = "天猫";
                 }else{
                     //淘宝
-                    rid = R.drawable.img_tb;
+                    rid = "淘宝";
                 }
 
             }else if(productType.equals("jd")){
                 //京东
-                rid = R.drawable.icon_jd;
+                rid = "京东";
             }else if(productType.equals("mgj")){
                 //蘑菇街
-                rid = R.drawable.icon_mogu;
+                rid = "蘑菇街";
             }else if(productType.equals("pdd")){
                 //拼多多
-                rid = R.drawable.icon_pdd;
+                rid = "拼多多";
             }else if(productType.equals("sn")){
                 //苏宁
-                rid = R.drawable.icon_suning;
+                rid = "苏宁";
             }
 
         }

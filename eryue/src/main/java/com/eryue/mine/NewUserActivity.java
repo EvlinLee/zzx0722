@@ -17,8 +17,7 @@ import base.BaseActivity;
 public class NewUserActivity extends BaseActivity implements View.OnClickListener{
 
 
-    int[] ids = {R.id.hint11, R.id.hint12, R.id.hint13, R.id.hint14, R.id.hint15, R.id.hint16
-    , R.id.hint17, R.id.hint21};
+    int[] ids = {R.id.hint11, R.id.hint12, R.id.hint13, R.id.hint14, R.id.hint15};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

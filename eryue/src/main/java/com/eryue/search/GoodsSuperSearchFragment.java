@@ -28,9 +28,10 @@ import com.eryue.activity.BaseFragment;
 import com.eryue.model.GoodsSearchModel;
 import com.eryue.ui.MultiLineTextView;
 import com.eryue.util.SharedPreferencesUtil;
+import com.eryue.widget.StockDatePopModel;
+import com.eryue.widget.StockDatePopView;
 import com.library.util.ToastTools;
 
-import org.angmarch.views.NiceSpinner;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -84,13 +85,16 @@ public class GoodsSuperSearchFragment extends BaseFragment implements View.OnCli
     //清除输入框内容
     private ImageView iv_clear;
 
-    private LinearLayout layout_textclear;
 
     /**
      * 下拉选项
      * @param savedInstanceState
      */
-    private NiceSpinner niceSpinner;
+    private TextView niceSpinner;
+    private StockDatePopView stockDatePopView;
+    private final String[] hintStr0 = {"淘宝", "京东", "拼多多", "蘑菇街", "苏宁"};
+    private final int[] hintValue0 = {0, 1, 2, 3, 4};
+    private int hintIndex0 = 0;
 
 
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -134,8 +138,7 @@ public class GoodsSuperSearchFragment extends BaseFragment implements View.OnCli
 
         iv_clear = getView().findViewById(R.id.iv_clear);
 
-        layout_textclear = getView().findViewById(R.id.layout_textclear);
-        layout_textclear.setOnClickListener(this);
+        iv_clear.setOnClickListener(this);
 
         tv_search_keyword.addTextChangedListener(new TextWatcher() {
             @Override
@@ -154,9 +157,9 @@ public class GoodsSuperSearchFragment extends BaseFragment implements View.OnCli
                 String textContent =  tv_search_keyword.getText().toString();
 
                 if (!TextUtils.isEmpty(textContent)){
-                    layout_textclear.setVisibility(View.VISIBLE);
+                    iv_clear.setVisibility(View.VISIBLE);
                 }else{
-                    layout_textclear.setVisibility(View.GONE);
+                    iv_clear.setVisibility(View.GONE);
                 }
 
             }
@@ -176,22 +179,27 @@ public class GoodsSuperSearchFragment extends BaseFragment implements View.OnCli
 
         iv_tip = getView().findViewById(R.id.iv_tip);
 
-        List<String> spinnerData = new LinkedList<>(Arrays.asList("淘宝", "天猫", "拼多多", "苏宁","京东",
-                "蘑菇街"));
-        niceSpinner = getView().findViewById(R.id.nice_spinner);
-        niceSpinner.attachDataSource(spinnerData);
-        niceSpinner.setTextColor(Color.RED);
-        niceSpinner.setBackground(getResources().getDrawable(R.drawable.lv_item_shape));
-        niceSpinner.setTextSize(11);
-        niceSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        getView().findViewById(R.id.nice_spinner).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
+            public void onClick(View v) {
+                if (null != stockDatePopView) {
+                    stockDatePopView.showPopView(v);
+                }
             }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {}
         });
+        stockDatePopView = new StockDatePopView(getContext());
+        stockDatePopView.setData(hintStr0, hintValue0);
+
+        stockDatePopView.setOnDateClickListener(new StockDatePopView.OnDateClickListener() {
+            @Override
+            public void onDateItemClick(StockDatePopModel model) {
+                TextView textView = (TextView) getView().findViewById(R.id.spinner_text);
+                textView.setText(model.getShowString());
+                hintIndex0 = model.getIndex();
+            }
+        });
+
+        stockDatePopView.setSelectOption(hintIndex0);
 
     }
 
@@ -260,7 +268,11 @@ public class GoodsSuperSearchFragment extends BaseFragment implements View.OnCli
     public void onClick(View v) {
 
         if (v == tv_search) {
-            String keyword = tv_search_keyword.getText().toString();
+            String platform = hintStr0[hintIndex0].toString();
+            String keyword = null;
+            if (null != platform) {
+                keyword = platform+"+"+tv_search_keyword.getText().toString();
+            }
             requestSearch(keyword);
         } else if (v == iv_delete) {
             //清空历史记录
@@ -269,7 +281,7 @@ public class GoodsSuperSearchFragment extends BaseFragment implements View.OnCli
             if (null!=historyList){
                 historyList.clear();
             }
-        }else if (v == layout_textclear){
+        }else if (v == iv_clear){
 
             //清空输入框内容
             if (null!=tv_search_keyword){

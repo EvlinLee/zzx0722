@@ -20,6 +20,7 @@ import com.eryue.GoodsContants;
 import com.eryue.R;
 import com.eryue.activity.BaseFragment;
 import com.eryue.activity.CreateShareActivity;
+import com.eryue.home.Goods;
 import com.eryue.home.GoodsListAdapter;
 import com.eryue.home.GoodsUtil;
 import com.eryue.ui.NoScrollListView;
@@ -50,7 +51,7 @@ public class GoodsAbstractTopFragment extends BaseFragment implements AdapterVie
     /**
      * 商品渠道
      */
-    private ImageView iv_business;
+    private TextView iv_business;
 
     /**
      * 商品标题
@@ -128,7 +129,7 @@ public class GoodsAbstractTopFragment extends BaseFragment implements AdapterVie
         autoScrollViewPager = (AutoScrollViewPager) getView().findViewById(R.id.viewPager_goodsimg);
         listview_like = (NoScrollListView) getView().findViewById(R.id.listview_like);
 
-        iv_business = (ImageView) getView().findViewById(R.id.iv_business);
+        iv_business = (TextView) getView().findViewById(R.id.iv_business);
         tv_goodstitle = (TextView) getView().findViewById(R.id.tv_goodstitle);
         tv_afterpaper = (TextView) getView().findViewById(R.id.tv_afterpaper);
         tv_nowprice = (TextView) getView().findViewById(R.id.tv_nowprice);
@@ -221,8 +222,8 @@ public class GoodsAbstractTopFragment extends BaseFragment implements AdapterVie
 
                 //商品状态
                 Glide.with(getContext()).load(GoodsUtil.getGoodsStatusRid(true,detailInfo.couponStatus)).asBitmap().into(iv_status);
-                //商品渠道
-                Glide.with(getContext()).load(GoodsUtil.getGoodsBusinessRid(detailInfo.isMall,detailInfo.productType)).asBitmap().into(iv_business);
+                //设置商品渠道
+                iv_business.setText(GoodsUtil.getGoodsBusinessRid(detailInfo.isMall, detailInfo.productType).toString());
 
             }
         });

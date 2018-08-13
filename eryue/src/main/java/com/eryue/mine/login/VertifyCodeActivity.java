@@ -190,6 +190,7 @@ public class VertifyCodeActivity extends BaseActivity implements View.OnClickLis
                         }, 1000);
                     }
                     else {
+                        Log.e("JudgeRsp判断验证码", " "+response.body().status);
                         Toast.makeText(VertifyCodeActivity.this, "验证失败，稍后重试", Toast.LENGTH_SHORT).show();
                     }
                 } catch (Exception e) {

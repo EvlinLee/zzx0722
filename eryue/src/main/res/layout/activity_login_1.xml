@@ -8,29 +8,34 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <ImageView
-            android:layout_width="68dip"
-            android:layout_height="68dip"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="169dip"
             android:id="@+id/image"
-            android:background="@drawable/icon"/>
+            android:background="@drawable/img_login_weixin"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="登录"
             android:id="@+id/hint"
+            android:visibility="gone"
             android:textColor="#000000"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/image"
             android:textSize="16dip"
             android:layout_marginTop="5dip"/>
 
-        <ImageView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/wechat_login"
-            android:background="@drawable/wechat_login"
+            android:text="微信登录"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/login_btn_pre"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/hint"
             android:layout_marginTop="40dip"/>

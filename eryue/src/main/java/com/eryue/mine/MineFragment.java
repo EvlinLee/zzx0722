@@ -1,20 +1,14 @@
 package com.eryue.mine;
 
-import android.Manifest;
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.BroadcastReceiver;
-import android.content.ClipData;
-import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Bitmap;
-import android.net.Uri;
+import android.graphics.Paint;
 import android.os.Bundle;
-import android.os.Handler;
-import android.provider.MediaStore;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.text.TextUtils;
@@ -27,28 +21,18 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.Key;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.target.BitmapImageViewTarget;
 import com.eryue.AccountUtil;
-import com.eryue.GoodsContants;
 import com.eryue.R;
 import com.eryue.WXShare;
 import com.eryue.activity.BaseFragment;
-import com.eryue.home.SharePopView;
 import com.eryue.mine.login.LoginActivity1;
-import com.eryue.push.Utils;
-import com.eryue.search.GoodsSearchListActivity;
 import com.eryue.util.Logger;
-import com.eryue.util.SharedPreferencesUtil;
-import com.eryue.widget.ShareContentView;
-import com.library.util.ImageUtils;
-import com.library.util.StringUtils;
 import com.library.util.ToastTools;
 import com.library.util.UIScreen;
 import com.tencent.mm.opensdk.modelbase.BaseResp;
@@ -60,23 +44,16 @@ import net.MineInterface;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import permission.PermissionUtil;
-import qrcode.QRCodeUtil;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-
-import static net.KeyFlag.IP_BIND_OPEN_ID;
-import static net.KeyFlag.KEY_DOMAIN;
 
 /**
  * Created by dazhou on 2018/2/11.
@@ -198,9 +175,11 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
     private void refreshLoginStateView() {
         String openid = DataCenterManager.Instance().get(getContext(), KeyFlag.WECHAT_OPON_ID);
         if (TextUtils.isEmpty(openid)) {
-            bindwx.setVisibility(View.GONE);
+            bindwx.setText("前往绑定微信");
+            bindwx.getPaint().setFlags(Paint.UNDERLINE_TEXT_FLAG); //下划线
         } else {
-            bindwx.setText(View.VISIBLE);
+            bindwx.setText("已绑定微信");
+            bindwx.getPaint().setFlags(0);
         }
         loginTV.setVisibility(View.GONE);
         cell_contain_login.setVisibility(View.VISIBLE);
@@ -397,7 +376,7 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
         } else if (v == navigation_help) {
             showTips();
         } else if (v == dingdanxiangqing) {//订单详情
-            Intent intent = new Intent(getContext(), OrderDetailActivity1.class);
+            Intent intent = new Intent(getContext(), MyOrderChartsActivity.class);
             startActivity(intent);
         } else if (v == getView().findViewById(R.id.navigation_setting)) {
             if (AccountUtil.isLogin()) {
@@ -461,7 +440,9 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
                     }
 
                     if (response.body().status == 1) {
-                        bindwx.setText("未绑定微信");
+                        bindwx.setText("前往绑定微信");
+                        bindwx.getPaint().setFlags(Paint.UNDERLINE_TEXT_FLAG); //下划线
+
                         DataCenterManager.Instance().save(getContext(), KeyFlag.WECHAT_OPON_ID, "");
                         DataCenterManager.Instance().save(getContext(), KeyFlag.WECHAT_USER_NAME, "");
                         DataCenterManager.Instance().save(getContext(), KeyFlag.IMAGE_RUL_WX, "");

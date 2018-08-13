@@ -1,0 +1,42 @@
+-injars 'F:\work\zzx0722\eryue\build\intermediates\transforms\proguard\release\0.jar'
+-outjars 'F:\work\zzx0722\eryue\build\intermediates\multi-dex\release\componentClasses.jar'
+
+-libraryjars 'F:\android\build-tools\26.0.2\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **
+-dontwarn **
+-printconfiguration 'F:\work\zzx0722\eryue\build\intermediates\multi-dex\release\components.flags'
+
+
+# Referenced at F:\work\zzx0722\eryue\build\intermediates\manifests\full\release\AndroidManifest.xml:49
+-keep class com.eryue.BaseApplication {
+    <init>(...);
+}
+
+-keep public class * extends android.app.Instrumentation {
+    <init>();
+}
+
+-keep public class * extends android.app.Application {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.ir.** {
+    <fields>;
+    <methods>;
+}

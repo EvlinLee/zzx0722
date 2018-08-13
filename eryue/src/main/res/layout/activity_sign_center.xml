@@ -29,7 +29,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="您已经签到"
+            android:text="您已经连续签到"
             android:layout_below="@+id/num"
             android:layout_alignParentRight="true"
             android:layout_marginRight="16dp"

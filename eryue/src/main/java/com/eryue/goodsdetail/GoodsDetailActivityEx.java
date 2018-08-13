@@ -76,6 +76,11 @@ public class GoodsDetailActivityEx extends BaseActivityTransparent implements Vi
     private ImageView iv_detailback;
 
     /**
+     * 可赚积分
+     */
+    private TextView tv_jf;
+
+    /**
      * 领券购买
      */
     private LinearLayout layout_buy;
@@ -93,11 +98,7 @@ public class GoodsDetailActivityEx extends BaseActivityTransparent implements Vi
     Drawable ic_star;
     Drawable ic_star_selected;
 
-    private TextView tv_home;
-    private TextView tv_mine;
-    private TextView tv_serice;
     private TextView tv_detail_share;
-    private TextView tv_buy;
     private String uid = AccountUtil.getUID();
 
 
@@ -120,17 +121,10 @@ public class GoodsDetailActivityEx extends BaseActivityTransparent implements Vi
         layout_back.setOnClickListener(this);
 
 
-        tv_home = findViewById(R.id.tv_home);
-        tv_mine = findViewById(R.id.tv_mine);
-        tv_serice = findViewById(R.id.tv_serice);
         tv_detail_share = findViewById(R.id.tv_detail_share);
-        tv_buy = findViewById(R.id.tv_buy);
+        tv_jf = findViewById(R.id.tv_jf);
 
-        tv_home.setOnClickListener(this);
-        tv_mine.setOnClickListener(this);
-        tv_serice.setOnClickListener(this);
         tv_detail_share.setOnClickListener(this);
-        tv_buy.setOnClickListener(this);
 
     }
 
@@ -215,7 +209,7 @@ public class GoodsDetailActivityEx extends BaseActivityTransparent implements Vi
 
         if (v == layout_back){
             this.finish();
-        }else if (v == tv_buy){
+        }/*else if (v == tv_buy){
             if (null!=productDetailInfo&& !TextUtils.isEmpty(productDetailInfo.clickUrl)){
 
 //                if (CommonFunc.checkPackage("com.taobao.taobao",this)){
@@ -265,7 +259,7 @@ public class GoodsDetailActivityEx extends BaseActivityTransparent implements Vi
                 ToastTools.showShort(this,"该产品已下架");
             }
 
-        }else if (v == layout_start){
+        }*/else if (v == layout_start){
             //收藏
             if (null!=presenter&&null!=productDetailInfo){
                 if (productDetailInfo.isCollect == 0){
@@ -292,25 +286,6 @@ public class GoodsDetailActivityEx extends BaseActivityTransparent implements Vi
                 intent.putExtra("itemId",productDetailInfo.itemId);
                 startActivity(intent);
             }
-        }else if (v == tv_home){
-            //首页
-            Intent intent = new Intent(this, MainActivity.class);
-            intent.putExtra("selectIndex",MainActivity.TAB_HOME);
-            startActivity(intent);
-        }else if (v == tv_mine){
-            //我的
-            Intent intent = new Intent(this, MainActivity.class);
-            intent.putExtra("selectIndex",MainActivity.TAB_MINE);
-            startActivity(intent);
-        }else if (v == tv_serice){
-            //如果没有登录就进入到登录页
-            //点击消息、每日发圈、列表分享、详情分享、立即购买、联系客服,需要登录
-            if (!AccountUtil.checkLogin(this)){
-                return;
-            }
-            //客服
-            Intent intent = new Intent(this.getBaseContext(), ContactServerActivity.class);
-            startActivity(intent);
         }
 
     }

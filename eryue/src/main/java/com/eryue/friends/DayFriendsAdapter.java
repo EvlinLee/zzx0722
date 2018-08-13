@@ -22,10 +22,12 @@ import com.eryue.GoodsContants;
 import com.eryue.R;
 import com.eryue.WXShare;
 import com.eryue.activity.ImageBrowserActivity;
+import com.eryue.activity.MainActivity;
 import com.eryue.home.SharePopView;
 import com.eryue.ui.ImageCacheHelper;
 import com.eryue.ui.Images;
 import com.eryue.ui.NineViewGroup;
+import com.eryue.ui.PopDialog;
 import com.eryue.widget.ShareContentView;
 import com.library.util.ImageUtils;
 import com.library.util.StringUtils;
@@ -62,8 +64,19 @@ public class DayFriendsAdapter extends BaseAdapter implements ShareContentView.O
 
     private InterfaceManager.TimeLineEx shareTimeLine;
 
-    public DayFriendsAdapter(Context context) {
+    public DayFriendsAdapter(Context context,String type) {
         this.context = context;
+
+        /**
+         * 判断是哪一种类型
+         */
+        if (type.equals("Newcomers")) {
+
+        } else if (type.equals("Material")) {
+
+        } else if (type.equals("Recommend")) {
+
+        }
 
         sharePopView = new SharePopView(context);
         sharePopView.setOnShareClickListener(this);
@@ -232,7 +245,17 @@ public class DayFriendsAdapter extends BaseAdapter implements ShareContentView.O
                 public void onClick(View v) {
                     shareTimeLine = timeLine;
                     if (null != sharePopView) {
-                        sharePopView.showPopView();
+//                        sharePopView.showPopView();
+                        final PopDialog popDialog = new PopDialog(MainActivity.mContext);
+                        popDialog.setTitle("消息提示");
+
+                        popDialog.setOnCloseOnclickListener(new PopDialog.OnCloseclickListener() {
+                            @Override
+                            public void onCloseClick() {
+                                popDialog.dismiss();
+                            }
+                        });
+                        popDialog.show();
                     }
                 }
             });

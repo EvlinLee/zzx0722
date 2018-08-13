@@ -1,10 +1,14 @@
 package com.eryue.home;
 
+import android.annotation.TargetApi;
+import android.app.Activity;
 import android.app.Dialog;
 import android.app.Notification;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Message;
 import android.support.v7.app.NotificationCompat;
@@ -14,14 +18,18 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.view.WindowManager;
+import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.FrameLayout;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -34,6 +42,7 @@ import com.eryue.RedRocketPopView;
 import com.eryue.activity.BaseFragment;
 import com.eryue.activity.ImageBigActivity;
 import com.eryue.activity.ImageBrowserActivity;
+import com.eryue.activity.MainActivity;
 import com.eryue.goodsdetail.GoodsDetailActivityEx;
 import com.eryue.goodsdetail.GoodsImageModel;
 import com.eryue.goodsdetail.GoodsWebActivity;
@@ -43,9 +52,11 @@ import com.eryue.jd.SearchJDPresenter;
 import com.eryue.live.SearchLiveActivity;
 import com.eryue.mine.MessageCenterActivity;
 import com.eryue.search.GoodsSearchActivityEx;
+import com.eryue.search.GoodsSearchListActivity;
 import com.eryue.ui.HorizontalListView;
 import com.eryue.util.Logger;
 import com.eryue.util.SharedPreferencesUtil;
+import com.eryue.util.StatusBarCompat;
 import com.eryue.widget.AutoScrollViewPager.AutoScrollViewPager;
 import com.eryue.widget.AutoScrollViewPager.BaseViewPagerAdapter;
 import com.library.ui.dragrefresh.DragRefreshListView;
@@ -61,6 +72,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import base.BaseActivity;
+
 /**
  * Created by bli.Jason on 2018/2/8.
  */
@@ -71,6 +84,12 @@ public class GoodsAllFragmentEx extends BaseFragment implements DragRefreshListV
         MainPresenter.SearchRedPacketListener, HomeRequestPresenter.AppInfoCountListener, SearchJDPresenter.SearchJDActivityListener {
 
     private GoodsTabModel tabModel;
+
+
+    private float y1 = 0;
+    private float y2 = 0;
+
+    private LinearLayout linearLayoutTop;
 
     //搜索框
     private LinearLayout search_contain;
@@ -132,7 +151,11 @@ public class GoodsAllFragmentEx extends BaseFragment implements DragRefreshListV
     private View view_space;
 
 
+    @TargetApi(Build.VERSION_CODES.M)
     private void init() {
+
+        search_contain = getView().findViewById(R.id.layout_header);
+
         iv_rocket = getView().findViewById(R.id.iv_rocket);
         iv_rocket.setOnClickListener(this);
 
@@ -148,6 +171,19 @@ public class GoodsAllFragmentEx extends BaseFragment implements DragRefreshListV
         listview.refreshComplete(true, new Date().getTime());
         //headerview
         final View headerView = LayoutInflater.from(getContext()).inflate(R.layout.header_fragment_goods, null);
+
+        TextView textView = (TextView) getView().findViewById(R.id.tv_search);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(getContext(), GoodsSearchActivityEx.class));
+                //打开超级搜索
+
+            }
+        });
+
+
         listview.addHeaderView(headerView);
         listview.setScrollStateChangeListener(this);
 
@@ -369,6 +405,21 @@ public class GoodsAllFragmentEx extends BaseFragment implements DragRefreshListV
         //StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL);
         rv_goodsTop.setLayoutManager(layoutManager);
         rv_goodsTop.setAdapter(new GoodsTopCardViewAdapter(getActivity(),inintList()));
+
+        linearLayoutTop = (LinearLayout) getView().findViewById(R.id.ll_linear_top);
+        final TextView textView1 = (TextView) getView().findViewById(R.id.aaa);
+        textView1.getBackground().mutate().setAlpha(0);
+
+        // 设置滑动
+        listview.setOnScrollListener(new OnScrollYListener(listview) {
+
+            @Override
+            protected void onScrollY(int scrolledY) {
+                System.out.println("正在滑动。。。"+scrolledY);
+                textView1.getBackground().mutate().setAlpha(scrolledY/20);
+            }
+        });
+
 
     }
 

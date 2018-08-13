@@ -2,30 +2,31 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff">
+    android:background="@color/comm_background">
 
-    <RelativeLayout
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hint"
+        android:src="@drawable/img_login_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/hint"
-            android:textColor="#333333"
-            android:textSize="18dip"
-            android:gravity="center|right"
-            android:text="账号登录"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="130dip"/>
-
-
-
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hint"
+        android:id="@+id/linear_layout1"
+        android:background="@drawable/textview_list_shape"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="55dip"
             android:id="@+id/contain_1"
-            android:layout_below="@+id/hint"
             android:layout_marginTop="15dip">
 
             <EditText
@@ -34,11 +35,10 @@
                 android:layout_height="40dip"
                 android:layout_marginLeft="15dip"
                 android:background="@null"
-                android:hint="请输入账号"
+                android:hint="请输入手机号或昵称"
                 android:inputType="text"
                 android:maxLines="1"
-                android:textSize="16dip"
-
+                android:textSize="15sp"
                 android:textColorHint="#cccccc"
                 android:textColor="#333333"
                 android:layout_above="@+id/line1"
@@ -48,7 +48,7 @@
                 android:layout_height="1dp"
                 android:id="@+id/line1"
                 android:layout_alignParentBottom="true"
-                android:background="#cbcbcb"
+                android:background="#f5f5f5"
                 android:layout_marginLeft="15dip"
                 android:layout_marginRight="15dip"
                 />
@@ -73,7 +73,7 @@
                 android:textColor="#333333"
                 android:inputType="textPassword"
                 android:maxLines="1"
-                android:textSize="16dip"
+                android:textSize="15sp"
                 android:layout_above="@+id/line2"
                 />
             <View
@@ -81,7 +81,7 @@
                 android:layout_height="1dp"
                 android:id="@+id/line2"
                 android:layout_alignParentBottom="true"
-                android:background="#cbcbcb"
+                android:background="#f5f5f5"
                 android:layout_marginLeft="15dip"
                 android:layout_marginRight="15dip"
                 />
@@ -98,40 +98,35 @@
             android:textColor="#ffffff"
             android:textSize="16dip"
             android:gravity="center"
-            android:text="立即登录"
+            android:text="登录"
             android:layout_below="@+id/contain_2"
             android:layout_marginTop="20dip"
-            android:background="@drawable/bg_tv_copycomment"/>
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/login_btn_pre"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="60dip"
+        android:layout_height="45dip"
+        android:layout_marginRight="15dip"
+        android:layout_alignParentRight="true"
+        android:id="@+id/register"
+        android:textColor="#444444"
+        android:textSize="16dip"
+        android:gravity="center|right"
+        android:text="注册"
+        android:visibility="gone"
+        android:layout_marginTop="20dip"/>
 
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="40dip"
-            android:layout_marginLeft="15dip"
-            android:id="@+id/forget_password"
-            android:textColor="#444444"
-            android:textSize="16dip"
-            android:gravity="center"
-            android:text="忘记密码"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dip"/>
-
-        <TextView
-            android:layout_width="60dip"
-            android:layout_height="45dip"
-            android:layout_marginRight="15dip"
-            android:layout_alignParentRight="true"
-            android:id="@+id/register"
-            android:textColor="#444444"
-            android:textSize="16dip"
-            android:gravity="center|right"
-            android:text="注册"
-            android:visibility="gone"
-            android:layout_below="@+id/sure"
-            android:layout_marginTop="20dip"/>
-
-
-    </RelativeLayout>
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forget_password"
+        android:layout_below="@+id/linear_layout1"
+        android:textColor="#666666"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:text="忘记密码"
+        />
 </RelativeLayout>
